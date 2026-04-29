@@ -1,0 +1,43 @@
+{
+  "name": "leeway-autonomous-content-foundry",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Leonard Le",
+  "type": "module",
+  "scripts": {
+    "hivemind:sync": "node scripts/sync-leeway-hivemind.mjs",
+    "platform:skills": "node scripts/sync-platform-api-skills.mjs",
+    "dev": "npm run hivemind:sync && npm run platform:skills && vite --port=7007 --host=0.0.0.0",
+    "build": "npm run hivemind:sync && npm run platform:skills && npm run brand:check && vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "brand:check": "node scripts/brand-gate.mjs",
+    "ci:verify": "npm run brand:check && npm run lint && npm run build",
+    "leeway:enforce:check": "node LeeWay-Standards/scripts/auto-enforce-file-governance.mjs --root . --include src --include scripts --include vite.config.ts",
+    "leeway:enforce:fix": "node LeeWay-Standards/scripts/auto-enforce-file-governance.mjs --apply --root . --include src --include scripts --include vite.config.ts",
+    "leeway:compliance": "node LeeWay-Standards/scripts/compliance-check.mjs src"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "simple-icons": "^16.18.0",
+    "vite": "^6.2.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "product": {
+    "name": "Beast AI Agentic Content Foundry",
+    "owner": "Leeway Industries",
+    "forBrand": "Beast AI",
+    "author": "Leonard Le",
+    "persona": "Agent Lee"
+  },
+  "brandPolicy": {
+    "requiredBrand": "Beast AI",
+    "forbiddenBrandTokens": [
+      "Leeway Innovations"
+    ],
+    "contentIdPrefix": "LEEWAY-"
+  },
+  "modelControl": {
+    "primaryLane": "Gemini",
+    "rule": "Model output is subordinate to Leeway governance law and execution policy.",
+    "fallbackBehavior": "If any instruction conflicts with governance, reject the action and request policy-compliant input."
+  },
+  "governanceLayers": {
+    "L1": "Law and policy source in LeeWay-Standards/.leeway/layer-policy.json",
+    "L2": "Controller and orchestration in LeeWay-Standards/governance/layers/L2_Controller_VRM",
+    "L7": "Execution runtime in LeeWay-Standards/governance/layers/L7_Execution_Die",
+    "L9": "Integrity enforcement in LeeWay-Standards/governance/layers/L9_Integrity_Sentinel"
+  },
+  "agentLeePersonaGuardrails": {
+    "mustPreservePersona": true,
+    "mustPreserveSchemaFirstCognition": true,
+    "mustRequireVerificationForMutatingActions": true,
+    "mustLogGovernanceDecisions": true
+  }
+}

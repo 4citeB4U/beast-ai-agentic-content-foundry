@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "authority": "Leeway Industries",
+  "product": "Beast AI Agentic Content Foundry",
+  "purpose": "Directory governance registry for Leeway runtime compliance",
+  "directories": [
+    {
+      "path": "src",
+      "layer": "projection-ui",
+      "governedBy": "LeeWay-Standards",
+      "headerPolicy": "required"
+    },
+    {
+      "path": "scripts",
+      "layer": "governance-automation",
+      "governedBy": "LeeWay-Standards",
+      "headerPolicy": "required"
+    },
+    {
+      "path": "governance",
+      "layer": "policy",
+      "governedBy": "LeeWay-Standards",
+      "headerPolicy": "required"
+    },
+    {
+      "path": "LeeWay-Standards",
+      "layer": "standards-law",
+      "governedBy": "Leeway Industries",
+      "headerPolicy": "required"
+    }
+  ]
+}

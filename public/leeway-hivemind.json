@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-04-29T11:37:18.161Z",
+  "authority": "Leeway Industries",
+  "persona": "Agent Lee",
+  "lane": "hivemind",
+  "sources": [
+    {
+      "sourceRoot": "E:/.Leeway-new-line-of-products/leeway-employment-center",
+      "exists": true,
+      "artifactsRead": 4,
+      "artifactsFound": [
+        "AGENT_VM_SPEC.md",
+        "src/core/leewayGovernanceGate.ts",
+        "leeway-agents/src/core/governanceEnforcer.ts",
+        "src/core/seeds/agentCrewSeed.ts"
+      ]
+    },
+    {
+      "sourceRoot": "E:/.Leeway-new-line-of-products/Agent-Lee-The-Sum-of-All-Systems",
+      "exists": true,
+      "artifactsRead": 4,
+      "artifactsFound": [
+        "AGENTS.md",
+        "UNIFIED_SYSTEM_DOCUMENTATION.md",
+        "SYSTEM_ARCHITECTURE.md",
+        "governance-compliance-report.json"
+      ]
+    }
+  ],
+  "discoveredArtifacts": [
+    "E:\\.Leeway-new-line-of-products\\leeway-employment-center\\AGENT_VM_SPEC.md",
+    "E:\\.Leeway-new-line-of-products\\leeway-employment-center\\src\\core\\leewayGovernanceGate.ts",
+    "E:\\.Leeway-new-line-of-products\\leeway-employment-center\\leeway-agents\\src\\core\\governanceEnforcer.ts",
+    "E:\\.Leeway-new-line-of-products\\leeway-employment-center\\src\\core\\seeds\\agentCrewSeed.ts",
+    "E:\\.Leeway-new-line-of-products\\Agent-Lee-The-Sum-of-All-Systems\\AGENTS.md",
+    "E:\\.Leeway-new-line-of-products\\Agent-Lee-The-Sum-of-All-Systems\\UNIFIED_SYSTEM_DOCUMENTATION.md",
+    "E:\\.Leeway-new-line-of-products\\Agent-Lee-The-Sum-of-All-Systems\\SYSTEM_ARCHITECTURE.md",
+    "E:\\.Leeway-new-line-of-products\\Agent-Lee-The-Sum-of-All-Systems\\governance-compliance-report.json"
+  ],
+  "agentRoster": [
+    "Administrative Agent",
+    "Administrative Sovereign Agent",
+    "Agent Lee The Sum of All Systems",
+    "Central Orchestrator",
+    "Contract Compliance Agent",
+    "Deployment Officer Agent",
+    "Employment Operations Agent",
+    "Escalation to Agent",
+    "Governance Audit Agent",
+    "Hiring Specialist Agent",
+    "Investor Relations Agent",
+    "LeeWay governed asset for Agent",
+    "Portal Agent",
+    "Preserve Agent",
+    "Role Matching Agent",
+    "Runtime Diagnostics Agent",
+    "Staffing Coordinator Agent",
+    "Temp Workforce Agent",
+    "The Agent",
+    "This repository is Agent",
+    "Vision Support Agent",
+    "leeway law"
+  ],
+  "intentMap": [
+    {
+      "intent": "document_to_video_pipeline",
+      "keywords": [
+        "pdf",
+        "document",
+        "convert",
+        "pipeline",
+        "movie",
+        "video"
+      ],
+      "nodeSequence": [
+        "pdf_to_story",
+        "story_to_script",
+        "script_to_images",
+        "images_to_movie"
+      ],
+      "ownerAgent": "Agent Lee Orchestrator"
+    },
+    {
+      "intent": "social_distribution",
+      "keywords": [
+        "social",
+        "instagram",
+        "tiktok",
+        "youtube",
+        "facebook",
+        "linkedin",
+        "post"
+      ],
+      "nodeSequence": [
+        "agent_lee_social"
+      ],
+      "ownerAgent": "Dispatch Center"
+    },
+    {
+      "intent": "thumbnail_refinement",
+      "keywords": [
+        "thumbnail",
+        "thumb",
+        "cover"
+      ],
+      "nodeSequence": [
+        "image_to_thumb_raw",
+        "thumb_best_pick"
+      ],
+      "ownerAgent": "Skill Capability Layer"
+    },
+    {
+      "intent": "blog_expansion",
+      "keywords": [
+        "blog",
+        "article",
+        "write-up",
+        "summary"
+      ],
+      "nodeSequence": [
+        "movie_to_blog"
+      ],
+      "ownerAgent": "Persistence + Narrative Cortex"
+    }
+  ]
+}
