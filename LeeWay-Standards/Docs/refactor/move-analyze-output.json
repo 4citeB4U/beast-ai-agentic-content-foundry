@@ -1,0 +1,7045 @@
+[
+  {
+    "source": "**/runtime/**",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "wildcard-pattern",
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "**/runtime/**",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "wildcard-pattern",
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "**/transport/**",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "wildcard-pattern",
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "**/gpu/**",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "wildcard-pattern"
+    ]
+  },
+  {
+    "source": "**/GovernanceContract.*",
+    "target": "LeeWay-Standards/packages/standards/policy",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "wildcard-pattern"
+    ]
+  },
+  {
+    "source": "**/IntentSanitizer.*",
+    "target": "LeeWay-Standards/packages/standards/validators",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "wildcard-pattern"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLee.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 31,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeCameraPopup.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeCodeStudio.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 1,
+    "outboundImports": 17,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeCreatorsStudio.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 4,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeForm.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeLaunchPad.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentleeMic.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 10,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeePermissions-Loading.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeWidget.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 2,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentLeeWorkstation.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 5,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentTeamPanel.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AgentVM.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 5,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/AuthGate.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/ChatConsole.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 6,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/ChatInterface.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 1,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/DatabaseHub.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 8,
+    "outboundImports": 8,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/Diagnostics.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 21,
+    "outboundImports": 11,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/firebase.ts",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 31,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/FloatingChat.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/Home.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 6,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/Layout.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 12,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/LeeWayUniverse.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 11,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/LeewayWatermark.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 9,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/Pallium.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 12,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/PalliumVisuals.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/RTCBootstrap.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/Settings.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/components/SystemAwarenessPanel.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 1,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/core/GovernanceContract.ts",
+    "target": "LeeWay-Standards/packages/standards/policy",
+    "inboundImports": 28,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/core/runtime/scheduler.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/core/runtime/taskBroker.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/creative/CodeStudio.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/creative/CreatorsStudio.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 3,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/creative/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/retrieval/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/retrieval/PalliumGateway.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 5,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/retrieval/RetrievalCortex.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 5,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/sensory/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/sensory/RTCInitializer.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/visual/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/visual/LeeWayUniverse3D.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/visual/VisionAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/visual/VisualCortex.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "agent-lee-agentic-os/cortices/visual/VoxelEngine.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/consensus/ExecutionTrace.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 18,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/consensus/HiveConsensus.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 6,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/consensus/HiveState.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 12,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/core/PerceptionBus.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 23,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/core/SovereignRuntime.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 7,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/core/UnifiedExecutionLayer.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 7,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/cortices/ModuleLoaderAgent.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/cortices/ModuleLoaderAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/GovernanceContract.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 28,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/GovernanceContract.ts",
+    "target": "LeeWay-Standards/packages/standards/policy",
+    "inboundImports": 28,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/IntentSanitizer.ts",
+    "target": "LeeWay-Edge-Integrated/runtime",
+    "inboundImports": 6,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/IntentSanitizer.ts",
+    "target": "LeeWay-Standards/packages/standards/policy",
+    "inboundImports": 6,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/AgentLeeCodeStudio.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 1,
+    "outboundImports": 17,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/AgentLeeCreatorsStudio.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 4,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/AgentLeeLaunchPad.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 10,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/AgentLeeWorkstation.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 5,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/DatabaseHub.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 8,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/Diagnostics.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 21,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/Home.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 6,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/pages/Settings.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 3,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "agent-lee-agentic-os/services/SignalingService.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Agents-the-World-Within/leeway-agents/src/components/firebase.ts",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 31,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier1",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Agents-the-World-Within/leeway-agents/src/cortices/retrieval/RetrievalCortex.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 5,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Agents-the-World-Within/leeway-agents/src/pages/DatabaseHub.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 8,
+    "outboundImports": 8,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Agents-the-World-Within/leeway-agents/src/pages/Diagnostics.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 21,
+    "outboundImports": 13,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/AdamCortex.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Hardware-Guardian.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Human-Link.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Interface-Designer.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Logistic-Preparer.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Neural-Cartographer.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Neural-Navigator.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Phi-3.5-Orchestrator.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Qwen3-Deep-Brain.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Sovereign-Auditor.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Agent.Systems-Integrator.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/AgentLee.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 32,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/AgentLeeBT.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 1,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/archivist_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Aria.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Atlas.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/BrainSentinel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/BugHunterForge.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/ClerkArchive.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/code_scout_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Echo.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 7,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/GabrielCortex.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/GuardAegis.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/indexer.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/JanitorSentinel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/LeewayStandardsAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/LibrarianAegis.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/LilyCortex.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/LiveConductorAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/MarshalVerify.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/navigator_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Nexus.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Nova.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Pixel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/RouterAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/SafetyRedactionAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/ScribeArchive.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/sentinel_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/Shield.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 7,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/StreamingSTTAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/StreamingTTSAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/SyntaxForge.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/VisionAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/agents/__init__.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L1_Perception/StreamingSTTAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L1_Perception/StreamingTTSAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L1_Perception/VisionAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L2_Ingestion/Aria.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L2_Ingestion/Nexus.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L2_Ingestion/RouterAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L3_Cognition/AdamCortex.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L3_Cognition/Atlas.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L3_Cognition/Echo.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 7,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L3_Cognition/GabrielCortex.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L3_Cognition/LilyCortex.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L3_Cognition/Nova.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L4_Consensus/GuardAegis.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L4_Consensus/MarshalVerify.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L5_Governance/BrainSentinel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L5_Governance/JanitorSentinel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L5_Governance/LeewayStandardsAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L5_Governance/SafetyRedactionAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L5_Governance/sentinel_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L5_Governance/Shield.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 7,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L6_Execution/BugHunterForge.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L6_Execution/code_scout_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L6_Execution/LiveConductorAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L6_Execution/SyntaxForge.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L7_Memory/archivist_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L7_Memory/ClerkArchive.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L7_Memory/indexer.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L7_Memory/LibrarianAegis.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L7_Memory/ScribeArchive.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L8_Delivery/AgentLee.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 32,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L8_Delivery/AgentLeeBT.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 1,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L8_Delivery/navigator_agent.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L8_Delivery/Pixel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/CORE/L8_Delivery/__init__.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/agent-registry-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/agent-registry-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/agent-registry-mcp/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/agent-registry.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/contracts/agent-contracts.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 36,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/contracts/agent-lee-behavior-policies.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/contracts/agent-lee-core.contract.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/contracts/intent-router-map.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 8,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/lib/path-guard.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 12,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tools/capture-state.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tools/kill-process.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tools/open-app.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tools/read-file.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tools/run-terminal.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tools/write-file.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/desktop-commander-agent-mcp/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/docs-rag-agent-mcp/manifest.yaml",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/docs-rag-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/docs-rag-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/docs-rag-agent-mcp/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/health-agent-mcp/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 86,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/health-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/health-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/health-agent-mcp/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/insforge-agent-mcp/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 86,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/insforge-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/insforge-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 86,
+    "outboundImports": 10,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/lib/session-store.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 8,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/tools/build-context-packet.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/tools/compress-session.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/tools/fetch-related-episodes.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/tools/recall-context.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 8,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/memory-agent-mcp/tools/write-summary.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/contracts/agent-contracts.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 36,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/contracts/intent-router-map.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 8,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/test/health-check.node.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/test/health-check.test.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/tools/break-into-steps.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/tools/choose-agent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 12,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/tools/make-plan.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 12,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/tools/suggest-recovery.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/tools/summarize-mission.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 12,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/planner-agent-mcp/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/playwright-agent-mcp/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 86,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/playwright-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/playwright-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/scheduling-agent-mcp/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 86,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/scheduling-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/scheduling-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/schemas/agent-registry.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/schemas/agent-test-spec.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/schemas/context-packet.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/schemas/mission-summary.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/schemas/validation-result.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/shared/env.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 83,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/shared/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/STARTUP.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/testsprite-agent-mcp/manifest.yaml",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/testsprite-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/testsprite-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/testsprite-agent-mcp/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/validation-agent-mcp/index.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 86,
+    "outboundImports": 8,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/validation-agent-mcp/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/validation-agent-mcp/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/vscode-mcp-tooling/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/vscode-mcp-tooling/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/vscode-mcp-tooling/src/tool.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 20,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/MCP agents/vscode-mcp-tooling/vscode-mcp-settings-snippet.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/agent-autonomy/autonomous-conductor/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/agent-autonomy/full-stack-delivery/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/agent-orchestration/multi-agent-orchestration/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/agent-patterns/agent-design-patterns/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/ai-ml/llm-prompting/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/ai-ml/ml-model-development/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/ai-ml/multimodal-systems/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/ai-ml/retrieval-generation-fine-tuning/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/architecture/system-design/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/CALL_MODE_INTEGRATION.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-analysis/refactoring/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-analysis/security-vulnerability-scanning/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-analysis/static-analysis/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-generation/full-stack-application/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-generation/microservices-architecture/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-generation/python-codegen/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/code-generation/typescript-codegen/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/data-analysis/advanced-analytics/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/data-analysis/pandas-analysis/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/database-design/database-design-optimization/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/debugging/javascript-debugging/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/debugging/python-debugging/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/devops/dockerfile-creation/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/devops/kubernetes-deployment/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/documentation/api-documentation/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/error-handling/resilience-patterns/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/git-workflow/git-collaboration/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/infrastructure/cicd-pipelines/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/infrastructure/infrastructure-as-code/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/observability/monitoring-and-observability/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/operations/internal-admin-guide.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/operations/monitoring.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/operations/non-technical-guide.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/performance-optimization/performance-engineering/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/prompt-optimization/prompt-engineering-advanced/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/quality-assurance/deployment-validator/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/quality-assurance/web-security-sweep/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/rag-knowledge/rag-systems/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/research/knowledge-synthesis/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/security/authentication-authorization/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/security/code-security/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/security/secure-architecture/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/self-optimization/dev-loop-optimizer/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/self-optimization/memory-learning/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/self-optimization/runtime-self-profiling/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/testing/advanced-testing-strategies/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/testing/integration-testing/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/testing/load-testing-capacity/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/testing/unit-testing/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/tool-integration/custom-tool-creation/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/voice-pipeline.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/voice-pipeline2.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/web-development/advanced-frontend-patterns/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/web-development/api-design/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/web-development/css-styling/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/web-development/react-development/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/skills/workflow-composition/workflow-orchestration/SKILL.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/vscode-mcp-tooling/src/dotenv.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 56,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/vscode-mcp-tooling/src/exec.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 53,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/agents/vscode-mcp-tooling/vscode-mcp-settings-snippet.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/Agent_Lee_Persona_System/05_MANIFEST/agentlee_persona_manifest.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/app.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 24,
+    "outboundImports": 8,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/apply_unicorn_directive.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-base.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-alderlake.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-cannonlake.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-cascadelake.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-cooperlake.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-haswell.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-icelake.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-ivybridge.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-piledriver.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-sandybridge.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-sapphirerapids.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-skylakex.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-sse42.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-x64.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-cpu-zen4.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml-rpc.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/ggml.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/leeway-skills-badge.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/leeway-skills-mcp.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/leeway-skills.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/leeway-standards.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 18,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/libomp140.x86_64.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/llama.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/bin/mtmd.dll",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/buffers/buffer.pool.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/config/.skillsignore",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/config/agent_manifest.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/config/skills-config.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/control/gpu.controller.bridge.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/economic.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/evolution.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/federation.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/gpu.bootstrap.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/gpu.capabilities.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/graph.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 1,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/hybrid.dispatcher.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/identity.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 3,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/layer.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/ldcc.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/quad.pipeline.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/state.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/core/trust.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/dispatch/compute.dispatch.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/Dockerfile",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/fallback/cpu.engine.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/fallback/cpu.worker.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/fly.toml",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/index.html",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L10_Orchestrator_Kernel/leeway.kernel.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L10_Orchestrator_Kernel/VerifiedAgentVM.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L1_Governance/constitution.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L1_Governance_BIOS/identity.bios.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L2_Controller_VRM/mosfet.regulator.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L3_Persistence_Memory/DatabaseHub.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 8,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L3_Persistence_Memory/Pallium.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 13,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L4_WorkflowProtocol/fsm.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L5_SkillCapability/tensor.skill.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L5_Skill_Capability/atom.gating.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L6_Dispatch_Center/rtc.sovereign.node.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L7_Execution_Die/gpu.alu.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L7_Execution_Die/qwen.alu.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L7_Execution_Die/shaders/bitwise_integrity.wgsl",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L7_Execution_Die/shaders/context_compressor.wgsl",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L7_Execution_Die/shaders/data_normalizer.wgsl",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L7_Execution_Die/shaders/tensor_matmul.wgsl",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L8_Telemetry_Assembly/Diagnostics.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 21,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L8_Telemetry_Assembly/janitor.audit.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L9_Integrity_Sentinel/probe.analyzer.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 8,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/L9_Interface_Display/App.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 24,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/leeway-agents/metadata.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/leeway-agents/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/leeway-agents/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/leeway-agents/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/.gitattributes",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/.leeway/config.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/convert_mp4_to_gif_clean.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/convert_to_gif.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/convert_video_to_gif.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/Docs/01_Application_Layers.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/Docs/02_LLM_Integration.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/Docs/04_System_Workflow.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/examples/web/LeeWayUniverse.tsx",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 11,
+    "outboundImports": 10,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/leeway-sdk/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/leeway-sdk/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/public/readmevideo.mp4",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/schemas/leeway-config.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/schemas/leeway-header.schema.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/cli/leeway.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 178,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/consensus/ExecutionTrace.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 18,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/consensus/HiveConsensus.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/consensus/HiveState.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 12,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/core/PerceptionBus.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 23,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/core/SovereignRuntime.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 7,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/core/UnifiedExecutionLayer.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 7,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/cortices/ModuleLoaderAgent.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/GovernanceContract.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 28,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/GovernanceContract.ts",
+    "target": "LeeWay-Standards/packages/standards/policy",
+    "inboundImports": 28,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/IntentSanitizer.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/IntentSanitizer.ts",
+    "target": "LeeWay-Standards/packages/standards/policy",
+    "inboundImports": 6,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/LeeWay-Standards/Workplace/README.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/manifest.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/pipeline/pipeline.cache.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/README.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/rtc/cluster.registry.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/rtc/cluster.registry.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/rtc/discovery.broadcast.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/rtc/discovery.broadcast.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/rtc/gpu.rtc.bridge.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/rtc/gpu.rtc.bridge.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/agent.scanner.cjs",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/fix-adb-path.ps1",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/leeway-agents/compliance-monitor.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/LWA_Agent_Registry_Manifest_Ledger.sql",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/LWA_Agent_Registry_Seed_10k.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/skill-integration-toolkit.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/skills-registry.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/sync-skills.ps1",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/verify-leeway-setup.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/scripts/workflow-integration-toolkit.py",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/sdk/application-installer.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 6,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/service-worker.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/shaders/matmul.wgsl.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/standalone-agent-runtime/package-lock.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/standalone-agent-runtime/package.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/standalone-agent-runtime/policies/adapter-policy.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/standalone-agent-runtime/tsconfig.json",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/telemetry/gpu.telemetry.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": [
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/gpu/workers/worker.manager.js",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier2",
+    "blockers": []
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/admin.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/auth.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 36,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/capabilities.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 5,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/events.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 9,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/qr.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/rooms.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 3,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/room-system/runtime.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 38,
+    "outboundImports": 13,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/buildlog.txt",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/Dockerfile",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/index.html",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/nginx.conf",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/package-lock.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/package.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/App.module.css",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/App.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 23,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/CommandCenter.module.css",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/CommandCenter.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 3,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/index.css",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/main.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/RemoteAudio.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/useWebRTC.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/src/vite-env.d.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/tsconfig.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/clients/web-demo/vite.config.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/configs/.env.example",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/configs/sfu.config.example.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/deploy/coturn/turnserver.conf",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/deploy/docker-compose.prod.yml",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/deploy/docker-compose.yml",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/deploy/systemd/coturn.service",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/deploy/systemd/leeway-sfu.service",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/agents/fleet.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/architecture/system.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/architecture/workflow.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/architecture.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/CALL_MODE_INTEGRATION.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/deployment.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/guardian-core.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/integration/web.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/integration.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/MEDIA_ENGINE.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/models/voice-pipeline.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/operations/internal-admin-guide.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/operations/monitoring.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/operations/non-technical-guide.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/README.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/system-overview.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/docs/voice-pipeline.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/final-branding-audit.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/index.html",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/LeeWay-Edge_RTC.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 7,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/metadata.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/package-lock.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/package.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/patch-governance.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/README.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/.env.example",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/Dockerfile",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/fly.toml",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/package-lock.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/package.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/aria.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 6,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/bus.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 276,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/governance.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 86,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/governor.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/nexus.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/observer.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/registry.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 30,
+    "outboundImports": 13,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/repair.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/runtime.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 39,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/scaler.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/sentinel.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 15,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/types.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 126,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/vector.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/ward.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/auth.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 36,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/config.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 70,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/governance-guard.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/intent-router.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 8,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/runtime-mode.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/stats-worker.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/summary-worker.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/index.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 87,
+    "outboundImports": 8,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/logger.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 27,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/mediasoup/room.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 20,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/mediasoup/worker.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 6,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/metrics.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 10,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/server.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 50,
+    "outboundImports": 11,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/src/signaling/handler.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/services/sfu/tsconfig.json",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/App.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 24,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/AgentFleet.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/AgentHub.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/CallModeUI.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 1,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/DiagnosticSpectrum.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/EconomicMoat.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/GalaxyBackground.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/VisionPerceptionLab.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/VoiceStudioLab.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/components/VoiceTuner.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/index.css",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/main.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/rtc/federation-router.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/rtc/leeway-rtc-native.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/rtc/mesh-fallback.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/rtc/store.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 23,
+    "outboundImports": 5,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/rtc/vector-agent.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/runtime/CallMode.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 3,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/runtime/index.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "runtime-critical",
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/sdk/index.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/sdk/package.json.template",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/speech-recognition.d.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/index.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 87,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/types.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 126,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-adapter.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-awareness.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-budget.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-diagnostics.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-governance.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-inspect.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-monitor.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-scanner.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/vision-storage.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/vision/VisualOverlayRenderer.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/audio.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 16,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/emotion-engine.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/engine-controller.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/engine-types.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/persona.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 6,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/poetry.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/speech-queue.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/types.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 126,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/use-voice-engine.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/voice-config.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 6,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/voice-loop.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 9,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "high-dependency-depth",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/voice-output.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/voice-presets.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/voice-registry.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/src/voice/VoiceStudio.tsx",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 2,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/tsc-errors.txt",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/tts-bridge.cjs",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/vite.config.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/vite.sdk.config.ts",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/VOICE_ENGINE_IMPLEMENTATION.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-Integrated/rtc/VOICE_ENGINE_STATUS.md",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/docs/deployment/relay-and-compute-orchestrator.md",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/services/sfu/src/compute/corridor.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 1,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/services/sfu/src/compute/orchestrator.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 15,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/services/sfu/src/compute/service.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 26,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/services/sfu/src/compute/task-router.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 1,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/services/sfu/src/compute/types.ts",
+    "target": "LeewayEdgeWebGPU/gpu",
+    "inboundImports": 126,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/AgentFleet.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/AgentHub.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/CallModeUI.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 1,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/DiagnosticSpectrum.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 4,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/EconomicMoat.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 2,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/GalaxyBackground.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 2,
+    "outboundImports": 1,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/RoomCallModeWrapper.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/VisionPerceptionLab.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 6,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/VoiceStudioLab.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-dependency"
+    ]
+  },
+  {
+    "source": "LeeWay-Edge-RTC-main/src/components/VoiceTuner.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 0,
+    "outboundImports": 3,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeewayEdgeWebGPU/leeway-agents/src/pages/Diagnostics.tsx",
+    "target": "LeeWay-Edge-Integrated/app",
+    "inboundImports": 21,
+    "outboundImports": 13,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "high-dependency-depth",
+      "cross-repo-dependency",
+      "cross-repo-inbound"
+    ]
+  },
+  {
+    "source": "LeewayEdgeWebGPU/rtc/cluster.registry.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeewayEdgeWebGPU/rtc/discovery.broadcast.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 0,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy"
+    ]
+  },
+  {
+    "source": "LeewayEdgeWebGPU/rtc/gpu.rtc.bridge.js",
+    "target": "LeeWay-Edge-RTC-main/src/transport",
+    "inboundImports": 4,
+    "outboundImports": 0,
+    "requiresRewrite": true,
+    "safeToMove": false,
+    "tier": "Tier3",
+    "blockers": [
+      "adapter-heavy",
+      "cross-repo-inbound"
+    ]
+  }
+]

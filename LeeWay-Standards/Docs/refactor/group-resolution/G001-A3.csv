@@ -1,0 +1,11 @@
+group_id,source_path,target_path,repo,reason,risk,coupling_class,imports_count,imported_by_count,external_importers_count,external_imports_count,runtime_critical,import_rewrite
+G001-A3,LeeWay-Edge-Integrated/gpu/rtc/cluster.registry.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/gpu/rtc/discovery.broadcast.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/Dockerfile,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/index.html,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/nginx.conf,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/package-lock.json,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/package.json,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/src/vite-env.d.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/tsconfig.json,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A3,LeeWay-Edge-Integrated/rtc/clients/web-demo/vite.config.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true

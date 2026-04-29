@@ -1,0 +1,95 @@
+{
+  "name": "leeway-sdk",
+  "version": "1.0.1",
+  "description": "LEEWAY™ — Logically Enhanced Engineering Web Architecture Yield. A lightweight autonomous code governance SDK that embeds identity, safety, readability, and repair assistance directly into the developer workflow.",
+  "main": "src/index.js",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    },
+    "./governance": {
+      "import": "./src/governance/index.js"
+    },
+    "./bootstrap": {
+      "import": "./src/bootstrap/LEEWAY_BOOTSTRAP.js"
+    },
+    "./runtime/mode": {
+      "import": "./src/runtime/core/leeway-mode.js"
+    },
+    "./src/*": "./src/*"
+  },
+  "bin": {
+    "leeway": "src/cli/leeway.js"
+  },
+  "scripts": {
+    "start": "node src/cli/leeway.js start",
+    "doctor": "node src/cli/leeway.js doctor",
+    "audit": "node src/cli/leeway.js audit",
+    "assess": "node src/cli/leeway.js assess",
+    "align": "node src/cli/leeway.js align",
+    "registry": "node src/cli/leeway.js registry",
+    "map": "node src/cli/leeway.js map",
+    "scan": "node src/cli/leeway.js scan",
+    "forge": "node src/cli/leeway.js forge",
+    "hive": "node src/cli/leeway.js hive",
+    "setup": "node src/cli/leeway.js setup",
+    "watch": "node src/cli/leeway.js watch",
+    "template": "node src/cli/leeway.js template",
+    "agentlee": "node src/cli/leeway.js agentlee",
+    "ssa:scan": "node scripts/run-agents.mjs scan",
+    "ssa:purge-plan": "node scripts/run-agents.mjs --mode=purge-plan",
+    "ssa:enforce": "node scripts/enforce.mjs",
+    "ssa:quarantine:dry": "node scripts/quarantine.mjs --dry-run",
+    "ssa:quarantine:apply": "node scripts/quarantine.mjs --apply",
+    "ssa:audit": "node scripts/audit.mjs",
+    "ssa:status": "node scripts/standards-agent-status.mjs",
+    "leeway:enforce:check": "node scripts/auto-enforce-file-governance.mjs --check .",
+    "leeway:enforce:fix": "node scripts/auto-enforce-file-governance.mjs --apply",
+    "leeway:enforce:strict": "node scripts/auto-enforce-file-governance.mjs --strict",
+    "leeway:compliance": "node scripts/compliance-check.mjs .",
+    "leeway:compliance:check": "node scripts/compliance-check.mjs",
+    "leeway:dev": "echo 'Developer SDK ready. See packages/standards/sdk/DEVELOPER_GUIDE.md'",
+    "test": "node --test src/**/*.test.js src/**/**/*.test.js 2>/dev/null || node --test src/core/*.test.js"
+  },
+  "keywords": [
+    "leeway",
+    "governance",
+    "ai-native",
+    "mcp",
+    "agents",
+    "code-standards",
+    "sdk",
+    "autonomous",
+    "architecture"
+  ],
+  "author": "Leeway Industries (Leonard Le)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/",
+    "schemas/",
+    ".leeway/",
+    "README.md",
+    "HELP.md",
+    "LICENSE",
+    "package.json",
+    "leeway.cmd",
+    "setup.bat"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "leeway-edge-rtc": "git+https://github.com/4citeB4U/LeeWay-Edge-RTC.git"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.5",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9"
+  }
+}

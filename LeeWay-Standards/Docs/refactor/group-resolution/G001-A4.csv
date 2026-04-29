@@ -1,0 +1,11 @@
+group_id,source_path,target_path,repo,reason,risk,coupling_class,imports_count,imported_by_count,external_importers_count,external_imports_count,runtime_critical,import_rewrite
+G001-A4,LeeWay-Edge-Integrated/rtc/configs/.env.example,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/configs/sfu.config.example.json,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/deploy/coturn/turnserver.conf,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/deploy/docker-compose.prod.yml,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/deploy/docker-compose.yml,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/deploy/systemd/coturn.service,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/deploy/systemd/leeway-sfu.service,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/docs/agents/fleet.md,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/docs/architecture.md,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true
+G001-A4,LeeWay-Edge-Integrated/rtc/docs/architecture/system.md,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,D-micro,0,0,0,0,true,true

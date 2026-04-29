@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-04-17T02:04:51.045Z",
+  "mode": "scan",
+  "scope": "all",
+  "doctrine": {
+    "systemName": "LeeWay - The Structured Freedom System",
+    "oneLineDefinition": "LeeWay = Freedom to build, enforced through layers, executed through systems, and delivered through governed outcomes.",
+    "finalTruth": "Freedom survives at scale not by removing limits, but by designing them correctly.",
+    "governedPath": [
+      "Standards",
+      "Integrated",
+      "Runtime"
+    ],
+    "pillars": {
+      "L": {
+        "name": "Layered Foundations",
+        "principle": "Freedom is contained without being restricted.",
+        "operationalMeaning": "Capabilities must remain in proper layers with clear ownership boundaries."
+      },
+      "E1": {
+        "name": "Execution Law",
+        "principle": "Freedom becomes intentional.",
+        "operationalMeaning": "Every operation follows the governed path Standards -> Integrated -> Runtime."
+      },
+      "E2": {
+        "name": "Environment and Engine",
+        "principle": "Freedom becomes possible.",
+        "operationalMeaning": "Execution runs inside managed environments and engines with policy controls."
+      },
+      "W": {
+        "name": "Workflow and Workforce",
+        "principle": "Freedom becomes productive.",
+        "operationalMeaning": "Agents and workflows execute structured tasks with receipts and traceability."
+      },
+      "A": {
+        "name": "Architecture and Agents",
+        "principle": "Freedom becomes stable.",
+        "operationalMeaning": "Architecture defines law and agents continuously enforce it."
+      },
+      "Y": {
+        "name": "Yield and System Output",
+        "principle": "Freedom becomes real results.",
+        "operationalMeaning": "The system must produce clean, scalable, and governed outcomes."
+      }
+    }
+  },
+  "leeWayOperationalState": "LAYERED_GOVERNANCE",
+  "phase": "completed",
+  "summary": {
+    "totalAgents": 10,
+    "activeAgents": 7,
+    "blockedAgents": 0,
+    "errorAgents": 0,
+    "totalReceipts": 38,
+    "totalBlockingReceipts": 0
+  },
+  "agents": [
+    {
+      "agentId": "ssa-placement-auditor",
+      "title": "Placement Auditor",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 32,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Placement Auditor scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-import-sentinel",
+      "title": "Import Sentinel",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Import Sentinel scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-contract-integrity",
+      "title": "Contract Integrity",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Contract Integrity scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-dead-code-reaper",
+      "title": "Dead Code Reaper",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Dead Code Reaper standby in scan mode under governed path Standards -> Integrated -> Runtime",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-quarantine-executor",
+      "title": "Quarantine Executor",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Quarantine Executor standby in scan mode under governed path Standards -> Integrated -> Runtime",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-rehome-orchestrator",
+      "title": "Rehome Orchestrator",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Rehome Orchestrator standby in scan mode under governed path Standards -> Integrated -> Runtime",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-runtime-chain-guardian",
+      "title": "Runtime Chain Guardian",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Runtime Chain Guardian scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-receipt-audit",
+      "title": "Receipt Auditor",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Receipt Auditor scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-health-monitor",
+      "title": "Health Monitor",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Health Monitor scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    },
+    {
+      "agentId": "ssa-data-lineage-tracker",
+      "title": "Data Lineage Tracker",
+      "status": "idle",
+      "lastRunAt": 1776391491045,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Data Lineage Tracker scanning layered governance for policy drift",
+      "leeWayPhase": "LAYERED_GOVERNANCE"
+    }
+  ]
+}

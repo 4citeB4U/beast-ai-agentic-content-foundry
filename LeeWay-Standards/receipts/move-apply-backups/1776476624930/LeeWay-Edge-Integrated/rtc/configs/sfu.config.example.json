@@ -1,0 +1,38 @@
+{
+  "_comment": "Production reference config – actual values come from environment variables. See configs/.env.example",
+  "server": {
+    "httpPort": 3000,
+    "wsPath": "/ws",
+    "healthPath": "/health",
+    "metricsPath": "/metrics"
+  },
+  "mediasoup": {
+    "numWorkers": "auto (os.cpus().length)",
+    "rtcMinPort": 40000,
+    "rtcMaxPort": 49999,
+    "announcedIp": "set ANNOUNCED_IP env var to your public IP"
+  },
+  "turn": {
+    "realm": "leeway.local",
+    "listenPort": 3478,
+    "tlsPort": 5349,
+    "minRelayPort": 49160,
+    "maxRelayPort": 65535
+  },
+  "auth": {
+    "algorithm": "HS256",
+    "defaultExpiry": "8h"
+  },
+  "rateLimiting": {
+    "wsMaxConnectionsPerIp": 10,
+    "wsMaxMessageBytes": 65536
+  },
+  "firewall": {
+    "required_open_ports": [
+      "3000/tcp  (SFU HTTP + WS signaling)",
+      "3478/udp+tcp  (STUN/TURN)",
+      "5349/udp+tcp  (TURN TLS)",
+      "40000-49999/udp  (RTP/RTCP media)"
+    ]
+  }
+}

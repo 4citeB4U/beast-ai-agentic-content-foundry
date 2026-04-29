@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-04-17T00:00:00.000Z",
+  "law": "A solved structural problem is not fully solved until a dedicated Standards issue agent is registered to prevent recurrence.",
+  "schema": {
+    "agentId": "string",
+    "title": "string",
+    "issueClass": "string",
+    "purpose": "string",
+    "watches": ["string"],
+    "triggers": ["string"],
+    "prevents": ["string"],
+    "mode": ["scan", "purge-plan", "move-analyze", "move-resolve-blockers", "enforce"],
+    "severity": "warn|error|blocking"
+  },
+  "agents": [
+    {
+      "agentId": "ssa-wildcard-contamination-sentinel",
+      "title": "Wildcard Contamination Sentinel",
+      "issueClass": "wildcard-contamination",
+      "purpose": "Detect wildcard-only MOVE rows and block abstract seeds until concrete expansion exists.",
+      "watches": ["Docs/refactor/purge-ledger.csv", "Docs/refactor/group-resolution/*-wildcard-expansion.csv"],
+      "triggers": ["source_path contains wildcard characters", "wildcard expansion resolves to 0 rows"],
+      "prevents": ["non-concrete move seeds", "analysis pollution"],
+      "mode": ["scan", "move-analyze", "move-resolve-blockers", "enforce"],
+      "severity": "blocking"
+    },
+    {
+      "agentId": "ssa-artifact-boundary-sentinel",
+      "title": "Artifact Boundary Sentinel",
+      "issueClass": "artifact-boundary-backup-pollution",
+      "purpose": "Keep receipts, backups, generated inventories, and logs out of active structure metrics.",
+      "watches": ["receipts/**", "Docs/refactor/**", "full-inventory_*.csv", "inventory-log_*.txt"],
+      "triggers": ["generated artifact counted in active inventory", "backup paths appear in purge ledger"],
+      "prevents": ["inventory inflation", "false blockers", "ledger contamination"],
+      "mode": ["scan", "purge-plan", "enforce"],
+      "severity": "blocking"
+    },
+    {
+      "agentId": "ssa-tier-safety-verifier",
+      "title": "Tier Safety Verifier",
+      "issueClass": "false-safe-tier-classification",
+      "purpose": "Validate safe-tier move classification against cross-repo dependency reality.",
+      "watches": ["Docs/refactor/purge-ledger.csv", "Docs/refactor/move-group-analysis.json"],
+      "triggers": ["Tier1 row has cross-repo inbound importer", "safe move requires import rewrite"],
+      "prevents": ["false-safe apply", "runtime breakage after move"],
+      "mode": ["move-analyze", "move-resolve-blockers", "enforce"],
+      "severity": "blocking"
+    },
+    {
+      "agentId": "ssa-projection-purity-agent",
+      "title": "Projection Purity Agent",
+      "issueClass": "projection-overweight",
+      "purpose": "Ensure projection repos remain hollow shells and do not reclaim runtime or governance ownership.",
+      "watches": ["agent-lee-agentic-os/**", "LeeWay-Agents-the-World-Within/**"],
+      "triggers": ["runtime or standards internals appear inside projection repo"],
+      "prevents": ["projection ownership drift", "layer inversion"],
+      "mode": ["scan", "purge-plan", "enforce"],
+      "severity": "blocking"
+    },
+    {
+      "agentId": "ssa-nested-standards-detector",
+      "title": "Nested Standards Detector",
+      "issueClass": "nested-standards-copy",
+      "purpose": "Detect and quarantine nested copies of LeeWay-Standards inside non-owner repos.",
+      "watches": ["**/LeeWay-Standards/**"],
+      "triggers": ["nested LeeWay-Standards folder discovered outside root"],
+      "prevents": ["governance duplication", "law drift"],
+      "mode": ["scan", "purge-plan", "enforce"],
+      "severity": "blocking"
+    },
+    {
+      "agentId": "ssa-coupling-boundary-monitor",
+      "title": "Coupling Boundary Monitor",
+      "issueClass": "cross-repo-coupling-bleed",
+      "purpose": "Detect external inbound importers for move groups and require subgroup-safe relocation.",
+      "watches": ["Docs/refactor/move-group-analysis.json", "Docs/refactor/group-resolution/dependency-map-*.json"],
+      "triggers": ["group apply has external inbound importers", "cross-repo coupling exceeds threshold"],
+      "prevents": ["broken imports after move", "unsafe group apply"],
+      "mode": ["move-analyze", "move-resolve-blockers", "enforce"],
+      "severity": "blocking"
+    },
+    {
+      "agentId": "ssa-runtime-leakage-detection",
+      "title": "Runtime Leakage Detection",
+      "issueClass": "runtime-leakage",
+      "purpose": "Catch runtime-chain assets escaping designated runtime ownership boundaries.",
+      "watches": ["LeeWay-Edge-RTC-main/**", "LeewayEdgeWebGPU/**", "agent-lee-agentic-os/**", "LeeWay-Agents-the-World-Within/**"],
+      "triggers": ["runtime execution files appear outside runtime repos"],
+      "prevents": ["execution-chain drift", "runtime ownership duplication"],
+      "mode": ["scan", "enforce"],
+      "severity": "error"
+    },
+    {
+      "agentId": "ssa-governance-leakage-detection",
+      "title": "Governance Leakage Detection",
+      "issueClass": "governance-leakage",
+      "purpose": "Catch standards/governance logic escaping LeeWay-Standards ownership boundaries.",
+      "watches": ["LeeWay-Standards/**", "agent-lee-agentic-os/**", "LeeWay-Agents-the-World-Within/**"],
+      "triggers": ["governance rule implementation appears outside LeeWay-Standards"],
+      "prevents": ["governance duplication", "policy divergence"],
+      "mode": ["scan", "enforce"],
+      "severity": "error"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "healing",
+  "description": "Autonomous repair, monitoring, and self-heal workflow layer.",
+  "directories": [
+    "src/runtime/core",
+    "src/agents/generated",
+    "src/runtime/events"
+  ],
+  "provisionedAt": "2026-04-21T18:48:02.043Z"
+}

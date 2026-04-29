@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-04-17T00:00:00.000Z",
+  "law": "No serious structural problem is considered solved until a dedicated Standards issue agent is registered for recurrence prevention.",
+  "incidents": [
+    {
+      "issueDiscovered": "wildcard-contamination",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Wildcard source rows entered MOVE analysis before concrete file expansion.",
+      "fixApplied": "Wildcard expansion now resolves to concrete source_path+target_path rows and group apply consumes expansion artifacts.",
+      "agentCreated": "ssa-wildcard-contamination-sentinel",
+      "watchResponsibility": "Block abstract wildcard MOVE rows unless expansion artifacts produce executable concrete rows."
+    },
+    {
+      "issueDiscovered": "artifact-boundary-backup-pollution",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Receipts, backups, and generated accounting artifacts were included in active inventory/ledger scans.",
+      "fixApplied": "Inventory, lineage, and SSA audit generation now exclude receipts, backups, and generated accounting artifacts.",
+      "agentCreated": "ssa-artifact-boundary-sentinel",
+      "watchResponsibility": "Ensure active accounting only includes system files; never generated artifacts."
+    },
+    {
+      "issueDiscovered": "false-safe-tier-classification",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Safe tier assignment did not fully enforce cross-repo inbound coupling checks.",
+      "fixApplied": "Group coupling gate now blocks members with external inbound importers until regrouped or rewritten.",
+      "agentCreated": "ssa-tier-safety-verifier",
+      "watchResponsibility": "Validate Tier/Safe labels against actual import graph before apply."
+    },
+    {
+      "issueDiscovered": "projection-overweight",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Projection repos held runtime/governance ownership and heavy logic.",
+      "fixApplied": "Projection extraction removed nested standards/runtime/governance internals from projection surfaces.",
+      "agentCreated": "ssa-projection-purity-agent",
+      "watchResponsibility": "Detect and prevent reintroduction of heavy ownership into projection repos."
+    },
+    {
+      "issueDiscovered": "nested-standards-copy",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Nested LeeWay-Standards copies existed within non-owner repos.",
+      "fixApplied": "Nested standards paths removed from active tree and isolated during extraction.",
+      "agentCreated": "ssa-nested-standards-detector",
+      "watchResponsibility": "Detect nested governance copies and block recurrence."
+    },
+    {
+      "issueDiscovered": "cross-repo-coupling-bleed",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Transport files were imported across repo boundaries, blocking direct grouped moves.",
+      "fixApplied": "Dependency-map + A/B/C/D subgrouping introduced before apply.",
+      "agentCreated": "ssa-coupling-boundary-monitor",
+      "watchResponsibility": "Require dependency-safe subgroup execution for coupled move groups."
+    },
+    {
+      "issueDiscovered": "runtime-leakage",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Runtime chain assets leaked outside designated runtime ownership boundaries.",
+      "fixApplied": "Runtime chain ownership re-centralized in RTC/WebGPU layer boundaries.",
+      "agentCreated": "ssa-runtime-leakage-detection",
+      "watchResponsibility": "Flag runtime assets that reappear outside runtime-designated repos."
+    },
+    {
+      "issueDiscovered": "governance-leakage",
+      "dateDiscovered": "2026-04-17",
+      "rootCause": "Governance logic duplicated outside LeeWay-Standards.",
+      "fixApplied": "Governance boundaries reinforced; projection and nested copies removed.",
+      "agentCreated": "ssa-governance-leakage-detection",
+      "watchResponsibility": "Detect and block governance law duplication outside LeeWay-Standards."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "leeway-sdk",
+    "author": "Rapid Web Development",
+    "license": "MIT"
+  },
+  "rootDir": "src",
+  "agents": {
+    "align": {
+      "dryRun": true
+    },
+    "audit": {
+      "outputDir": "reports"
+    },
+    "health": {
+      "timeout": 5000
+    }
+  },
+  "compliance": {
+    "minimumScore": 60,
+    "blockOnFail": false
+  },
+  "policies": {
+    "NO_SECRETS_IN_CODE": { "enforced": true },
+    "HEADERS_REQUIRED": { "enforced": true },
+    "TAGS_REQUIRED": { "enforced": true },
+    "NO_CIRCULAR_DEPS": { "enforced": true },
+    "NAMING_CONVENTIONS": { "enforced": false },
+    "PLACEMENT_RULES": { "enforced": false }
+  },
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".next/**",
+    "coverage/**",
+    "*.min.js"
+  ]
+}

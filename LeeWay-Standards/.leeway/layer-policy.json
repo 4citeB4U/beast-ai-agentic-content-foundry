@@ -1,0 +1,200 @@
+{
+  "version": "1.0.0",
+  "policyName": "standards-integrated-runtime-governance",
+  "projectionRule": "Projection repos may consume core layers, but may not privately re-own them.",
+  "allowedRepoExecutionRoles": [
+    "validate",
+    "orchestrate",
+    "execute-runtime",
+    "projection"
+  ],
+  "executionPath": [
+    "standards",
+    "integrated",
+    "runtime"
+  ],
+  "layerEdges": {
+    "allowed": [
+      "standards->integrated",
+      "integrated->runtime",
+      "projection->integrated",
+      "runtime->standards"
+    ],
+    "forbidden": [
+      "runtime->integrated-ui",
+      "projection->runtime-internals",
+      "projection->standards-runtime-law",
+      "standards->projection",
+      "standards->runtime",
+      "projection->projection-cross-ownership"
+    ]
+  },
+  "repos": {
+    "standards": {
+      "path": "LeeWay-Standards",
+      "role": "law",
+      "ownerLayer": "standards",
+      "allowedImportsFrom": [],
+      "forbiddenImportsFrom": [
+        "integrated",
+        "runtime",
+        "projection"
+      ],
+      "allowedExecutionRole": "validate",
+      "forbiddenImportTokens": [
+        "LeeWay-Edge-Integrated",
+        "LeeWay-Edge-RTC-main",
+        "LeewayEdgeWebGPU",
+        "agent-lee-agentic-os",
+        "LeeWay-Agents-the-World-Within"
+      ]
+    },
+    "integrated": {
+      "path": "LeeWay-Edge-Integrated",
+      "role": "control-plane",
+      "ownerLayer": "integrated",
+      "allowedImportsFrom": [
+        "standards"
+      ],
+      "forbiddenImportsFrom": [
+        "projection"
+      ],
+      "allowedExecutionRole": "orchestrate",
+      "forbiddenImportTokens": [
+        "agent-lee-agentic-os/pages",
+        "LeeWay-Agents-the-World-Within"
+      ]
+    },
+    "runtimeRtc": {
+      "path": "LeeWay-Edge-RTC-main",
+      "role": "runtime-communication",
+      "ownerLayer": "runtime",
+      "allowedImportsFrom": [
+        "standards"
+      ],
+      "forbiddenImportsFrom": [
+        "integrated-ui",
+        "projection"
+      ],
+      "allowedExecutionRole": "execute-runtime",
+      "forbiddenImportTokens": [
+        "LeeWay-Edge-Integrated/ui",
+        "agent-lee-agentic-os",
+        "LeeWay-Agents-the-World-Within",
+        "LeewayEdgeWebGPU"
+      ]
+    },
+    "runtimeGpu": {
+      "path": "LeewayEdgeWebGPU",
+      "role": "runtime-compute",
+      "ownerLayer": "runtime",
+      "allowedImportsFrom": [
+        "standards"
+      ],
+      "forbiddenImportsFrom": [
+        "integrated-ui",
+        "projection"
+      ],
+      "allowedExecutionRole": "execute-runtime",
+      "forbiddenImportTokens": [
+        "LeeWay-Edge-Integrated/ui",
+        "agent-lee-agentic-os",
+        "LeeWay-Agents-the-World-Within",
+        "LeeWay-Edge-RTC-main"
+      ]
+    },
+    "projectionAgentLee": {
+      "path": "agent-lee-agentic-os",
+      "role": "projection",
+      "ownerLayer": "projection",
+      "allowedImportsFrom": [
+        "integrated",
+        "standards-contracts"
+      ],
+      "forbiddenImportsFrom": [
+        "runtime",
+        "standards-runtime-law",
+        "projection"
+      ],
+      "allowedExecutionRole": "projection",
+      "forbiddenImportTokens": [
+        "LeeWay-Edge-RTC-main/src",
+        "LeewayEdgeWebGPU/gpu",
+        "LeeWay-Standards/src",
+        "LeeWay-Agents-the-World-Within"
+      ]
+    },
+    "projectionWorldWithin": {
+      "path": "LeeWay-Agents-the-World-Within",
+      "role": "projection-workforce",
+      "ownerLayer": "projection",
+      "allowedImportsFrom": [
+        "integrated",
+        "standards-contracts"
+      ],
+      "forbiddenImportsFrom": [
+        "runtime",
+        "standards-runtime-law",
+        "projection"
+      ],
+      "allowedExecutionRole": "projection",
+      "forbiddenImportTokens": [
+        "LeeWay-Edge-RTC-main/src",
+        "LeewayEdgeWebGPU/gpu",
+        "LeeWay-Edge-Integrated/ui",
+        "agent-lee-agentic-os/pages"
+      ]
+    }
+  },
+  "ignoreDirs": [
+    ".git",
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "playwright-report",
+    "test-results",
+    "__pycache__",
+    ".venv"
+  ],
+  "quarantinePatterns": [
+    "**/LeeWay-Standards/**",
+    "**/Agent_Lee_Persona_System - Copy/**",
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/playwright-report/**",
+    "**/test-results/**",
+    "**/__pycache__/**",
+    "**/serviceAccountKey.json"
+  ],
+  "externalizePatterns": [
+    "**/*.gguf",
+    "**/*.safetensors",
+    "**/*.onnx",
+    "**/*.bin",
+    "**/*.mp4",
+    "**/*.webm",
+    "**/*.png"
+  ],
+  "projectionRestrictions": {
+    "noPrivateCoreOwnership": true,
+    "forbiddenPaths": [
+      "core/LeewayRTCClient.ts",
+      "core/RTCInitializer.ts",
+      "core/CentralGovernance.ts",
+      "cortices/**"
+    ]
+  },
+  "scanExtensions": [
+    ".ts",
+    ".tsx",
+    ".js",
+    ".jsx",
+    ".mjs",
+    ".cjs",
+    ".py",
+    ".json"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "action": "create-agent",
+  "file": "src/agents/generated/ProbeCycleAgent.ts",
+  "template": "default"
+}

@@ -1,0 +1,4 @@
+group_id,size,source_repos,target_repos,risk_score,all_blocker_free,requires_rewrite,cross_repo_dependency
+G001,1,**,LeeWay-Edge-RTC-main,32,false,true,false
+G002,1,**,LeeWay-Edge-Integrated,42,false,true,false
+G003,542,**|LeeWay-Edge-Integrated|agent-lee-agentic-os|LeeWay-Agents-the-World-Within|LeeWay-Edge-RTC-main|LeewayEdgeWebGPU,LeeWay-Standards|LeewayEdgeWebGPU|LeeWay-Edge-Integrated|LeeWay-Edge-RTC-main,16222,false,true,true

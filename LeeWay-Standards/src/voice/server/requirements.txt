@@ -1,0 +1,35 @@
+fastapi
+uvicorn[standard]
+websockets
+python-dotenv
+pydantic
+pydantic-settings
+
+# VAD
+silero-vad
+torch
+torchaudio
+
+# STT (Agent-controlled, not LLM)
+vosk
+
+# TTS (piper-tts wraps the piper binary; piper itself must be installed separately)
+# See docs/SETUP.md for Piper installation
+# piper-phonemize
+
+# leeway
+# leeway-generativeai
+
+# Utilities
+numpy
+aiofiles
+anyio
+httpx
+
+# Testing
+pytest
+pytest-asyncio
+
+# Linting (dev)
+ruff
+

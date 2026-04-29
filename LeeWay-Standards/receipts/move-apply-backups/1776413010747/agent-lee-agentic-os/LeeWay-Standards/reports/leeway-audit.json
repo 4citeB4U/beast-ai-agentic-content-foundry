@@ -1,0 +1,820 @@
+{
+  "agent": "audit-agent",
+  "rootDir": "C:\\Users\\Agent Lee\\LeeWay-Standards",
+  "timestamp": "2026-03-11T16:25:27.091Z",
+  "durationMs": 47,
+  "summary": {
+    "totalFiles": 52,
+    "averageScore": 98,
+    "complianceLevel": "PLATINUM",
+    "passing": 52,
+    "failing": 0,
+    "platinum": 43,
+    "gold": 9,
+    "silver": 0,
+    "bronze": 0,
+    "none": 0
+  },
+  "files": [
+    {
+      "file": "src\\agents\\discovery\\intent-registry-agent.js",
+      "score": 85,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 0,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "Unknown subdomain \"INTENT\" for domain \"SEO\". Valid: SCHEMA, META, SITEMAP, GENERATOR, DISCOVERY"
+      ]
+    },
+    {
+      "file": "src\\agents\\mcp\\env-agent.js",
+      "score": 85,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 0,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "Unknown subdomain \"ENV\" for domain \"MCP\". Valid: TRANSPORT, ENDPOINT, PORT, PROCESS, MANIFEST, HEALTH"
+      ]
+    },
+    {
+      "file": "src\\agents\\mcp\\runtime-agent.js",
+      "score": 85,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 0,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "Unknown subdomain \"RUNTIME\" for domain \"MCP\". Valid: TRANSPORT, ENDPOINT, PORT, PROCESS, MANIFEST, HEALTH"
+      ]
+    },
+    {
+      "file": "src\\agents\\security\\privacy-agent.js",
+      "score": 85,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 0,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "Unknown subdomain \"PRIVACY\" for domain \"SECURITY\". Valid: SCANNER, POLICY, PERMISSION, VALIDATOR, AUDIT"
+      ]
+    },
+    {
+      "file": "src\\agents\\security\\tool-access-agent.js",
+      "score": 85,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 0,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "Unknown subdomain \"ACCESS\" for domain \"SECURITY\". Valid: SCANNER, POLICY, PERMISSION, VALIDATOR, AUDIT"
+      ]
+    },
+    {
+      "file": "examples\\example-agent.js",
+      "score": 90,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 0,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "File placement may be incorrect for region"
+      ]
+    },
+    {
+      "file": "examples\\NexusButton.tsx",
+      "score": 90,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 0,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "File placement may be incorrect for region"
+      ]
+    },
+    {
+      "file": "src\\cli\\leeway.js",
+      "score": 90,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 0,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "File placement may be incorrect for region"
+      ]
+    },
+    {
+      "file": "src\\index.js",
+      "score": 90,
+      "level": "GOLD",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 0,
+        "securityCompliant": 5
+      },
+      "issues": [
+        "File placement may be incorrect for region"
+      ]
+    },
+    {
+      "file": "src\\core\\compliance-scorer.test.js",
+      "score": 95,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 0
+      },
+      "issues": [
+        "Potential security violation detected (secrets/credentials)"
+      ]
+    },
+    {
+      "file": "src\\agents\\discovery\\architecture-map-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\discovery\\docs-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\discovery\\explain-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\discovery\\schema-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\discovery\\sitemap-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\governance\\align-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\governance\\assess-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\governance\\audit-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\circular-dependency-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\dependency-graph-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\duplicate-logic-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\import-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\module-policy-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\refactor-scan-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\integrity\\syntax-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\mcp\\endpoint-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\mcp\\health-agent-lite.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\mcp\\manifest-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\mcp\\port-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\mcp\\process-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\mcp\\transport-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\orchestration\\doctor-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\orchestration\\memory-agent-lite.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\orchestration\\router-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\security\\permission-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\security\\policy-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\security\\prompt-security-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\security\\secret-scan-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\authority-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\discovery-pipeline-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\header-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\placement-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\region-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\registry-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\agents\\standards\\tag-agent.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\compliance-scorer.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\header-parser.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\header-parser.test.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\region-classifier.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\region-classifier.test.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\tag-validator.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    },
+    {
+      "file": "src\\core\\tag-validator.test.js",
+      "score": 100,
+      "level": "PLATINUM",
+      "breakdown": {
+        "hasHeader": 30,
+        "headerValid": 20,
+        "tagValid": 15,
+        "regionDeclared": 10,
+        "namingConvention": 10,
+        "correctPlacement": 10,
+        "securityCompliant": 5
+      },
+      "issues": []
+    }
+  ]
+}

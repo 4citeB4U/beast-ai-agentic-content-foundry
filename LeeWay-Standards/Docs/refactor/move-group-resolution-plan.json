@@ -1,0 +1,113 @@
+{
+  "phase": 4,
+  "rule": "Groups are not moved. Groups are prepared, cleared, and then moved.",
+  "generatedAt": "2026-04-17T16:42:31.796Z",
+  "totalGroups": 3,
+  "blockedGroups": 3,
+  "readyGroups": 0,
+  "blockerTypeCounts": {
+    "cross-repo": 2,
+    "import-complexity": 0,
+    "runtime-coupling": 5,
+    "structural-contamination": 3
+  },
+  "groups": [
+    {
+      "groupId": "G001",
+      "primaryRepo": "LeeWay-Edge-RTC-main",
+      "category": "communication",
+      "dependencyDepth": "low",
+      "blockers": [
+        {
+          "type": "structural-contamination",
+          "code": "wildcard-pattern",
+          "description": "row uses wildcard source pattern and is not executable as a concrete move",
+          "resolution": "Expand wildcard rows into concrete file rows and re-run move-group-analyze before any move apply.",
+          "status": "pending"
+        },
+        {
+          "type": "runtime-coupling",
+          "code": "adapter-heavy",
+          "description": "adapter coupling requires grouped migration of related integration points",
+          "resolution": "Build a coordinated runtime migration set (execution chain + adapters), simulate full rewrite impact, then move as one governed group.",
+          "status": "pending"
+        }
+      ],
+      "resolutionState": "blocked"
+    },
+    {
+      "groupId": "G002",
+      "primaryRepo": "LeeWay-Edge-Integrated",
+      "category": "shell",
+      "dependencyDepth": "low",
+      "blockers": [
+        {
+          "type": "structural-contamination",
+          "code": "wildcard-pattern",
+          "description": "row uses wildcard source pattern and is not executable as a concrete move",
+          "resolution": "Expand wildcard rows into concrete file rows and re-run move-group-analyze before any move apply.",
+          "status": "pending"
+        },
+        {
+          "type": "runtime-coupling",
+          "code": "runtime-critical",
+          "description": "runtime-critical file requires coordinated chain-safe migration",
+          "resolution": "Build a coordinated runtime migration set (execution chain + adapters), simulate full rewrite impact, then move as one governed group.",
+          "status": "pending"
+        }
+      ],
+      "resolutionState": "blocked"
+    },
+    {
+      "groupId": "G003",
+      "primaryRepo": "LeeWay-Edge-Integrated",
+      "category": "compute",
+      "dependencyDepth": "high",
+      "blockers": [
+        {
+          "type": "structural-contamination",
+          "code": "wildcard-pattern",
+          "description": "row uses wildcard source pattern and is not executable as a concrete move",
+          "resolution": "Expand wildcard rows into concrete file rows and re-run move-group-analyze before any move apply.",
+          "status": "pending"
+        },
+        {
+          "type": "runtime-coupling",
+          "code": "runtime-critical",
+          "description": "runtime-critical file requires coordinated chain-safe migration",
+          "resolution": "Build a coordinated runtime migration set (execution chain + adapters), simulate full rewrite impact, then move as one governed group.",
+          "status": "pending"
+        },
+        {
+          "type": "cross-repo",
+          "code": "cross-repo-dependency",
+          "description": "outbound import path resolves outside target ownership repo",
+          "resolution": "Resolve ownership boundary by relocating coupled producer and consumer modules together, then rewrite imports to target-owned paths.",
+          "status": "pending"
+        },
+        {
+          "type": "cross-repo",
+          "code": "cross-repo-inbound",
+          "description": "inbound imports originate from a different repo than target ownership",
+          "resolution": "Resolve ownership boundary by relocating coupled producer and consumer modules together, then rewrite imports to target-owned paths.",
+          "status": "pending"
+        },
+        {
+          "type": "runtime-coupling",
+          "code": "high-dependency-depth",
+          "description": "dependency depth is high and needs staged normalization",
+          "resolution": "Build a coordinated runtime migration set (execution chain + adapters), simulate full rewrite impact, then move as one governed group.",
+          "status": "pending"
+        },
+        {
+          "type": "runtime-coupling",
+          "code": "adapter-heavy",
+          "description": "adapter coupling requires grouped migration of related integration points",
+          "resolution": "Build a coordinated runtime migration set (execution chain + adapters), simulate full rewrite impact, then move as one governed group.",
+          "status": "pending"
+        }
+      ],
+      "resolutionState": "blocked"
+    }
+  ]
+}

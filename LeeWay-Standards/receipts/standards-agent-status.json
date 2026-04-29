@@ -1,0 +1,356 @@
+{
+  "generatedAt": "2026-04-22T13:36:35.404Z",
+  "mode": "scan",
+  "scope": "standards",
+  "doctrine": {
+    "systemName": "LeeWay - The Structured Freedom System",
+    "oneLineDefinition": "LeeWay = Freedom to build, enforced through layers, executed through systems, and delivered through governed outcomes.",
+    "finalTruth": "Freedom survives at scale not by removing limits, but by designing them correctly.",
+    "governedPath": [
+      "Standards",
+      "Integrated",
+      "Runtime"
+    ],
+    "pillars": {
+      "L": {
+        "name": "Layered Foundations",
+        "principle": "Freedom is contained without being restricted.",
+        "operationalMeaning": "Capabilities must remain in proper layers with clear ownership boundaries."
+      },
+      "E1": {
+        "name": "Execution Law",
+        "principle": "Freedom becomes intentional.",
+        "operationalMeaning": "Every operation follows the governed path Standards -> Integrated -> Runtime."
+      },
+      "E2": {
+        "name": "Environment and Engine",
+        "principle": "Freedom becomes possible.",
+        "operationalMeaning": "Execution runs inside managed environments and engines with policy controls."
+      },
+      "W": {
+        "name": "Workflow and Workforce",
+        "principle": "Freedom becomes productive.",
+        "operationalMeaning": "Agents and workflows execute structured tasks with receipts and traceability."
+      },
+      "A": {
+        "name": "Architecture and Agents",
+        "principle": "Freedom becomes stable.",
+        "operationalMeaning": "Architecture defines law and agents continuously enforce it."
+      },
+      "Y": {
+        "name": "Yield and System Output",
+        "principle": "Freedom becomes real results.",
+        "operationalMeaning": "The system must produce clean, scalable, and governed outcomes."
+      }
+    }
+  },
+  "leeWayOperationalState": "LAYERED_GOVERNANCE",
+  "phase": "completed",
+  "runDurationMs": 4212,
+  "statuses": [
+    {
+      "agentId": "ssa-placement-auditor",
+      "title": "Placement Auditor",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 32,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Placement Auditor scanning layered governance for policy drift",
+      "authority": "blocking",
+      "watchScope": [
+        "ownership",
+        "misplacement",
+        "duplicates",
+        "nested-repos"
+      ],
+      "packagePath": "packages/standards/agents/placement-auditor",
+      "entrypoint": "src/agents/service/placement-auditor/index.js",
+      "receiptAgent": "placement-auditor",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-placement-auditor",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-placement-auditor",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-import-sentinel",
+      "title": "Import Sentinel",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Import Sentinel scanning layered governance for policy drift",
+      "authority": "blocking",
+      "watchScope": [
+        "imports",
+        "forbidden-edges",
+        "projection-internal-bypass"
+      ],
+      "packagePath": "packages/standards/agents/import-sentinel",
+      "entrypoint": "src/agents/service/import-sentinel/index.js",
+      "receiptAgent": "import-sentinel",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-import-sentinel",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-import-sentinel",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-contract-integrity",
+      "title": "Contract Integrity",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Contract Integrity scanning layered governance for policy drift",
+      "authority": "warn",
+      "watchScope": [
+        "contracts",
+        "schemas",
+        "drift"
+      ],
+      "packagePath": "packages/standards/agents/contract-integrity",
+      "entrypoint": "src/agents/service/contract-integrity/index.js",
+      "receiptAgent": "contract-integrity",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-contract-integrity",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-contract-integrity",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-dead-code-reaper",
+      "title": "Dead Code Reaper",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Dead Code Reaper standby in scan mode under governed path Standards -> Integrated -> Runtime",
+      "authority": "warn",
+      "watchScope": [
+        "orphans",
+        "placeholders",
+        "dead-folders",
+        "stale-artifacts"
+      ],
+      "packagePath": "packages/standards/agents/dead-code-reaper",
+      "entrypoint": "src/agents/service/dead-code-reaper/index.js",
+      "receiptAgent": "dead-code-reaper",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-dead-code-reaper",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-dead-code-reaper",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-quarantine-executor",
+      "title": "Quarantine Executor",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Quarantine Executor standby in scan mode under governed path Standards -> Integrated -> Runtime",
+      "authority": "warn",
+      "watchScope": [
+        "approved-quarantine-rows",
+        "quarantine-targets",
+        "missing-sources"
+      ],
+      "packagePath": "packages/standards/agents/quarantine-executor",
+      "entrypoint": "src/agents/service/quarantine-executor/index.js",
+      "receiptAgent": "quarantine-executor",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-quarantine-executor",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-quarantine-executor",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-rehome-orchestrator",
+      "title": "Rehome Orchestrator",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Rehome Orchestrator standby in scan mode under governed path Standards -> Integrated -> Runtime",
+      "authority": "blocking",
+      "watchScope": [
+        "move-map",
+        "import-impact",
+        "dependency-depth",
+        "rewrite-plan"
+      ],
+      "packagePath": "packages/standards/agents/rehome-orchestrator",
+      "entrypoint": "src/agents/service/rehome-orchestrator/index.js",
+      "receiptAgent": "rehome-orchestrator",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-rehome-orchestrator",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-rehome-orchestrator",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-runtime-chain-guardian",
+      "title": "Runtime Chain Guardian",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Runtime Chain Guardian scanning layered governance for policy drift",
+      "authority": "blocking",
+      "watchScope": [
+        "chain-bypass",
+        "runtime-ownership-drift",
+        "projection-runtime-overreach"
+      ],
+      "packagePath": "packages/standards/agents/runtime-chain-guardian",
+      "entrypoint": "src/agents/service/runtime-chain-guardian/index.js",
+      "receiptAgent": "runtime-chain-guardian",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-runtime-chain-guardian",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-runtime-chain-guardian",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-receipt-audit",
+      "title": "Receipt Auditor",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Receipt Auditor scanning layered governance for policy drift",
+      "authority": "info",
+      "watchScope": [
+        "receipts",
+        "run-history",
+        "batch-evidence"
+      ],
+      "packagePath": "packages/standards/agents/receipt-audit",
+      "entrypoint": "src/agents/service/receipt-audit/index.js",
+      "receiptAgent": "receipt-audit",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-receipt-audit",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-receipt-audit",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-health-monitor",
+      "title": "Health Monitor",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Health Monitor scanning layered governance for policy drift",
+      "authority": "info",
+      "watchScope": [
+        "heartbeat",
+        "last-run",
+        "blocking-count",
+        "agent-failures"
+      ],
+      "packagePath": "packages/standards/agents/health-monitor",
+      "entrypoint": "src/agents/service/health-monitor/index.js",
+      "receiptAgent": "health-monitor",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-health-monitor",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-health-monitor",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    },
+    {
+      "agentId": "ssa-data-lineage-tracker",
+      "title": "Data Lineage Tracker",
+      "status": "idle",
+      "lastRunAt": 1776864995404,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "standards"
+      ],
+      "currentMission": "Data Lineage Tracker scanning layered governance for policy drift",
+      "authority": "blocking",
+      "watchScope": [
+        "classification",
+        "ownership",
+        "duplicates",
+        "orphans",
+        "import-breaks"
+      ],
+      "packagePath": "packages/standards/agents/data-lineage-tracker",
+      "entrypoint": "src/agents/service/data-lineage-tracker/index.js",
+      "receiptAgent": "data-lineage-tracker",
+      "leeWayPhase": "LAYERED_GOVERNANCE",
+      "identitySurface": "agent-vm",
+      "vmSurfaceId": "vm.ssa-data-lineage-tracker",
+      "vmSurfaceRoute": "/construct/agent-vm/ssa-data-lineage-tracker",
+      "vmRequired": true,
+      "fullIdentitySurface": true,
+      "standardsMonitored": true,
+      "vmMounted": true
+    }
+  ],
+  "summary": {
+    "totalAgents": 10,
+    "activeAgents": 7,
+    "blockedAgents": 0,
+    "errorAgents": 0,
+    "totalReceipts": 38,
+    "totalBlockingReceipts": 0
+  }
+}

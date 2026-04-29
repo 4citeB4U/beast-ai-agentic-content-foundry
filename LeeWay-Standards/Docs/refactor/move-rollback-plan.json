@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-04-18T01:43:44.930Z",
+  "groupId": "G001-A4",
+  "backupRoot": "LeeWay-Standards/receipts/move-apply-backups/1776476624930",
+  "moves": [
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/configs/.env.example",
+      "target": "LeeWay-Edge-RTC-main/src/transport/.env.example"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/configs/sfu.config.example.json",
+      "target": "LeeWay-Edge-RTC-main/src/transport/sfu.config.example.json"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/deploy/coturn/turnserver.conf",
+      "target": "LeeWay-Edge-RTC-main/src/transport/turnserver.conf"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/deploy/docker-compose.prod.yml",
+      "target": "LeeWay-Edge-RTC-main/src/transport/docker-compose.prod.yml"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/deploy/docker-compose.yml",
+      "target": "LeeWay-Edge-RTC-main/src/transport/docker-compose.yml"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/deploy/systemd/coturn.service",
+      "target": "LeeWay-Edge-RTC-main/src/transport/coturn.service"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/deploy/systemd/leeway-sfu.service",
+      "target": "LeeWay-Edge-RTC-main/src/transport/leeway-sfu.service"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/docs/agents/fleet.md",
+      "target": "LeeWay-Edge-RTC-main/src/transport/fleet.md"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/docs/architecture.md",
+      "target": "LeeWay-Edge-RTC-main/src/transport/architecture.md"
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/rtc/docs/architecture/system.md",
+      "target": "LeeWay-Edge-RTC-main/src/transport/system.md"
+    }
+  ],
+  "rewrittenFiles": []
+}

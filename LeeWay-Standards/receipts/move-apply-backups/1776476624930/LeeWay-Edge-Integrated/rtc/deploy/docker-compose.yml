@@ -1,0 +1,55 @@
+services:
+  # ─── coturn TURN server ─────────────────────────────────────────────────────
+  coturn:
+    image: coturn/coturn:4.6
+    restart: unless-stopped
+    network_mode: host          # TURN needs to bind real UDP/TCP ports
+    volumes:
+      - ./coturn/turnserver.conf:/etc/coturn/turnserver.conf:ro
+    command: ["-c", "/etc/coturn/turnserver.conf"]
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z localhost 3478 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ─── LeeWay SFU + Signaling ─────────────────────────────────────────────────
+  sfu:
+    build:
+      context: ../services/sfu
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - ../services/sfu/.env.example   # override with real .env in production
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+      # RTP/RTCP UDP range – must match RTC_MIN_PORT / RTC_MAX_PORT
+      - "40000-40099:40000-40099/udp"
+    networks:
+      - leeway
+    depends_on:
+      - coturn
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O- http://localhost:3000/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+
+  # ─── Web demo client ────────────────────────────────────────────────────────
+  web-demo:
+    build:
+      context: ../clients/web-demo
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      - leeway
+    depends_on:
+      - sfu
+
+networks:
+  leeway:
+    driver: bridge

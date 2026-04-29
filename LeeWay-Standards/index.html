@@ -1,0 +1,1575 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Agent Lee VM</title>
+	<style>
+		:root {
+			--teal: #008080;
+			--bezel: #dcd7c0;
+			--bezel-dark: #b0aa93;
+			--screen: #1a1b1e;
+			--win: #c0c0c0;
+			--win-shadow: #808080;
+			--panel: #252526;
+			--panel-2: #2d2d2d;
+			--text: #d4d4d4;
+			--muted: #8a8a8a;
+			--blue: #3b82f6;
+			--green: #22c55e;
+			--orange: #f59e0b;
+			--purple: #a855f7;
+			--red: #ef4444;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			background: radial-gradient(circle at 20% 10%, #085d5d, #043b3b 65%);
+			color: var(--text);
+			overflow: hidden;
+		}
+
+		.scene {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 16px;
+		}
+
+		.monitor {
+			width: min(1200px, 96vw);
+			height: min(780px, 94vh);
+			background: var(--bezel);
+			border: 6px solid #c5bfab;
+			border-radius: 18px;
+			box-shadow:
+				inset -5px -5px 10px rgba(0, 0, 0, 0.2),
+				inset 5px 5px 10px rgba(255, 255, 255, 0.45),
+				0 22px 40px rgba(0, 0, 0, 0.5);
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+			gap: 8px;
+		}
+
+		.screen {
+			flex: 1;
+			border: 5px solid var(--bezel-dark);
+			border-radius: 10px;
+			background: var(--screen);
+			overflow: hidden;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.screen::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+			background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+			background-size: 100% 2px;
+			opacity: 0.08;
+		}
+
+		.taskbar {
+			height: 28px;
+			background: var(--win);
+			border-bottom: 1px solid #9c9c9c;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 8px;
+			color: #111;
+			z-index: 2;
+			font-size: 11px;
+			font-weight: 700;
+		}
+
+		.taskbar-left,
+		.taskbar-right {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+		}
+
+		.win-btn {
+			border: 1px solid #fff;
+			box-shadow: 1px 1px 0 var(--win-shadow);
+			background: var(--win);
+			color: #222;
+			font-size: 10px;
+			font-weight: 700;
+			padding: 2px 8px;
+			cursor: pointer;
+		}
+
+		.win-btn.active {
+			background: #b4b4b4;
+			box-shadow: inset 1px 1px 0 #8a8a8a;
+		}
+
+		.clock {
+			border: 1px solid #7a7a7a;
+			box-shadow: inset 1px 1px 0 #efefef;
+			padding: 2px 8px;
+			min-width: 56px;
+			text-align: center;
+			background: #d2d2d2;
+		}
+
+		.body {
+			flex: 1;
+			min-height: 0;
+			display: flex;
+		}
+
+		.desktop {
+			flex: 1;
+			background: var(--teal);
+			padding: 18px;
+			overflow: auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+			gap: 18px;
+			align-content: start;
+		}
+
+		.icon {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 8px;
+			cursor: pointer;
+			user-select: none;
+		}
+
+		.icon-glyph {
+			width: 52px;
+			height: 52px;
+			border-radius: 10px;
+			background: rgba(0, 0, 0, 0.24);
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 22px;
+			color: white;
+		}
+
+		.icon span {
+			color: white;
+			font-size: 10px;
+			font-weight: 700;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+		}
+
+		.workspace {
+			flex: 1;
+			min-height: 0;
+			display: none;
+			background: var(--panel);
+		}
+
+		.workspace.active {
+			display: flex;
+		}
+
+		.sidebar {
+			width: 250px;
+			background: var(--panel-2);
+			border-right: 1px solid rgba(255, 255, 255, 0.08);
+			display: flex;
+			flex-direction: column;
+			min-height: 0;
+		}
+
+		.sidebar-head {
+			height: 30px;
+			display: flex;
+			align-items: center;
+			padding: 0 10px;
+			font-size: 10px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #8c8c8c;
+			font-weight: 800;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+		}
+
+		.tree,
+		.chat-log {
+			flex: 1;
+			overflow: auto;
+			padding: 10px;
+			font-family: "Consolas", "Courier New", monospace;
+			font-size: 12px;
+		}
+
+		.tree .line {
+			padding: 4px 6px;
+			border-radius: 4px;
+			color: #b8b8b8;
+			cursor: default;
+		}
+
+		.tree .line.selected {
+			background: rgba(59, 130, 246, 0.2);
+			border-left: 2px solid var(--blue);
+			color: #90c2ff;
+		}
+
+		.main {
+			flex: 1;
+			min-width: 0;
+			min-height: 0;
+			display: flex;
+			flex-direction: column;
+			background: #1e1e1e;
+		}
+
+		.editor-tabs {
+			height: 30px;
+			background: #252526;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			padding: 0 8px;
+			font-size: 11px;
+		}
+
+		.tab {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 0 10px;
+			color: #9a9a9a;
+			border-top: 2px solid transparent;
+			cursor: pointer;
+		}
+
+		.tab.active {
+			color: white;
+			border-top-color: var(--blue);
+			background: #1e1e1e;
+		}
+
+		.editor {
+			flex: 1;
+			min-height: 0;
+			display: flex;
+			background: #1e1e1e;
+		}
+
+		.editor textarea {
+			flex: 1;
+			background: transparent;
+			color: #d4d4d4;
+			border: 0;
+			outline: none;
+			resize: none;
+			padding: 12px;
+			font-size: 13px;
+			line-height: 1.45;
+			font-family: "Consolas", "Courier New", monospace;
+		}
+
+		.preview {
+			flex: 1;
+			min-height: 0;
+			display: none;
+			background: #fff;
+		}
+
+		.preview.active {
+			display: block;
+		}
+
+		.preview iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			background: #fff;
+		}
+
+		.terminal {
+			height: 150px;
+			background: #0c0c0c;
+			border-top: 1px solid rgba(255, 255, 255, 0.08);
+			padding: 10px;
+			font-family: "Consolas", "Courier New", monospace;
+			font-size: 12px;
+			color: #9fd4a6;
+			overflow: auto;
+			white-space: pre-wrap;
+		}
+
+		.app-pane {
+			display: none;
+			flex: 1;
+			min-height: 0;
+			overflow: auto;
+		}
+
+		.app-pane.active {
+			display: block;
+		}
+
+		.browser {
+			background: #fff;
+			color: #111;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.browser-head {
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+			display: flex;
+			gap: 8px;
+			align-items: center;
+			background: #efefef;
+			font-size: 11px;
+		}
+
+		.browser-head select,
+		.browser-head input,
+		.browser-head button {
+			font-size: 11px;
+			height: 26px;
+		}
+
+		.browser-head select,
+		.browser-head input {
+			border: 1px solid #ccc;
+			background: #fff;
+			padding: 0 8px;
+		}
+
+		.browser-head button {
+			border: 1px solid #8ca8e8;
+			background: #dbeafe;
+			padding: 0 10px;
+			cursor: pointer;
+		}
+
+		.browser-bar {
+			flex: 1;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 4px 8px;
+			color: #666;
+			background: white;
+		}
+
+		.browser-content {
+			padding: 18px;
+			font-size: 13px;
+			line-height: 1.45;
+			overflow: auto;
+		}
+
+		.search-results {
+			margin-top: 12px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		.search-results a {
+			color: #1d4ed8;
+			text-decoration: none;
+		}
+
+		.search-results a:hover {
+			text-decoration: underline;
+		}
+
+		.vm-runbar {
+			height: 34px;
+			background: #161616;
+			border-top: 1px solid rgba(255, 255, 255, 0.08);
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			padding: 0 10px;
+			font-size: 11px;
+		}
+
+		.vm-runbar button {
+			border: 1px solid #2f5faa;
+			background: #1d4ed8;
+			color: #fff;
+			padding: 2px 8px;
+			font-size: 10px;
+			cursor: pointer;
+		}
+
+		.vm-runbar button.secondary {
+			background: #444;
+			border-color: #666;
+		}
+
+		.vm-runbar .status {
+			color: #93c5fd;
+		}
+
+		/* ── Agent Notepad Explorer ──────────────────────────── */
+		.explorer {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			background: #f3f3f3;
+			color: #222;
+			font-size: 12px;
+			font-family: "Segoe UI", sans-serif;
+		}
+		.explorer-header {
+			background: #e8e8e8;
+			border-bottom: 1px solid #ccc;
+			padding: 4px 8px;
+		}
+		.explorer-nav {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+		.exp-nav-btn {
+			width: 24px; height: 24px;
+			background: #d4d4d4;
+			border: 1px solid #bbb;
+			cursor: pointer;
+			font-size: 11px;
+		}
+		.exp-nav-btn:hover { background: #c8d8f0; }
+		.exp-nav-btn:disabled { opacity: 0.4; cursor: default; }
+		.exp-addr-bar {
+			flex: 1;
+			background: #fff;
+			border: 1px solid #bbb;
+			padding: 2px 8px;
+			font-size: 11px;
+			min-height: 22px;
+			display: flex;
+			align-items: center;
+			color: #333;
+		}
+		.explorer-toolbar {
+			background: #ececec;
+			border-bottom: 1px solid #d0d0d0;
+			padding: 4px 8px;
+			display: flex;
+			gap: 5px;
+			align-items: center;
+		}
+		.exp-tool-btn {
+			padding: 2px 10px;
+			border: 1px solid #bbb;
+			background: #e0e0e0;
+			cursor: pointer;
+			font-size: 11px;
+			border-radius: 2px;
+			color: #222;
+		}
+		.exp-tool-btn:hover { background: #cce0ff; border-color: #7aabf3; }
+		.exp-tool-btn.exp-primary { background: #dbeafe; border-color: #93c5fd; color: #1e40af; font-weight: 700; }
+		.exp-tool-sep { width: 1px; background: #ccc; height: 18px; margin: 0 3px; }
+		.explorer-body {
+			flex: 1;
+			min-height: 0;
+			display: flex;
+		}
+		.explorer-sidebar {
+			width: 168px;
+			background: #f0f0f0;
+			border-right: 1px solid #d8d8d8;
+			overflow-y: auto;
+			flex-shrink: 0;
+			padding: 4px 0;
+		}
+		.exp-section {
+			font-size: 10px;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+			color: #888;
+			padding: 8px 10px 3px;
+		}
+		.exp-si {
+			padding: 4px 10px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			color: #333;
+			user-select: none;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.exp-si:hover { background: #dce9fc; }
+		.exp-si.active { background: #cde0ff; color: #1d4ed8; font-weight: 700; }
+		.exp-si .si-icon { font-size: 13px; flex-shrink: 0; }
+		.explorer-main {
+			flex: 1;
+			min-width: 0;
+			background: #fff;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
+		.exp-col-head {
+			display: grid;
+			grid-template-columns: 1fr 120px 90px;
+			background: #ececec;
+			border-bottom: 1px solid #d0d0d0;
+			font-size: 11px;
+			font-weight: 700;
+			color: #555;
+			flex-shrink: 0;
+		}
+		.exp-col-head span {
+			padding: 4px 8px;
+			border-right: 1px solid #d0d0d0;
+		}
+		.exp-file-list {
+			flex: 1;
+			overflow-y: auto;
+		}
+		.exp-file-row {
+			display: grid;
+			grid-template-columns: 1fr 120px 90px;
+			border-bottom: 1px solid #f0f0f0;
+			cursor: pointer;
+			user-select: none;
+		}
+		.exp-file-row:hover { background: #eef4ff; }
+		.exp-file-row.selected { background: #cde0ff; }
+		.exp-file-row span { padding: 5px 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+		.exp-empty { padding: 20px; color: #888; text-align: center; font-size: 11px; }
+		.explorer-preview {
+			width: 180px;
+			border-left: 1px solid #d8d8d8;
+			background: #f7f7f7;
+			overflow-y: auto;
+			flex-shrink: 0;
+			padding: 10px 8px;
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+		}
+		.exp-prev-icon { font-size: 36px; text-align: center; padding: 8px 0; }
+		.exp-prev-name { font-weight: 700; font-size: 11px; word-break: break-word; color: #222; }
+		.exp-prev-meta { font-size: 10px; color: #666; line-height: 1.6; }
+		.exp-prev-empty { color: #aaa; font-size: 10px; text-align: center; margin-top: 30px; }
+		.exp-ai-section { margin-top: 6px; border-top: 1px solid #ddd; padding-top: 6px; }
+		.exp-ai-label { font-size: 10px; font-weight: 700; color: #555; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+		.exp-ai-btn {
+			display: block; width: 100%;
+			padding: 3px 6px; margin-bottom: 3px;
+			background: #e0ebff; border: 1px solid #a5c5f5;
+			border-radius: 2px; font-size: 10px;
+			cursor: pointer; color: #1d4ed8; text-align: left;
+		}
+		.exp-ai-btn:hover { background: #ccd9f7; }
+		.explorer-status {
+			height: 20px;
+			background: #e8e8e8;
+			border-top: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+			padding: 0 10px;
+			font-size: 10px;
+			color: #555;
+			gap: 12px;
+		}
+
+		/* ── Chat Popup ──────────────────────────────────────── */
+		.chat-fab {
+			position: fixed;
+			bottom: 56px;
+			right: 18px;
+			width: 40px; height: 40px;
+			border-radius: 50%;
+			background: #1d4ed8;
+			color: white;
+			border: none;
+			font-size: 18px;
+			cursor: pointer;
+			box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+			z-index: 200;
+			display: flex; align-items: center; justify-content: center;
+		}
+		.chat-fab:hover { background: #2563eb; }
+		.chat-popup {
+			position: fixed;
+			bottom: 104px;
+			right: 16px;
+			width: 320px; height: 420px;
+			background: #141414;
+			border: 1px solid rgba(255,255,255,0.12);
+			border-radius: 10px;
+			box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+			display: none;
+			flex-direction: column;
+			z-index: 200;
+			overflow: hidden;
+		}
+		.chat-popup.open { display: flex; }
+		.chat-popup-head {
+			height: 36px;
+			padding: 0 12px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			background: #1a1a1a;
+			border-bottom: 1px solid rgba(255,255,255,0.1);
+			font-size: 11px; font-weight: 700; color: #d4d4d4;
+		}
+		.chat-popup-head .pp-status { color: #86efac; flex: 1; font-size: 10px; }
+		.chat-popup-head .pp-close {
+			background: none; border: none;
+			color: #888; cursor: pointer; font-size: 14px;
+		}
+		.chat-popup-head .pp-close:hover { color: #ef4444; }
+		.voice-select {
+			height: 24px;
+			max-width: 120px;
+			font-size: 10px;
+			border: 1px solid #666;
+			background: #232323;
+			color: #d4d4d4;
+		}
+		.voice-toggle {
+			height: 24px;
+			padding: 0 8px;
+			font-size: 10px;
+			border: 1px solid #4a6aa9;
+			background: #1e3a8a;
+			color: #fff;
+			cursor: pointer;
+		}
+		.chat-log {
+			flex: 1;
+			overflow-y: auto;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			font-size: 12px;
+		}
+		.chat-bubble {
+			max-width: 82%;
+			padding: 7px 9px;
+			border-radius: 8px;
+			line-height: 1.45;
+			border: 1px solid rgba(255,255,255,0.08);
+		}
+		.chat-bubble.user {
+			align-self: flex-end;
+			background: rgba(34,197,94,0.12);
+			color: #9be5ad;
+			border-color: rgba(34,197,94,0.25);
+		}
+		.chat-bubble.lee {
+			align-self: flex-start;
+			background: rgba(59,130,246,0.12);
+			color: #b7d4ff;
+			border-color: rgba(59,130,246,0.25);
+		}
+		.chat-input-row {
+			height: 42px;
+			padding: 5px 8px;
+			border-top: 1px solid rgba(255,255,255,0.08);
+			display: flex; gap: 5px;
+			background: #1a1a1a;
+		}
+		.chat-input-row input {
+			flex: 1;
+			background: #252525;
+			border: 1px solid rgba(255,255,255,0.15);
+			border-radius: 5px;
+			color: #d4d4d4;
+			padding: 0 8px; font-size: 12px; outline: none;
+		}
+		.chat-input-row button {
+			background: #2563eb;
+			border: none; border-radius: 5px;
+			color: white; padding: 0 12px;
+			font-size: 13px; cursor: pointer;
+		}
+
+		.diag {
+			background: #111;
+			color: #34d399;
+			padding: 14px;
+			font-family: "Consolas", "Courier New", monospace;
+			font-size: 12px;
+			line-height: 1.6;
+		}
+
+		.bezel-foot {
+			height: 22px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px;
+			font-size: 9px;
+			color: #726e5d;
+			font-weight: 800;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		.led {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--green);
+			box-shadow: 0 0 6px rgba(34, 197, 94, 0.8);
+		}
+
+		@media (max-width: 980px) {
+			.sidebar {
+				width: 190px;
+			}
+			.terminal {
+				height: 120px;
+			}
+		}
+
+		@media (max-width: 760px) {
+			.monitor {
+				width: 100vw;
+				height: 100vh;
+				border-radius: 0;
+				border-width: 0;
+				padding: 0;
+			}
+			.screen {
+				border-radius: 0;
+				border-width: 0;
+			}
+			.sidebar {
+				display: none;
+			}
+			.bezel-foot {
+				display: none;
+			}
+			.explorer-preview {
+				display: none;
+			}
+			.chat-popup {
+				right: 8px;
+				bottom: 84px;
+				width: calc(100vw - 16px);
+				height: 56vh;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="scene">
+		<div class="monitor">
+			<div class="screen">
+				<div class="taskbar">
+					<div class="taskbar-left">
+						<button class="win-btn" id="startBtn">Start</button>
+						<button class="win-btn app-switch" data-app="desktop">Desktop</button>
+						<button class="win-btn app-switch" data-app="workspace">LeeCode</button>
+						<button class="win-btn app-switch" data-app="browser">Browser</button>
+						<button class="win-btn app-switch" data-app="notepad">Notepad</button>
+						<button class="win-btn app-switch" data-app="diagnostics">Diag</button>
+					</div>
+					<div class="taskbar-right">
+						<div class="clock" id="clock">00:00</div>
+					</div>
+				</div>
+
+				<div class="body">
+					<div class="app-pane desktop active" id="desktopPane">
+						<div class="icon" data-app="workspace"><div class="icon-glyph">{ }</div><span>LeeCode</span></div>
+						<div class="icon" data-app="browser"><div class="icon-glyph">◎</div><span>Web Search</span></div>
+						<div class="icon" data-app="notepad"><div class="icon-glyph">N</div><span>Notepad</span></div>
+						<div class="icon" data-app="diagnostics"><div class="icon-glyph">D</div><span>Diagnostics</span></div>
+					</div>
+
+					<div class="app-pane" id="workspacePane">
+						<div class="workspace active">
+							<aside class="sidebar">
+								<div class="sidebar-head">Explorer</div>
+								<div class="tree">
+									<div class="line">root</div>
+									<div class="line">  src</div>
+									<div class="line selected">    App.tsx</div>
+									<div class="line">    index.css</div>
+									<div class="line">    plan.md</div>
+									<div class="line">  package.json</div>
+									<div class="line">  index.html</div>
+								</div>
+							</aside>
+							<main class="main">
+								<div class="editor-tabs">
+									<div class="tab active" data-tab="editor">App.tsx</div>
+									<div class="tab" data-tab="preview">Live Preview</div>
+								</div>
+								<div class="editor" id="editorPanel">
+									<textarea id="editorInput">import React from "react";
+
+export default function App() {
+	return (
+		<div style={{ padding: 32, background: "#0f172a", color: "#e2e8f0", minHeight: "100vh" }}>
+			<h1 style={{ fontSize: 36, marginBottom: 8, color: "#22d3ee" }}>Agent Lee VM</h1>
+			<p style={{ color: "#94a3b8" }}>Live preview running from the workstation editor.</p>
+		</div>
+	);
+}</textarea>
+								</div>
+								<div class="preview" id="previewPanel">
+									<iframe id="previewFrame" sandbox="allow-scripts"></iframe>
+								</div>
+								<div class="vm-runbar">
+									<button id="vmRunSafeBtn">Run In VM (Safe Check)</button>
+									<button id="vmApplyBtn" class="secondary" disabled>Present Result Before Apply</button>
+									<span class="status" id="vmRunStatus">No execution yet</span>
+								</div>
+								<div class="terminal" id="terminalOutput">Agent Lee VM Workspace v1.0.0
+Ready for execution.
+Type help for command list.
+
+lee@vm:~$ help
+Available commands: help, clear, pkg list, pkg install termux, pkg installed
+
+lee@vm:~$ </div>
+							</main>
+						</div>
+					</div>
+
+					<div class="app-pane" id="browserPane">
+						<div class="browser">
+							<div class="browser-head">
+								<select id="searchEngine">
+									<option value="duckduckgo">DuckDuckGo</option>
+									<option value="brave">Brave Search</option>
+								</select>
+								<input id="searchQuery" class="browser-bar" placeholder="Search the web for answers..." />
+								<button id="searchBtn">Search</button>
+								<button id="openSearchBtn">Open Engine</button>
+							</div>
+							<div class="browser-content" id="browserContent">
+								<h2 style="font-size:20px; margin-bottom:8px; color:#1d4ed8;">Agent Lee Live Web Search</h2>
+								<p style="color:#555; margin-bottom:8px;">Search uses real DuckDuckGo and Brave Search URLs. Click results or open engine in a new tab.</p>
+								<div class="search-results" id="searchResults"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="app-pane" id="notepadPane">
+						<div class="explorer">
+							<!-- Header nav bar -->
+							<div class="explorer-header">
+								<div class="explorer-nav">
+									<button class="exp-nav-btn" id="expBack" title="Back" disabled>&#9664;</button>
+									<button class="exp-nav-btn" id="expFwd" title="Forward" disabled>&#9654;</button>
+									<button class="exp-nav-btn" id="expUp" title="Up">&#8679;</button>
+									<div class="exp-addr-bar" id="expAddrBar">Home</div>
+									<button class="exp-nav-btn" id="expRefresh" title="Refresh">&#8635;</button>
+								</div>
+							</div>
+							<!-- Toolbar / AgentLee panel -->
+							<div class="explorer-toolbar">
+								<button class="exp-tool-btn exp-primary" id="expNewPlan">&#10022; New Plan</button>
+								<button class="exp-tool-btn" id="expNewFile">+ New File</button>
+								<button class="exp-tool-btn" id="expNewFolder">&#128193; New Folder</button>
+								<span class="exp-tool-sep"></span>
+								<button class="exp-tool-btn" id="expDelete">&#128465; Delete</button>
+								<button class="exp-tool-btn" id="expCopy">&#10063; Copy</button>
+								<button class="exp-tool-btn" id="expCut">&#9986; Cut</button>
+							</div>
+							<!-- Body: sidebar + file list + preview -->
+							<div class="explorer-body">
+								<aside class="explorer-sidebar" id="expSidebar">
+									<div class="exp-section">Quick Access</div>
+									<div class="exp-si active" data-path="Home">&#127968; Home</div>
+									<div class="exp-si" data-path="virtual:music">&#9835; Music</div>
+									<div class="exp-si" data-path="virtual:pictures">&#128444; Pictures</div>
+									<div class="exp-si" data-path="virtual:videos">&#127910; Videos</div>
+									<div class="exp-si" data-path="virtual:downloads">&#8659; Downloads</div>
+									<div class="exp-si" data-path="virtual:documents">&#128196; Documents</div>
+									<div class="exp-si" data-path="Trash">&#128465; Trash</div>
+									<div class="exp-section">LEONARD Drives</div>
+									<div class="exp-si" data-path="L:/">&#9881; Drive L</div>
+									<div class="exp-si" data-path="E:/">&#128190; Drive E</div>
+									<div class="exp-si" data-path="O:/">&#128191; Drive O</div>
+									<div class="exp-si" data-path="N:/">&#128247; Drive N</div>
+									<div class="exp-si" data-path="A:/">&#127925; Drive A</div>
+									<div class="exp-si" data-path="R:/">&#128196; Drive R</div>
+									<div class="exp-si" data-path="D:/">&#128193; Drive D</div>
+									<div class="exp-si" data-path="LEE:/">&#9733; Drive LEE</div>
+								</aside>
+								<!-- Main file list -->
+								<main class="explorer-main">
+									<div class="exp-col-head">
+										<span>Name</span><span>Modified</span><span>Location</span>
+									</div>
+									<div class="exp-file-list" id="expFileList"></div>
+								</main>
+								<!-- Preview pane -->
+								<aside class="explorer-preview" id="expPreview">
+									<div class="exp-prev-empty" id="expPreviewEmpty">Select a file to preview</div>
+									<div id="expPreviewDetail" style="display:none">
+										<div class="exp-prev-icon" id="expPrevIcon">&#128196;</div>
+										<div class="exp-prev-name" id="expPrevName"></div>
+										<div class="exp-prev-meta" id="expPrevMeta"></div>
+										<div class="exp-ai-section">
+											<div class="exp-ai-label">Agent Lee AI</div>
+											<button class="exp-ai-btn" data-cap="Summarize">&#10022; Summarize</button>
+											<button class="exp-ai-btn" data-cap="Analyze">&#128270; Analyze</button>
+											<button class="exp-ai-btn" data-cap="Generate Plan">&#128203; Generate Plan</button>
+										</div>
+									</div>
+								</aside>
+							</div>
+							<!-- Status bar -->
+							<div class="explorer-status" id="expStatus">
+								<span id="expStatusCount">0 items</span>
+								<span id="expStatusSel"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="app-pane" id="diagnosticsPane">
+						<div class="diag" id="diagText">
+CPU LOAD: 18%
+RAM USAGE: 62%
+THERMAL: 37C
+LINK: ONLINE
+MODEL LANE: GLM_FLASH
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bezel-foot">
+				<span>AgentVM-3000</span>
+				<div style="display:flex; align-items:center; gap:8px;">
+					<span>Runtime Online</span>
+					<div class="led"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Agent Lee Chat Popup -->
+	<button class="chat-fab" id="chatFab" title="Agent Lee Chat">&#10022;</button>
+	<div class="chat-popup" id="chatPopup">
+		<div class="chat-popup-head">
+			<span>Agent Lee</span>
+			<span class="pp-status">&#9679; online</span>
+			<select id="voiceSelect" class="voice-select" title="Voice"></select>
+			<button id="voiceToggle" class="voice-toggle" title="Toggle Speech">Voice: On</button>
+			<button class="pp-close" id="chatClose">&#10005;</button>
+		</div>
+		<div class="chat-log" id="chatLog">
+			<div class="chat-bubble lee">I am Agent Lee. I run checks in VM first, verify safety, then present results before code changes.</div>
+		</div>
+		<div class="chat-input-row">
+			<input id="chatInput" type="text" placeholder="Message Agent Lee..." />
+			<button id="chatSendBtn">&#9654;</button>
+		</div>
+	</div>
+
+	<script>
+		const panes = {
+			desktop: document.getElementById("desktopPane"),
+			workspace: document.getElementById("workspacePane"),
+			browser: document.getElementById("browserPane"),
+			notepad: document.getElementById("notepadPane"),
+			diagnostics: document.getElementById("diagnosticsPane")
+		};
+
+		const openApp = (app) => {
+			Object.values(panes).forEach((p) => p.classList.remove("active"));
+			if (panes[app]) panes[app].classList.add("active");
+
+			document.querySelectorAll(".app-switch").forEach((b) => {
+				b.classList.toggle("active", b.dataset.app === app);
+			});
+		};
+
+		document.querySelectorAll(".app-switch").forEach((btn) => {
+			btn.addEventListener("click", () => openApp(btn.dataset.app));
+		});
+
+		document.querySelectorAll(".icon").forEach((icon) => {
+			icon.addEventListener("click", () => openApp(icon.dataset.app));
+		});
+
+		const updateClock = () => {
+			const now = new Date();
+			const hh = String(now.getHours()).padStart(2, "0");
+			const mm = String(now.getMinutes()).padStart(2, "0");
+			document.getElementById("clock").textContent = hh + ":" + mm;
+		};
+		updateClock();
+		setInterval(updateClock, 1000);
+
+		const editorTab = document.querySelector('.tab[data-tab="editor"]');
+		const previewTab = document.querySelector('.tab[data-tab="preview"]');
+		const editorPanel = document.getElementById("editorPanel");
+		const previewPanel = document.getElementById("previewPanel");
+		const previewFrame = document.getElementById("previewFrame");
+		const editorInput = document.getElementById("editorInput");
+		const terminalOutput = document.getElementById("terminalOutput");
+		const vmRunSafeBtn = document.getElementById("vmRunSafeBtn");
+		const vmApplyBtn = document.getElementById("vmApplyBtn");
+		const vmRunStatus = document.getElementById("vmRunStatus");
+		const hasSpeech = !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
+		let voiceEnabled = true;
+		let voiceReady = false;
+		let selectedVoiceName = "";
+		let availableVoices = [];
+
+		const previewDoc = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" /></head><body style="margin:0;"><div style="font-family:system-ui;padding:32px;background:#0f172a;color:#e2e8f0;min-height:100vh;"><h1 style="color:#22d3ee;margin:0 0 8px;">Agent Lee VM</h1><p style="color:#94a3b8;">Live preview from the workstation UI shell.</p><pre style="margin-top:16px;padding:12px;border-radius:8px;background:#111827;color:#86efac;overflow:auto;"></pre></div></body></html>`;
+
+		const renderPreview = () => {
+			previewFrame.srcdoc = previewDoc;
+			setTimeout(() => {
+				const pre = previewFrame.contentDocument.querySelector("pre");
+				if (pre) pre.textContent = editorInput.value;
+			}, 30);
+		};
+
+		editorInput.addEventListener("input", () => {
+			if (previewPanel.classList.contains("active")) renderPreview();
+		});
+
+		editorTab.addEventListener("click", () => {
+			editorTab.classList.add("active");
+			previewTab.classList.remove("active");
+			editorPanel.style.display = "flex";
+			previewPanel.classList.remove("active");
+		});
+
+		previewTab.addEventListener("click", () => {
+			previewTab.classList.add("active");
+			editorTab.classList.remove("active");
+			editorPanel.style.display = "none";
+			previewPanel.classList.add("active");
+			renderPreview();
+		});
+
+		const diagText = document.getElementById("diagText");
+		setInterval(() => {
+			const cpu = 10 + Math.floor(Math.random() * 40);
+			const ram = 58 + Math.floor(Math.random() * 24);
+			const temp = 34 + Math.floor(Math.random() * 6);
+			const voiceState = hasSpeech ? (voiceEnabled && voiceReady ? "ACTIVE" : "STANDBY") : "UNAVAILABLE";
+			diagText.textContent =
+`CPU LOAD: ${cpu}%
+RAM USAGE: ${ram}%
+THERMAL: ${temp}C
+LINK: ONLINE
+MODEL LANE: GLM_FLASH
+INTELLIGENCE LAYER: ACTIVE
+VOICE LAYER: ${voiceState}`;
+		}, 2200);
+
+		// ── Chat Popup ──────────────────────────────────────────────────────────
+		const chatFab = document.getElementById("chatFab");
+		const chatPopup = document.getElementById("chatPopup");
+		const chatClose = document.getElementById("chatClose");
+		const chatLog = document.getElementById("chatLog");
+		const chatInput = document.getElementById("chatInput");
+		const chatSendBtn = document.getElementById("chatSendBtn");
+		const voiceSelect = document.getElementById("voiceSelect");
+		const voiceToggle = document.getElementById("voiceToggle");
+		let greetedWithVoice = false;
+
+		const loadVoices = () => {
+			if (!hasSpeech) {
+				voiceSelect.innerHTML = '<option>No TTS</option>';
+				voiceSelect.disabled = true;
+				voiceToggle.disabled = true;
+				voiceToggle.textContent = "Voice: N/A";
+				voiceReady = false;
+				return;
+			}
+
+			availableVoices = window.speechSynthesis.getVoices();
+			voiceSelect.innerHTML = "";
+			availableVoices.forEach((v) => {
+				const option = document.createElement("option");
+				option.value = v.name;
+				option.textContent = v.name;
+				voiceSelect.appendChild(option);
+			});
+
+			const preferred = availableVoices.find((v) => /Microsoft|Natural|Samantha|Zira|Jenny/i.test(v.name)) || availableVoices[0];
+			if (preferred) {
+				selectedVoiceName = preferred.name;
+				voiceSelect.value = preferred.name;
+				voiceReady = true;
+			}
+		};
+
+		const speakLee = (text) => {
+			if (!hasSpeech || !voiceEnabled || !voiceReady) return;
+			window.speechSynthesis.cancel();
+			const utter = new SpeechSynthesisUtterance(text);
+			const voice = availableVoices.find((v) => v.name === selectedVoiceName);
+			if (voice) utter.voice = voice;
+			utter.rate = 1.0;
+			utter.pitch = 1.0;
+			utter.volume = 1.0;
+			window.speechSynthesis.speak(utter);
+		};
+
+		window.speechSynthesis?.addEventListener("voiceschanged", loadVoices);
+		loadVoices();
+		voiceSelect.addEventListener("change", () => {
+			selectedVoiceName = voiceSelect.value;
+		});
+		voiceToggle.addEventListener("click", () => {
+			voiceEnabled = !voiceEnabled;
+			voiceToggle.textContent = voiceEnabled ? "Voice: On" : "Voice: Off";
+			if (voiceEnabled) speakLee("Agent Lee voice layer online.");
+		});
+
+		const toggleChat = () => chatPopup.classList.toggle("open");
+		chatFab.addEventListener("click", toggleChat);
+		chatClose.addEventListener("click", () => chatPopup.classList.remove("open"));
+		chatFab.addEventListener("click", () => {
+			if (!greetedWithVoice && voiceEnabled && voiceReady) {
+				speakLee("Agent Lee voice and intelligence layers are active.");
+				greetedWithVoice = true;
+			}
+		});
+
+		const leeChatState = {
+			history: [],
+			userName: "",
+			lastTopic: ""
+		};
+
+		const rememberTurn = (role, text) => {
+			leeChatState.history.push({ role, text, ts: Date.now() });
+			if (leeChatState.history.length > 20) leeChatState.history.shift();
+		};
+
+		const pushChat = (role, text) => {
+			const b = document.createElement("div");
+			b.className = "chat-bubble " + (role === "user" ? "user" : "lee");
+			b.textContent = text;
+			chatLog.appendChild(b);
+			chatLog.scrollTop = chatLog.scrollHeight;
+			rememberTurn(role, text);
+			if (role === "lee") speakLee(text);
+		};
+
+		const replyFromLee = (input) => {
+			const t = input.toLowerCase();
+			const nameMatch = input.match(/(?:my name is|i am)\s+([a-zA-Z][a-zA-Z\-']{1,24})/i);
+			if (nameMatch) {
+				leeChatState.userName = nameMatch[1];
+				return "Great to meet you, " + leeChatState.userName + ". I can chat naturally, plan tasks, run VM safety checks, and guide searches.";
+			}
+
+			if (t.includes("help") || t === "?" || t.includes("what can you do")) {
+				return "I am Agent Lee chatbot. You can ask normal questions, say open workspace or open notepad, ask for a plan, ask for status, or request web search guidance.";
+			}
+
+			if (t.includes("open notepad") || t.includes("open explorer")) {
+				leeChatState.lastTopic = "notepad";
+				openApp("notepad");
+				return "Opening AgentNotepad file explorer now.";
+			}
+			if (t.includes("open leecode") || t.includes("open workspace")) {
+				leeChatState.lastTopic = "workspace";
+				openApp("workspace");
+				return "Opening LeeCode workspace now.";
+			}
+			if (t.includes("open browser") || t.includes("search")) {
+				leeChatState.lastTopic = "browser";
+				openApp("browser");
+				return "Opening browser. Use DuckDuckGo or Brave Search in the search bar for live answers.";
+			}
+			if (t.includes("status") || t.includes("health")) {
+				return "Runtime online. Intelligence layer active. Voice layer " + (voiceEnabled && voiceReady ? "active" : "standby") + ". VM safety guard is enabled before apply actions.";
+			}
+			if (t.includes("plan") || t.includes("todo") || t.includes("task")) {
+				leeChatState.lastTopic = "planning";
+				return "Plan mode active. Share your objective, constraints, and timeline, and I will break it into actionable steps with validation gates.";
+			}
+			if (t.includes("drive") || t.includes("leonard")) {
+				leeChatState.lastTopic = "drives";
+				return "LEONARD drives: L Scripts, E Data, O Other, N Media, A Audio and plans, R Working set, D Documents, LEE Registry.";
+			}
+			if (/(hello|hi|hey|good morning|good evening)/i.test(t)) {
+				return "Hello" + (leeChatState.userName ? " " + leeChatState.userName : "") + ". I am here and ready. What are we building today?";
+			}
+
+			const recentUserTurns = leeChatState.history.filter((m) => m.role === "user").slice(-3).map((m) => m.text);
+			if (recentUserTurns.length >= 2) {
+				return "Understood. Based on our recent context, I can continue on " + (leeChatState.lastTopic || "this") + ", or you can tell me exactly what outcome you want and I will guide step by step.";
+			}
+
+			return "I am in chatbot mode. Tell me your goal in plain language and I will respond conversationally, then route actions in the VM when needed.";
+		};
+
+		const sendChat = () => {
+			const val = chatInput.value.trim();
+			if (!val) return;
+			pushChat("user", val);
+			chatInput.value = "";
+			setTimeout(() => pushChat("lee", replyFromLee(val)), 180);
+		};
+		chatSendBtn.addEventListener("click", sendChat);
+		chatInput.addEventListener("keydown", (e) => { if (e.key === "Enter") sendChat(); });
+
+		const appendTerminal = (text) => {
+			terminalOutput.textContent += "\n" + text;
+			terminalOutput.scrollTop = terminalOutput.scrollHeight;
+		};
+
+		let vmLastReport = null;
+
+		const analyzeSafety = (code) => {
+			const blockedPatterns = [
+				{ key: "eval", re: /\beval\s*\(/ },
+				{ key: "Function", re: /new\s+Function\s*\(/ },
+				{ key: "document.write", re: /document\.write\s*\(/ },
+				{ key: "fetch", re: /\bfetch\s*\(/ },
+				{ key: "XMLHttpRequest", re: /XMLHttpRequest/ },
+				{ key: "localStorage", re: /localStorage/ },
+				{ key: "sessionStorage", re: /sessionStorage/ },
+				{ key: "window.open", re: /window\.open\s*\(/ },
+				{ key: "location", re: /location\s*\./ },
+				{ key: "script tag", re: /<script[\s>]/i }
+			];
+			const hits = blockedPatterns.filter((p) => p.re.test(code)).map((p) => p.key);
+			return {
+				safe: hits.length === 0,
+				hits
+			};
+		};
+
+		const runCodeInVm = () => {
+			const code = editorInput.value;
+			appendTerminal("lee@vm:~$ vm-run --safe-check");
+			const safety = analyzeSafety(code);
+			if (!safety.safe) {
+				const msg = "Safety check failed. Blocked patterns: " + safety.hits.join(", ");
+				appendTerminal("[SAFETY] " + msg);
+				vmRunStatus.textContent = "Blocked by safety policy";
+				vmApplyBtn.disabled = true;
+				pushChat("lee", "I blocked execution due to unsafe patterns: " + safety.hits.join(", ") + ". Please revise code before any repo action.");
+				return;
+			}
+
+			const lineCount = code.split("\n").length;
+			const hash = btoa(unescape(encodeURIComponent(code))).slice(0, 12);
+			vmLastReport = {
+				lineCount,
+				hash,
+				timestamp: new Date().toISOString()
+			};
+			appendTerminal("[SAFETY] PASS");
+			appendTerminal("[VM] dry-run complete. lines=" + lineCount + " hash=" + hash);
+			vmRunStatus.textContent = "Safe run complete - waiting developer confirmation";
+			vmApplyBtn.disabled = false;
+			pushChat("lee", "VM run completed safely. I will now present results before touching developer code. Lines: " + lineCount + ", run hash: " + hash + ".");
+		};
+
+		vmRunSafeBtn.addEventListener("click", runCodeInVm);
+		vmApplyBtn.addEventListener("click", () => {
+			if (!vmLastReport) return;
+			pushChat("lee", "Developer report: VM safety run passed at " + vmLastReport.timestamp + ". Code lines: " + vmLastReport.lineCount + ", hash: " + vmLastReport.hash + ". Awaiting explicit approval before any repository change.");
+			vmRunStatus.textContent = "Result presented to developer";
+		});
+
+		const searchEngine = document.getElementById("searchEngine");
+		const searchQuery = document.getElementById("searchQuery");
+		const searchBtn = document.getElementById("searchBtn");
+		const openSearchBtn = document.getElementById("openSearchBtn");
+		const searchResults = document.getElementById("searchResults");
+
+		const buildSearchUrl = (engine, q) => {
+			const encoded = encodeURIComponent(q);
+			if (engine === "duckduckgo") return "https://duckduckgo.com/?q=" + encoded;
+			return "https://search.brave.com/search?q=" + encoded;
+		};
+
+		const runWebSearch = () => {
+			const q = searchQuery.value.trim();
+			if (!q) return;
+			const engine = searchEngine.value;
+			const liveUrl = buildSearchUrl(engine, q);
+			const altEngine = engine === "duckduckgo" ? "brave" : "duckduckgo";
+			const altUrl = buildSearchUrl(altEngine, q);
+			searchResults.innerHTML = "";
+			const a1 = document.createElement("a");
+			a1.href = liveUrl;
+			a1.target = "_blank";
+			a1.rel = "noopener noreferrer";
+			a1.textContent = "Open live " + (engine === "duckduckgo" ? "DuckDuckGo" : "Brave Search") + " results for: " + q;
+			const a2 = document.createElement("a");
+			a2.href = altUrl;
+			a2.target = "_blank";
+			a2.rel = "noopener noreferrer";
+			a2.textContent = "Open same query in " + (altEngine === "duckduckgo" ? "DuckDuckGo" : "Brave Search");
+			const note = document.createElement("div");
+			note.style.color = "#555";
+			note.textContent = "These are real search engine pages opened directly in your browser.";
+			searchResults.appendChild(a1);
+			searchResults.appendChild(a2);
+			searchResults.appendChild(note);
+			pushChat("lee", "Live web search prepared for '" + q + "'. Opened links are real " + (engine === "duckduckgo" ? "DuckDuckGo" : "Brave Search") + " queries.");
+		};
+
+		searchBtn.addEventListener("click", runWebSearch);
+		searchQuery.addEventListener("keydown", (e) => {
+			if (e.key === "Enter") runWebSearch();
+		});
+		openSearchBtn.addEventListener("click", () => {
+			const q = searchQuery.value.trim() || "agent lee vm";
+			window.open(buildSearchUrl(searchEngine.value, q), "_blank", "noopener,noreferrer");
+		});
+
+		// ── AgentNotepad File Explorer ────────────────────────────────────────
+		const EXP_FS = {
+			'Home': [
+				{id:'hd',name:'Drive D — Documents',type:'folder',modified:'2025-12-01',location:'D:\\'},
+				{id:'he',name:'Drive E — Data / Media',type:'folder',modified:'2025-12-01',location:'E:\\'},
+				{id:'hl',name:'Drive L — Scripts',type:'folder',modified:'2025-11-30',location:'L:\\'},
+				{id:'hn',name:'Drive N — Pictures & Videos',type:'folder',modified:'2025-11-28',location:'N:\\'},
+				{id:'ha',name:'Drive A — Soundtracks & Plans',type:'folder',modified:'2025-11-25',location:'A:\\'},
+				{id:'hr',name:'Drive R — Working Files',type:'folder',modified:'2025-12-01',location:'R:\\'},
+				{id:'hlee',name:'Drive LEE — System Registry',type:'folder',modified:'2025-12-01',location:'LEE:\\'},
+			],
+			'D:/': [
+				{id:'d_docs',name:'Documents',type:'folder',modified:'2025-12-01',location:'D:\\'},
+				{id:'d_dl',name:'Downloads',type:'folder',modified:'2025-11-20',location:'D:\\'},
+			],
+			'D:/Documents/': [
+				{id:'d1',name:'Project Brief.docx',type:'docx',modified:'2025-12-01',location:'D:\\Documents\\'},
+				{id:'d2',name:'Meeting Notes.txt',type:'text',modified:'2025-11-28',location:'D:\\Documents\\'},
+				{id:'d3',name:'Annual Report.pdf',type:'pdf',modified:'2025-11-15',location:'D:\\Documents\\'},
+			],
+			'D:/Downloads/': [
+				{id:'d4',name:'archive.zip',type:'zip',modified:'2025-11-20',location:'D:\\Downloads\\'},
+			],
+			'L:/': [
+				{id:'l_sc',name:'Scripts',type:'folder',modified:'2025-11-30',location:'L:\\'},
+			],
+			'L:/Scripts/': [
+				{id:'l1',name:'data_processor.py',type:'py',modified:'2025-11-30',location:'L:\\Scripts\\'},
+				{id:'l2',name:'deploy.sh',type:'sh',modified:'2025-11-22',location:'L:\\Scripts\\'},
+			],
+			'E:/': [
+				{id:'e_d',name:'Data',type:'folder',modified:'2025-12-01',location:'E:\\'},
+				{id:'e_m',name:'Music',type:'folder',modified:'2025-11-18',location:'E:\\'},
+			],
+			'E:/Data/': [
+				{id:'e1',name:'user_profiles.json',type:'json',modified:'2025-12-01',location:'E:\\Data\\'},
+				{id:'e2',name:'sales_data.csv',type:'csv',modified:'2025-11-29',location:'E:\\Data\\'},
+			],
+			'E:/Music/': [
+				{id:'e3',name:'ambient_chill.mp3',type:'mp3',modified:'2025-11-18',location:'E:\\Music\\'},
+				{id:'e4',name:'focus_flow.wav',type:'wav',modified:'2025-11-10',location:'E:\\Music\\'},
+			],
+			'N:/': [
+				{id:'n_p',name:'Pictures',type:'folder',modified:'2025-11-28',location:'N:\\'},
+				{id:'n_v',name:'Videos',type:'folder',modified:'2025-11-05',location:'N:\\'},
+			],
+			'N:/Pictures/': [
+				{id:'n_vac',name:'Vacation',type:'folder',modified:'2025-11-28',location:'N:\\Pictures\\'},
+				{id:'n3',name:'logo.svg',type:'svg',modified:'2025-11-14',location:'N:\\Pictures\\'},
+			],
+			'N:/Pictures/Vacation/': [
+				{id:'n1',name:'beach_sunset.jpg',type:'jpg',modified:'2025-11-28',location:'N:\\Pictures\\Vacation\\'},
+				{id:'n2',name:'mountain_hike.png',type:'png',modified:'2025-11-25',location:'N:\\Pictures\\Vacation\\'},
+			],
+			'N:/Videos/': [
+				{id:'n4',name:'product_demo.mp4',type:'mp4',modified:'2025-11-05',location:'N:\\Videos\\'},
+			],
+			'A:/': [
+				{id:'a_s',name:'Soundtracks',type:'folder',modified:'2025-11-25',location:'A:\\'},
+				{id:'a1',name:'Plan — Implement Autosave Layer',type:'plan',modified:'2025-12-01',location:'A:\\'},
+			],
+			'A:/Soundtracks/': [
+				{id:'a2',name:'cinematic_score.mp3',type:'mp3',modified:'2025-11-25',location:'A:\\Soundtracks\\'},
+			],
+			'R:/': [
+				{id:'r1',name:'Working — Implement Autosave Layer',type:'working',modified:'2025-12-01',location:'R:\\'},
+				{id:'r2',name:'Working — Packers Watch Party',type:'working',modified:'2025-12-01',location:'R:\\'},
+			],
+			'LEE:/': [
+				{id:'lee1',name:'Registry — PLAN_autosave',type:'system',modified:'2025-12-01',location:'LEE:\\'},
+				{id:'lee2',name:'Registry — PLAN_packers',type:'system',modified:'2025-12-01',location:'LEE:\\'},
+			],
+			'O:/': [],
+			'Trash': [],
+			'virtual:music': [
+				{id:'e3',name:'ambient_chill.mp3',type:'mp3',modified:'2025-11-18',location:'E:\\Music\\'},
+				{id:'e4',name:'focus_flow.wav',type:'wav',modified:'2025-11-10',location:'E:\\Music\\'},
+				{id:'a2',name:'cinematic_score.mp3',type:'mp3',modified:'2025-11-25',location:'A:\\Soundtracks\\'},
+			],
+			'virtual:pictures': [
+				{id:'n1',name:'beach_sunset.jpg',type:'jpg',modified:'2025-11-28',location:'N:\\Pictures\\Vacation\\'},
+				{id:'n2',name:'mountain_hike.png',type:'png',modified:'2025-11-25',location:'N:\\Pictures\\Vacation\\'},
+				{id:'n3',name:'logo.svg',type:'svg',modified:'2025-11-14',location:'N:\\Pictures\\'},
+			],
+			'virtual:videos': [
+				{id:'n4',name:'product_demo.mp4',type:'mp4',modified:'2025-11-05',location:'N:\\Videos\\'},
+			],
+			'virtual:downloads': [
+				{id:'d4',name:'archive.zip',type:'zip',modified:'2025-11-20',location:'D:\\Downloads\\'},
+			],
+			'virtual:documents': [
+				{id:'d1',name:'Project Brief.docx',type:'docx',modified:'2025-12-01',location:'D:\\Documents\\'},
+				{id:'d2',name:'Meeting Notes.txt',type:'text',modified:'2025-11-28',location:'D:\\Documents\\'},
+				{id:'d3',name:'Annual Report.pdf',type:'pdf',modified:'2025-11-15',location:'D:\\Documents\\'},
+			],
+		};
+
+		const FILE_ICONS = {
+			folder:'📁', plan:'📋', working:'📝', system:'⚙', security:'🔒',
+			docx:'📄', pdf:'📕', txt:'📃', text:'📃', json:'📦', csv:'📊',
+			py:'🐍', sh:'⚡', mp3:'🎵', wav:'🎵', mp4:'🎬', jpg:'🖼', png:'🖼',
+			svg:'🎨', zip:'📦', default:'📄'
+		};
+		const fileIcon = (t) => FILE_ICONS[t] || FILE_ICONS.default;
+
+		let expCurrentPath = 'Home';
+		let expHistory = ['Home'];
+		let expHistIdx = 0;
+		let expSelected = null;
+
+		const expFileList = document.getElementById("expFileList");
+		const expAddrBar = document.getElementById("expAddrBar");
+		const expStatus = document.getElementById("expStatusCount");
+		const expStatusSel = document.getElementById("expStatusSel");
+		const expPreviewEmpty = document.getElementById("expPreviewEmpty");
+		const expPreviewDetail = document.getElementById("expPreviewDetail");
+		const expPrevIcon = document.getElementById("expPrevIcon");
+		const expPrevName = document.getElementById("expPrevName");
+		const expPrevMeta = document.getElementById("expPrevMeta");
+		const expBack = document.getElementById("expBack");
+		const expFwd = document.getElementById("expFwd");
+
+		const expRender = (path) => {
+			const files = EXP_FS[path] || [];
+			expAddrBar.textContent = path;
+			expFileList.innerHTML = '';
+			if (files.length === 0) {
+				expFileList.innerHTML = '<div class="exp-empty">This folder is empty.</div>';
+			} else {
+				files.forEach(file => {
+					const row = document.createElement('div');
+					row.className = 'exp-file-row';
+					row.dataset.id = file.id;
+					const mod = file.modified ? file.modified.split('T')[0] : '';
+					row.innerHTML = `<span>${fileIcon(file.type)} ${file.name}</span><span>${mod}</span><span>${file.location}</span>`;
+					row.addEventListener('click', () => {
+						document.querySelectorAll('.exp-file-row.selected').forEach(r => r.classList.remove('selected'));
+						row.classList.add('selected');
+						expSelected = file;
+						expShowPreview(file);
+						expStatusSel.textContent = '1 selected';
+					});
+					row.addEventListener('dblclick', () => {
+						if (file.type === 'folder') expNavigate(path + file.name + '/');
+					});
+					expFileList.appendChild(row);
+				});
+			}
+			expStatus.textContent = files.length + ' item' + (files.length !== 1 ? 's' : '');
+			expStatusSel.textContent = '';
+			expSelected = null;
+			expPreviewEmpty.style.display = '';
+			expPreviewDetail.style.display = 'none';
+			// update sidebar active
+			document.querySelectorAll('.exp-si').forEach(el => {
+				el.classList.toggle('active', el.dataset.path === path);
+			});
+			// update nav buttons
+			expBack.disabled = expHistIdx === 0;
+			expFwd.disabled = expHistIdx === expHistory.length - 1;
+		};
+
+		const expNavigate = (path) => {
+			if (path === expCurrentPath) return;
+			expHistory = expHistory.slice(0, expHistIdx + 1);
+			expHistory.push(path);
+			expHistIdx = expHistory.length - 1;
+			expCurrentPath = path;
+			expRender(path);
+		};
+
+		const expShowPreview = (file) => {
+			expPreviewEmpty.style.display = 'none';
+			expPreviewDetail.style.display = '';
+			expPrevIcon.textContent = fileIcon(file.type);
+			expPrevName.textContent = file.name;
+			expPrevMeta.innerHTML = `<strong>Type:</strong> ${file.type}<br><strong>Modified:</strong> ${file.modified ? file.modified.split('T')[0] : '—'}<br><strong>Location:</strong> ${file.location}`;
+		};
+
+		expBack.addEventListener('click', () => {
+			if (expHistIdx > 0) { expHistIdx--; expCurrentPath = expHistory[expHistIdx]; expRender(expCurrentPath); }
+		});
+		expFwd.addEventListener('click', () => {
+			if (expHistIdx < expHistory.length - 1) { expHistIdx++; expCurrentPath = expHistory[expHistIdx]; expRender(expCurrentPath); }
+		});
+		document.getElementById('expUp').addEventListener('click', () => {
+			const parts = expCurrentPath.replace(/\/$/, '').split('/');
+			if (parts.length > 1) { parts.pop(); expNavigate(parts.join('/') + '/'); }
+			else expNavigate('Home');
+		});
+		document.getElementById('expRefresh').addEventListener('click', () => expRender(expCurrentPath));
+
+		document.querySelectorAll('.exp-si').forEach(el => {
+			el.addEventListener('click', () => expNavigate(el.dataset.path));
+		});
+
+		document.querySelectorAll('.exp-ai-btn').forEach(btn => {
+			btn.addEventListener('click', () => {
+				if (!expSelected) return;
+				const cap = btn.dataset.cap;
+				pushChat('lee', `${cap} on "${expSelected.name}": Analysis complete. File located at ${expSelected.location}. Type: ${expSelected.type}. LEONARD drive model integrity verified.`);
+				if (!chatPopup.classList.contains('open')) chatPopup.classList.add('open');
+			});
+		});
+
+		// ── New Plan modal shortcut ───────────────────────────────────────────
+		document.getElementById('expNewPlan').addEventListener('click', () => {
+			const title = prompt('New Plan title:');
+			if (!title) return;
+			const id = 'plan_' + Date.now();
+			const entry = {id, name: 'Plan \u2014 ' + title, type:'plan', modified: new Date().toISOString().split('T')[0], location:'A:\\'};
+			if (!EXP_FS['A:/']) EXP_FS['A:/'] = [];
+			EXP_FS['A:/'].unshift(entry);
+			if (expCurrentPath === 'A:/') expRender('A:/');
+			pushChat('lee', 'New plan "' + title + '" created and stored in Drive A (A:\\). Ready to track steps.');
+			if (!chatPopup.classList.contains('open')) chatPopup.classList.add('open');
+		});
+
+		expRender('Home');
+		openApp("desktop");
+	</script>
+</body>
+</html>

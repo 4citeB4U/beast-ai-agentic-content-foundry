@@ -1,0 +1,118 @@
+name: Enforce LeeWay Standards
+
+on:
+  pull_request:
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - '**.jsx'
+      - '**.mjs'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - '**.jsx'
+      - '**.mjs'
+
+jobs:
+  enforce-standards:
+    runs-on: ubuntu-latest
+    name: LeeWay Standards Enforcement
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run LeeWay File Governance Enforcer (Report Mode)
+        id: scan
+        run: |
+          node scripts/auto-enforce-file-governance.mjs --root . > enforcement-report.json 2>&1
+          cat enforcement-report.json
+        continue-on-error: true
+
+      - name: Parse and Validate Compliance Score
+        run: |
+          node -e "
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('enforcement-report.json', 'utf8'));
+          const total = report.scanned || 0;
+          const compliant = total - (report.changed || 0);
+          const score = total === 0 ? 100 : Math.round((compliant / total) * 100);
+          
+          console.log('=== LeeWay Standards Enforcement Report ===');
+          console.log('Total Files Scanned:', total);
+          console.log('Compliant Files:', compliant);
+          console.log('Non-Compliant Files:', report.changed || 0);
+          console.log('Compliance Score:', score + '%');
+          console.log('');
+          
+          if (score < 70) {
+            console.error('❌ ENFORCEMENT FAILURE: Compliance score below 70%');
+            console.error('Required: 70% compliance or higher');
+            console.error('');
+            console.error('To auto-fix, run locally:');
+            console.error('  node scripts/auto-enforce-file-governance.mjs --apply');
+            process.exit(1);
+          }
+          
+          if (score < 95) {
+            console.warn('⚠️  WARNING: Compliance score below 95%');
+            console.warn('Consider running auto-fix before merge');
+          } else {
+            console.log('✅ ENFORCEMENT PASSED: All files compliant');
+          }
+          "
+
+      - name: Comment PR with Enforcement Results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('enforcement-report.json', 'utf8'));
+            const total = report.scanned || 0;
+            const compliant = total - (report.changed || 0);
+            const score = total === 0 ? 100 : Math.round((compliant / total) * 100);
+            
+            let icon = score < 70 ? '❌' : score < 95 ? '⚠️' : '✅';
+            
+            const body = `${icon} **LeeWay Standards Enforcement Report**
+
+| Metric | Value |
+|--------|-------|
+| Files Scanned | ${total} |
+| Compliant | ${compliant} |
+| Non-Compliant | ${report.changed || 0} |
+| **Score** | **${score}%** |
+
+${score < 70 ? '🚫 **FAILED** - Compliance below 70% threshold\n\nRun locally to auto-fix:\n```bash\nnode scripts/auto-enforce-file-governance.mjs --apply\n```' : score < 95 ? '⚠️ **PASSED** - But consider improving compliance\n\nRun to optimize:\n```bash\nnode scripts/auto-enforce-file-governance.mjs --apply\n```' : '✅ **PASSED** - All files compliant'}`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+
+  blocking-gate:
+    runs-on: ubuntu-latest
+    name: Admission Gate Validation
+    needs: enforce-standards
+    if: always()
+    steps:
+      - name: Verify Enforcement Passed
+        if: needs.enforce-standards.result != 'success'
+        run: |
+          echo "❌ Standards enforcement failed - build cannot proceed"
+          exit 1
+      - name: ✅ All Gates Passed
+        run: |
+          echo "✅ Code passed all LeeWay Standards gates"

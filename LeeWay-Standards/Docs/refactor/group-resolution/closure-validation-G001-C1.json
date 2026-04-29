@@ -1,0 +1,50 @@
+{
+  "seedGroup": "G001-C",
+  "outGroup": "G001-C1",
+  "generatedAt": "2026-04-17T16:28:03.359Z",
+  "seedSize": 3,
+  "closureSize": 7,
+  "closureIntegrity": {
+    "externalInboundViolationCount": 0,
+    "externalOutboundViolationCount": 3,
+    "targetRepoBoundaryCount": 1,
+    "isSelfContained": false,
+    "isSingleTargetRepoBoundary": true
+  },
+  "targetRepos": [
+    "LeeWay-Edge-RTC-main"
+  ],
+  "externalInboundViolations": [],
+  "externalOutboundViolations": [
+    {
+      "source": "LeeWay-Edge-Integrated/room-system/rooms.js",
+      "count": 2,
+      "dependencies": [
+        "LeeWay-Edge-Integrated/runtime/identity.engine.js",
+        "LeeWay-Edge-Integrated/runtime/state.engine.js"
+      ]
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/room-system/events.js",
+      "count": 1,
+      "dependencies": [
+        "LeeWay-Edge-Integrated/runtime/state.engine.js"
+      ]
+    },
+    {
+      "source": "LeeWay-Edge-Integrated/room-system/runtime.js",
+      "count": 9,
+      "dependencies": [
+        "LeeWay-Edge-Integrated/runtime/state.engine.js",
+        "LeeWay-Edge-Integrated/runtime/trust.engine.js",
+        "LeeWay-Edge-Integrated/runtime/identity.engine.js",
+        "LeeWay-Edge-Integrated/runtime/pallium.engine.js",
+        "LeeWay-Edge-Integrated/runtime/rtc.adapter.js",
+        "LeeWay-Edge-Integrated/runtime/gpu.adapter.js",
+        "LeeWay-Edge-Integrated/runtime/signature.engine.js",
+        "LeeWay-Edge-Integrated/runtime/audit.engine.js",
+        "LeeWay-Edge-Integrated/runtime/leeway.integrity.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+group_id,source_path,target_path,repo,reason,risk,coupling_class,imports_count,imported_by_count,external_importers_count,external_imports_count,runtime_critical,import_rewrite
+G001-C1,LeeWay-Edge-Integrated/room-system/admin.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true
+G001-C1,LeeWay-Edge-Integrated/room-system/auth.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true
+G001-C1,LeeWay-Edge-Integrated/room-system/capabilities.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true
+G001-C1,LeeWay-Edge-Integrated/room-system/events.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true
+G001-C1,LeeWay-Edge-Integrated/room-system/qr.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true
+G001-C1,LeeWay-Edge-Integrated/room-system/rooms.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true
+G001-C1,LeeWay-Edge-Integrated/room-system/runtime.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,closure,,,,,,true

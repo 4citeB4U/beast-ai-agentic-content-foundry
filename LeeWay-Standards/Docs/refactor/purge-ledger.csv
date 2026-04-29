@@ -1,0 +1,943 @@
+repo,source_path,current_role,correct_owner,action,target_path,risk,reason,import_rewrite,approved
+*,**/node_modules/**,env,External,EXTERNALIZE,,low,dependency cache,false,false
+*,**/.venv/**,env,External,EXTERNALIZE,,low,virtual environment,false,false
+*,**/dist/**,build,External,EXTERNALIZE,,low,build output,false,false
+*,**/*.gguf,binary,External,EXTERNALIZE,,high,model artifact,false,false
+*,**/*.safetensors,binary,External,EXTERNALIZE,,high,model artifact,false,false
+agent-lee-agentic-os,**/runtime/**,runtime,Integrated,MOVE,LeeWay-Edge-Integrated/runtime,high,projection owning runtime,true,false
+LeeWay-Agents-the-World-Within,**/runtime/**,runtime,Integrated,MOVE,LeeWay-Edge-Integrated/runtime,high,projection owning runtime,true,false
+LeeWay-Edge-Integrated,**/transport/**,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,transport misplaced,true,false
+*,**/GovernanceContract.*,governance,Standards,MOVE,LeeWay-Standards/packages/standards/policy,high,law duplication,true,false
+*,**/IntentSanitizer.*,governance,Standards,MOVE,LeeWay-Standards/packages/standards/validators,high,law duplication,true,false
+LeeWay-Standards,LeeWay-Standards/components/AgentNotepad.tsx,ui,Integrated,MOVE,LeeWay-Edge-Integrated/app,high,ui shell outside integrated,true,false
+LeeWay-Standards,LeeWay-Standards/components/css.d.ts,ui,Integrated,MOVE,LeeWay-Edge-Integrated/app,high,ui shell outside integrated,true,false
+LeeWay-Standards,LeeWay-Standards/components/vite-env.d.ts,ui,Integrated,MOVE,LeeWay-Edge-Integrated/app,high,ui shell outside integrated,true,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/cycle-runner.err.log,placeholder,External,QUARANTINE,,low,dead placeholder file,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/cycle-runner.err.log,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/cycle-runner.out.log,placeholder,External,QUARANTINE,,low,dead placeholder file,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/cycle-runner.out.log,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-A.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-A2.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-A3.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-A4.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-B.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-C.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-C1.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-C2-seed.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-D.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G001-wildcard-expansion.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/group-resolution/G002-wildcard-expansion.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-batch-001.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-batch-002.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-candidates-by-category.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-candidates-by-dependency-depth.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-candidates-by-filetype.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-candidates-by-repo.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-group-breakdown.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-map-annotated.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-map-starter-draft.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-map-tiered.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-map.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/move-tier-breakdown.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/ownership-matrix.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/purge-ledger.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-001.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-002.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-003.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-004.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-005.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-006.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-batch-007.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-reason-batch-005.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-reason-batch-006.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-reason-batch-007.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-repo-batch-005.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-repo-batch-006.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-repo-batch-007.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-risk-batch-005.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-risk-batch-006.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-risk-batch-007.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-role-batch-005.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-role-batch-006.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/Docs/refactor/quarantine-remainder-by-role-batch-007.csv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/bitwise_integrity.wgsl,compute,GPU,MOVE,LeewayEdgeWebGPU/gpu,high,gpu logic outside webgpu repo,true,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/bitwise_integrity.wgsl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/context_compressor.wgsl,compute,GPU,MOVE,LeewayEdgeWebGPU/gpu,high,gpu logic outside webgpu repo,true,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/context_compressor.wgsl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/data_normalizer.wgsl,compute,GPU,MOVE,LeewayEdgeWebGPU/gpu,high,gpu logic outside webgpu repo,true,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/data_normalizer.wgsl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/tensor_matmul.wgsl,compute,GPU,MOVE,LeewayEdgeWebGPU/gpu,high,gpu logic outside webgpu repo,true,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/shaders/tensor_matmul.wgsl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/aria.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/bus.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governance.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governor.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/nexus.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/observer.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/repair.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/runtime.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/scaler.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/sentinel.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/vector.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/ward.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/core/brain/slang.db,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/federation-router.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/leeway-rtc-native.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/mesh-fallback.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/store.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/vector-agent.ts,rtc,RTC,MOVE,LeeWay-Edge-RTC-main/src/transport,high,rtc logic outside rtc repo,true,false
+LeeWay-Standards,LeeWay-Standards/src/ui/diagnostics/PersonaHealthPanel.tsx,ui,Integrated,MOVE,LeeWay-Edge-Integrated/app,high,ui shell outside integrated,true,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/.env.example,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/.pytest_cache/.gitignore,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/.pytest_cache/CACHEDIR.TAG,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/.pytest_cache/v/cache/lastfailed,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/.pytest_cache/v/cache/nodeids,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/af_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/am_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/an_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ar_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/as_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/az_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ba_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/be_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/bg_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/bn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/bpy_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/bs_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ca_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/chr_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/cmn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/cs_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/cv_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/cy_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/da_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/de_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/el_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/en_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/eo_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/es_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/et_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/eu_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/fa_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/fi_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/fr_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ga_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/gd_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/gn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/grc_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/gu_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/hak_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/haw_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/he_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/hi_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/hr_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ht_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/hu_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/hy_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ia_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/id_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/intonations,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/io_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/is_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/it_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ja_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/jbo_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ka_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/kk_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/kl_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/kn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/kok_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ko_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ku_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ky_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/aav/vi,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/aav/vi-VN-x-central,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/aav/vi-VN-x-south,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/eo,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/ia,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/io,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/jbo,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/lfn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/piqd,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/py,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/qdb,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/qya,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/art/sjn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/azc/nci,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/bat/lt,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/bat/ltg,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/bat/lv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/bnt/sw,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/bnt/tn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ccs/ka,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/cel/cy,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/cel/ga,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/cel/gd,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/cus/om,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/dra/kn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/dra/ml,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/dra/ta,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/dra/te,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/esx/kl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/eu,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmq/da,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmq/is,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmq/nb,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmq/sv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/af,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/de,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-029,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-GB-scotland,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-GB-x-gbclan,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-GB-x-gbcwmd,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-GB-x-rp,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-US,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/en-US-nyc,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/lb,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/gmw/nl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/grk/el,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/grk/grc,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/as,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/bn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/bpy,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/gu,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/hi,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/kok,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/mr,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/ne,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/or,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/pa,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/sd,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/si,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/inc/ur,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ine/hy,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ine/hyw,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ine/sq,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ira/fa,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ira/fa-Latn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ira/ku,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/iro/chr,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/itc/la,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/jpx/ja,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/ko,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/map/haw,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/miz/mto,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/myn/quc,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/poz/id,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/poz/mi,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/poz/ms,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/qu,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/an,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/ca,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/es,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/es-419,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/fr,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/fr-BE,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/fr-CH,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/ht,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/it,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/pap,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/pt,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/pt-BR,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/roa/ro,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sai/gn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sem/am,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sem/ar,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sem/he,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sem/mt,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sit/cmn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sit/cmn-Latn-pinyin,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sit/hak,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sit/my,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sit/yue,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/sit/yue-Latn-jyutping,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/tai/shn,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/tai/th,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/az,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/ba,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/cv,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/kk,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/ky,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/nog,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/tk,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/tr,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/tt,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/ug,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/trk/uz,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/urj/et,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/urj/fi,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/urj/hu,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/urj/smj,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zle/be,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zle/ru,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zle/ru-cl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zle/ru-LV,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zle/uk,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zls/bg,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zls/bs,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zls/hr,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zls/mk,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zls/sl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zls/sr,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zlw/cs,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zlw/pl,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lang/zlw/sk,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/la_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lb_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lfn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lt_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/lv_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/mi_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/mk_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ml_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/mr_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ms_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/mto_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/mt_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/my_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/nci_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ne_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/nl_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/nog_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/no_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/om_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/or_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/pap_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/pa_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/phondata,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/phondata-manifest,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/phonindex,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/phontab,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/piqd_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/pl_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/pt_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/py_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/qdb_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/quc_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/qu_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/qya_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ro_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ru_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sd_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/shn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/si_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sjn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sk_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sl_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/smj_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sq_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sr_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sv_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/sw_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ta_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/te_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/th_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/tk_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/tn_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/tr_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/tt_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ug_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/uk_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/ur_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/uz_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/vi_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/adam,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Alex,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Alicia,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Andrea,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Andy,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/anika,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/anikaRobot,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Annie,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/announcer,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/antonio,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/AnxiousAndy,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/aunty,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/belinda,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/benjamin,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/boris,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/caleb,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/croak,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/david,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Demonic,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Denis,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Diogo,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/ed,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/edward,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/edward2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/f1,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/f2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/f3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/f4,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/f5,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/fast,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Gene,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Gene2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/grandma,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/grandpa,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/gustave,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Henrique,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Hugo,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/ian,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/iven,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/iven2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/iven3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/iven4,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Jacky,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/john,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/kaukovalta,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/klatt,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/klatt2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/klatt3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/klatt4,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/klatt5,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/klatt6,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Lee,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/linda,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m1,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m4,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m5,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m6,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m7,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/m8,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/marcelo,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Marco,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Mario,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/max,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Michael,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/michel,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/miguel,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Mike,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/mike2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Mr serious,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Nguyen,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/norbert,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/pablo,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/paul,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/pedro,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/quincy,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Reed,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/RicishayMax,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/RicishayMax2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/RicishayMax3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/rob,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robert,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft4,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft5,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft6,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft7,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/robosoft8,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/sandro,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/shelby,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/steph,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/steph2,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/steph3,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Storm,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/travis,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/Tweaky,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/UniRobot,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/victor,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/whisper,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/whisperf,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/voices/!v/zac,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng-data/yue_dict,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/espeak-ng.dll,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/libtashkeel_model.ort,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/onnxruntime.dll,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/onnxruntime_providers_shared.dll,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/piper.exe,binary,External,EXTERNALIZE,,high,model or binary artifact,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_bin/piper_phonemize.dll,unknown,External,QUARANTINE,,medium,unknown ownership fallback,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/piper_models/en_US-lessac-medium.onnx,binary,External,EXTERNALIZE,,high,large asset artifact,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/temp_piper/piper.zip,binary,External,EXTERNALIZE,,high,large asset artifact,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/server/vosk_models/model.zip,binary,External,EXTERNALIZE,,high,large asset artifact,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/contracts/agent-contracts.ts,import,External,QUARANTINE,,medium,broken import path ./capability-vocab.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/contracts/job-contract.ts,import,External,QUARANTINE,,medium,broken import path ./capability-vocab.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/capture-state.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/kill-process.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/open-app.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/read-file.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/run-terminal.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/write-file.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/read-file.ts,import,External,QUARANTINE,,medium,broken import path ../lib/path-guard.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/run-terminal.ts,import,External,QUARANTINE,,medium,broken import path ../lib/path-guard.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/write-file.ts,import,External,QUARANTINE,,medium,broken import path ../lib/path-guard.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/health-sweep.ts,import,External,QUARANTINE,,medium,broken import path ./index.ts,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./lib/session-store.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/build-context-packet.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/compress-session.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/fetch-related-episodes.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/recall-context.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/write-summary.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/build-context-packet.ts,import,External,QUARANTINE,,medium,broken import path ./recall-context.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/recall-context.ts,import,External,QUARANTINE,,medium,broken import path ../lib/session-store.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./contracts/agent-contracts.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/break-into-steps.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/choose-agent.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/make-plan.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/suggest-recovery.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/index.ts,import,External,QUARANTINE,,medium,broken import path ./tools/summarize-mission.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/test/health-check.node.js,import,External,QUARANTINE,,medium,broken import path ../dist/tools/make-plan.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/test/health-check.node.js,import,External,QUARANTINE,,medium,broken import path ../dist/tools/choose-agent.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/test/health-check.node.js,import,External,QUARANTINE,,medium,broken import path ../dist/tools/summarize-mission.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/choose-agent.ts,import,External,QUARANTINE,,medium,broken import path ../contracts/agent-contracts.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/choose-agent.ts,import,External,QUARANTINE,,medium,broken import path ../contracts/intent-router-map.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/make-plan.ts,import,External,QUARANTINE,,medium,broken import path ../contracts/agent-contracts.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/make-plan.ts,import,External,QUARANTINE,,medium,broken import path ../contracts/intent-router-map.js,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/summarize-mission.ts,import,External,QUARANTINE,,medium,broken import path ../contracts/agent-contracts.js,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/agent-contracts.ts,import,External,QUARANTINE,,medium,broken import path ./capability-vocab.js,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/job-contract.ts,import,External,QUARANTINE,,medium,broken import path ./capability-vocab.js,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L2_Controller_VRM/mosfet.regulator.ts,import,External,QUARANTINE,,medium,broken import path ../L1_Governance_BIOS/identity.bios,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L3_Persistence_Memory/Pallium.tsx,import,External,QUARANTINE,,medium,broken import path ./core/eventBus,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L5_Skill_Capability/atom.gating.ts,import,External,QUARANTINE,,medium,broken import path ../L3_Persistence_Memory/database.hub,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L5_Skill_Capability/atom.gating.ts,import,External,QUARANTINE,,medium,broken import path ../L9_Integrity_Sentinel/probe.analyzer,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L6_Dispatch_Center/rtc.sovereign.node.ts,import,External,QUARANTINE,,medium,broken import path ./eventBus,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/gpu.alu.ts,import,External,QUARANTINE,,medium,broken import path ../pipeline/pipeline.cache,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/gpu.alu.ts,import,External,QUARANTINE,,medium,broken import path ../buffers/buffer.pool,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/gpu.alu.ts,import,External,QUARANTINE,,medium,broken import path ./shaders/tensor_matmul.wgsl,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/qwen.alu.ts,import,External,QUARANTINE,,medium,broken import path ../L9_Integrity_Sentinel/probe.analyzer,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L8_Telemetry_Assembly/Diagnostics.tsx,import,External,QUARANTINE,,medium,broken import path ../lib/utils,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L8_Telemetry_Assembly/Diagnostics.tsx,import,External,QUARANTINE,,medium,broken import path ../core/eventBus,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L8_Telemetry_Assembly/janitor.audit.ts,import,External,QUARANTINE,,medium,broken import path ../L10_Orchestrator_Kernel/leeway.kernel,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L8_Telemetry_Assembly/janitor.audit.ts,import,External,QUARANTINE,,medium,broken import path ../L9_Integrity_Sentinel/probe.analyzer,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Integrity_Sentinel/probe.analyzer.ts,import,External,QUARANTINE,,medium,broken import path ../L1_Governance_BIOS/identity.bios,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Integrity_Sentinel/probe.analyzer.ts,import,External,QUARANTINE,,medium,broken import path ../L8_Telemetry_Assembly/janitor.audit,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Interface_Display/App.tsx,import,External,QUARANTINE,,medium,broken import path ./Diagnostics,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Interface_Display/App.tsx,import,External,QUARANTINE,,medium,broken import path ./DatabaseHub,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Interface_Display/App.tsx,import,External,QUARANTINE,,medium,broken import path ./Pallium,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Interface_Display/App.tsx,import,External,QUARANTINE,,medium,broken import path ./LeeWayUniverse,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Interface_Display/App.tsx,import,External,QUARANTINE,,medium,broken import path ./VerifiedAgentVM,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Interface_Display/App.tsx,import,External,QUARANTINE,,medium,broken import path ./core/rtc.sovereign.node,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/aria.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/bus.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governance.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governance.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governor.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governor.ts,import,External,QUARANTINE,,medium,broken import path ./governance.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governor.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governor.ts,import,External,QUARANTINE,,medium,broken import path ./runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/nexus.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/observer.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./bus.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./aria.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./vector.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./ward.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./sentinel.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./nexus.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./repair.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./governor.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./scaler.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ./observer.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/repair.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/repair.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/repair.ts,import,External,QUARANTINE,,medium,broken import path ./runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/runtime.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/runtime.ts,import,External,QUARANTINE,,medium,broken import path ./governance.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/runtime.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/scaler.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/scaler.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/scaler.ts,import,External,QUARANTINE,,medium,broken import path ./bus.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/scaler.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/sentinel.ts,import,External,QUARANTINE,,medium,broken import path ../metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/sentinel.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/vector.ts,import,External,QUARANTINE,,medium,broken import path ../metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/vector.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/vector.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/ward.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/ward.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/ward.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/auth.ts,import,External,QUARANTINE,,medium,broken import path ./config.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/governance-guard.ts,import,External,QUARANTINE,,medium,broken import path ./logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/guardian/summary-worker.ts,import,External,QUARANTINE,,medium,broken import path ./stats-worker.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/guardian/summary-worker.ts,import,External,QUARANTINE,,medium,broken import path ./runtime-mode.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/index.ts,import,External,QUARANTINE,,medium,broken import path ./governance-guard.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/index.ts,import,External,QUARANTINE,,medium,broken import path ./mediasoup/worker.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/index.ts,import,External,QUARANTINE,,medium,broken import path ./server.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/index.ts,import,External,QUARANTINE,,medium,broken import path ./agents/registry.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/index.ts,import,External,QUARANTINE,,medium,broken import path ./logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/logger.ts,import,External,QUARANTINE,,medium,broken import path ./config.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/room.ts,import,External,QUARANTINE,,medium,broken import path ./worker.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/room.ts,import,External,QUARANTINE,,medium,broken import path ../config.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/room.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/room.ts,import,External,QUARANTINE,,medium,broken import path ../metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/worker.ts,import,External,QUARANTINE,,medium,broken import path ../config.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/worker.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./signaling/handler.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./auth.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./config.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./agents/registry.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,import,External,QUARANTINE,,medium,broken import path ./mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,import,External,QUARANTINE,,medium,broken import path ../auth.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,import,External,QUARANTINE,,medium,broken import path ../metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,import,External,QUARANTINE,,medium,broken import path ../config.js,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,import,External,QUARANTINE,,medium,broken import path ../agents/registry.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AdamCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/LLMProvider,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AdamCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AdamCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AdamCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLee.ts,import,External,QUARANTINE,,medium,broken import path ../core/AgentRouter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLee.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLee.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLee.ts,import,External,QUARANTINE,,medium,broken import path ../core/LLMProvider,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLeeBT.ts,import,External,QUARANTINE,,medium,broken import path ../core/AgentBase,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLeeBT.ts,import,External,QUARANTINE,,medium,broken import path ../core/BehaviorTree,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Aria.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Aria.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Aria.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Atlas.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Atlas.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Atlas.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BrainSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BrainSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BugHunterForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BugHunterForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BugHunterForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BugHunterForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ClerkArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ClerkArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportIndex,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ClerkArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ClerkArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ClerkArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Echo.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Echo.ts,import,External,QUARANTINE,,medium,broken import path ../core/VoiceService,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Echo.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Echo.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GabrielCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GabrielCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GabrielCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GabrielCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GuardAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/WorldRegistry,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GuardAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GuardAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/JanitorSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/RetentionCleaner,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/JanitorSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/JanitorSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportIndex,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/JanitorSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/JanitorSentinel.ts,import,External,QUARANTINE,,medium,broken import path ../core/TaskGraph,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LeewayStandardsAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LeewayStandardsAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LeewayStandardsAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/MemoryDB,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LibrarianAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LibrarianAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LibrarianAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LibrarianAegis.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LilyCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LilyCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LilyCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LilyCortex.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LiveConductorAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LiveConductorAgent.ts,import,External,QUARANTINE,,medium,broken import path ../voice/client_core/VoiceSession,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,import,External,QUARANTINE,,medium,broken import path ../core/GovernanceContract,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,import,External,QUARANTINE,,medium,broken import path ../core/AgentRouter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,import,External,QUARANTINE,,medium,broken import path ../core/TaskGraph,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,import,External,QUARANTINE,,medium,broken import path ../core/VerificationCorps,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nexus.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nexus.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nexus.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nova.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nova.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nova.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Pixel.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Pixel.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Pixel.ts,import,External,QUARANTINE,,medium,broken import path ../services/leeway_inference,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Pixel.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/RouterAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/RouterAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SafetyRedactionAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Sage.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Sage.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Sage.ts,import,External,QUARANTINE,,medium,broken import path ../core/AuthProvider,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Sage.ts,import,External,QUARANTINE,,medium,broken import path ../core/MemoryDB,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Sage.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ScribeArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ScribeArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ScribeArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ScribeArchive.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Shield.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Shield.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Shield.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Shield.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Shield.ts,import,External,QUARANTINE,,medium,broken import path ../core/GovernanceContract,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/StreamingSTTAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/StreamingTTSAgent.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SyntaxForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/LeewayInferenceClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SyntaxForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/EventBus,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SyntaxForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SyntaxForge.ts,import,External,QUARANTINE,,medium,broken import path ../core/ReportWriter,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/aria.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/bus.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governance.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governance.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governor.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governor.ts,import,External,QUARANTINE,,medium,broken import path ./governance.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governor.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governor.ts,import,External,QUARANTINE,,medium,broken import path ./runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/nexus.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/observer.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./bus.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./aria.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./vector.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./ward.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./sentinel.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./nexus.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./repair.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./governor.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./scaler.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ./observer.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/repair.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/repair.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/repair.ts,import,External,QUARANTINE,,medium,broken import path ./runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/runtime.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/runtime.ts,import,External,QUARANTINE,,medium,broken import path ./governance.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/runtime.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/scaler.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/scaler.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/scaler.ts,import,External,QUARANTINE,,medium,broken import path ./bus.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/scaler.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/sentinel.ts,import,External,QUARANTINE,,medium,broken import path ../metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/sentinel.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/vector.ts,import,External,QUARANTINE,,medium,broken import path ../metrics.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/vector.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/vector.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/ward.ts,import,External,QUARANTINE,,medium,broken import path ../mediasoup/room.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/ward.ts,import,External,QUARANTINE,,medium,broken import path ../logger.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/ward.ts,import,External,QUARANTINE,,medium,broken import path ./types.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentManager.ts,import,External,QUARANTINE,,medium,broken import path ../agents/AgentLeeBT,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentOrchestrationPipeline.ts,import,External,QUARANTINE,,medium,broken import path ../agents/AgentLee,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentOrchestrationPipeline.ts,import,External,QUARANTINE,,medium,broken import path ./AgentLeePersonaPolicy,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentOrchestrationPipeline.ts,import,External,QUARANTINE,,medium,broken import path ./AgentLeeSpeechShaper,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentOrchestrationPipeline.ts,import,External,QUARANTINE,,medium,broken import path ./AgentLeeTurnManager,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/launchpad/launchRunner.ts,import,External,QUARANTINE,,medium,broken import path ./palliumClient,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/RTCInitializer.ts,import,External,QUARANTINE,,medium,broken import path ../cortices/sensory/RTCInitializer,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/recovery.engine.ts,import,External,QUARANTINE,,medium,broken import path ./creator.authority,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/recovery.engine.ts,import,External,QUARANTINE,,medium,broken import path ./policy.engine,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.coordinator.ts,import,External,QUARANTINE,,medium,broken import path ./creator.authority,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.coordinator.ts,import,External,QUARANTINE,,medium,broken import path ./policy.engine,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.coordinator.ts,import,External,QUARANTINE,,medium,broken import path ./recovery.engine,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.init.ts,import,External,QUARANTINE,,medium,broken import path ./security.coordinator,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.init.ts,import,External,QUARANTINE,,medium,broken import path ./creator.authority,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.init.ts,import,External,QUARANTINE,,medium,broken import path ./policy.engine,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.init.ts,import,External,QUARANTINE,,medium,broken import path ./recovery.engine,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/agentic/index.ts,import,External,QUARANTINE,,medium,broken import path ../legacy-restored/core/agent_lee_prompt_assembler,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/call/CallMode.ts,import,External,QUARANTINE,,medium,broken import path ../voice/voice-output,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/call/CallMode.ts,import,External,QUARANTINE,,medium,broken import path ../voice/voice-config,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/gpu.adapter.js,import,External,QUARANTINE,,medium,broken import path ../gpu/core/gpu.bootstrap.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/gpu.adapter.js,import,External,QUARANTINE,,medium,broken import path ../gpu/control/gpu.controller.bridge.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/gpu.adapter.js,import,External,QUARANTINE,,medium,broken import path ../gpu/dispatch/compute.dispatch.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/graph.engine.js,import,External,QUARANTINE,,medium,broken import path ../room-system/events.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,import,External,QUARANTINE,,medium,broken import path ../room-system/auth.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,import,External,QUARANTINE,,medium,broken import path ../room-system/capabilities.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,import,External,QUARANTINE,,medium,broken import path ../room-system/rooms.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,import,External,QUARANTINE,,medium,broken import path ../room-system/admin.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,import,External,QUARANTINE,,medium,broken import path ../room-system/runtime.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,import,External,QUARANTINE,,medium,broken import path ../room-system/events.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/rtc.adapter.js,import,External,QUARANTINE,,medium,broken import path ../gpu/rtc/gpu.rtc.bridge.js,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/standaloneAgent.ts,import,External,QUARANTINE,,medium,broken import path ./ui,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/standaloneAgent.ts,import,External,QUARANTINE,,medium,broken import path ./lib/agentLeePersona,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/wsAgent.ts,import,External,QUARANTINE,,medium,broken import path ./ui,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/contracts/agent-lee-core.contract.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/contracts/capability-vocab.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/contracts/intent-router-map.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/contracts/job-contract.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/lib/path-guard.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/capture-state.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/kill-process.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/open-app.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/read-file.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/run-terminal.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/desktop-commander-agent-mcp/tools/write-file.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/health-sweep.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/lib/session-store.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/build-context-packet.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/compress-session.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/fetch-related-episodes.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/recall-context.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/memory-agent-mcp/tools/write-summary.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/contracts/intent-router-map.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/break-into-steps.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/planner-agent-mcp/tools/suggest-recovery.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/sync-registry.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/vscode-mcp-tooling/src/bridge.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/adapters/mcp/vscode-mcp-tooling/src/tool.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/Agent_Lee_Persona_System/02_ENGINE/agentlee_persona_engine_v1_1.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/Agent_Lee_Persona_System/03_POETRY/agentlee_poetry_bank.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/Agent_Lee_Persona_System/04_LINGO/agentlee_lingo_worker.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/components/AgentNotepad.tsx,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/components/css.d.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/components/vite-env.d.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/agent-lee-behavior-policies.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/agent-lee-core.contract.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/capability-vocab.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/intent-router-map.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/contracts/job-contract.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L2_Controller_VRM/mosfet.regulator.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L3_Persistence_Memory/DatabaseHub.tsx,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L3_Persistence_Memory/Pallium.tsx,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L4_WorkflowProtocol/fsm.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L5_SkillCapability/tensor.skill.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L5_Skill_Capability/atom.gating.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L6_Dispatch_Center/rtc.sovereign.node.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/gpu.alu.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L7_Execution_Die/qwen.alu.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L8_Telemetry_Assembly/Diagnostics.tsx,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L8_Telemetry_Assembly/janitor.audit.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/governance/layers/L9_Integrity_Sentinel/probe.analyzer.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/aria.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/bus.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governance.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/governor.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/nexus.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/observer.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/registry.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/repair.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/runtime.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/scaler.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/sentinel.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/vector.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/agents/ward.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/auth.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/config.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/governance-guard.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/guardian/summary-worker.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/logger.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/room.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/mediasoup/worker.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/server.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/services/sfu/src/signaling/handler.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AdamCortex.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLee.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/AgentLeeBT.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Aria.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Atlas.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BrainSentinel.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/BugHunterForge.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ClerkArchive.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GabrielCortex.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/GuardAegis.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/JanitorSentinel.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LeewayStandardsAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LibrarianAegis.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LilyCortex.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/LiveConductorAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/MarshalVerify.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nexus.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Nova.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/Pixel.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/RouterAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SafetyRedactionAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/ScribeArchive.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/StreamingSTTAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/StreamingTTSAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/SyntaxForge.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/legacy/VisionAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/aria.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/bus.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governance.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/governor.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/nexus.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/observer.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/registry.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/repair.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/runtime.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/scaler.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/sentinel.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/vector.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/rtc/ward.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/agents/service/governance/governance-boot.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/cli/leeway.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/collaboration/ReceiptSchema.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentLeeCollectiveRuntime.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentLeeRuntimeBootstrap.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AgentManager.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/agent_lee_system_awareness.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/AuthProvider.tsx,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/BehaviorTree.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/CheckpointManager.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/dbOps.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/DeviceTelemetry.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/diagnostics_bridge.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/echo/MemoryAuthorityPolicy.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/execution/ExecutionLayer.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/execution/StudioExecutionController.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/governance/GovernanceGate.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/launchpad/launchRunner.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/launchpad/memoryLakeClient.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/leeway-rtc-setup.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/leeway_voice_custom.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/LLMProvider.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/model_lane_policy.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/MultiDatabaseManager.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/NativeBridge.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/RetentionCleaner.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/RTCInitializer.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/runtime/executionKernel.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/runtime/scheduler.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/runtime/taskBroker.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/SchemaRegistry.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/creator.authority.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/InputFirewallAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/policy.engine.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/recovery.engine.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.coordinator.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/security/security.init.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/ToolRegistry.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/ttsBridge.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/veritas/ValidationPolicy.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/VoiceService.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/WidgetCommandController.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/core/WorldState.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/call/CallMode.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/audit.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/cortices-adapter-contracts.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/economic.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/evolution.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/gpu.adapter.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/graph.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/identity.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/pallium.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/room-system.adapter.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/rtc.adapter.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/state.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/trust.engine.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/engines/worker.adapter.js,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/leeway-rtc-native.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/runtime/rtc/store.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-adapter.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-awareness.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-budget.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-diagnostics.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-governance.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-monitor.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/vision-storage.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/vision/VisualOverlayRenderer.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/speech-recognition.d.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/standaloneAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/VoiceSession.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/client_core/wsAgent.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/engine/audio.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/engine/use-voice-engine.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/engine/voice-loop.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/engine/voice-output.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/src/voice/engine/VoiceStudio.tsx,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/standards/cli/run-agents.mjs,orphan,External,QUARANTINE,,low,orphaned file,false,false
+LeeWay-Standards,LeeWay-Standards/vite-env.d.ts,orphan,External,QUARANTINE,,low,orphaned file,false,false

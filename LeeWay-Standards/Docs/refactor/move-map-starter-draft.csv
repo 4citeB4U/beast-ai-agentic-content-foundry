@@ -1,0 +1,17 @@
+repo,source_path,current_owner,correct_owner,target_path,reason,import_rewrite,risk,approved,category,dependency_depth,import_refs
+agent-lee-agentic-os,agent-lee-agentic-os/core/GovernanceContract.ts,agent-lee-agentic-os,Standards,LeeWay-Standards/packages/standards/policy,law duplication,true,high,false,Governance Duplication,low,0
+agent-lee-agentic-os,agent-lee-agentic-os/components/LeewayWatermark.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,1
+agent-lee-agentic-os,agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/GovernanceContract.ts,agent-lee-agentic-os,Standards,LeeWay-Standards/packages/standards/policy,law duplication,true,high,false,Governance Duplication,low,1
+agent-lee-agentic-os,agent-lee-agentic-os/LeeWay-Standards/src/runtime/security/IntentSanitizer.ts,agent-lee-agentic-os,Standards,LeeWay-Standards/packages/standards/policy,law duplication,true,high,false,Governance Duplication,low,1
+agent-lee-agentic-os,agent-lee-agentic-os/pages/Diagnostics.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,1
+agent-lee-agentic-os,agent-lee-agentic-os/pages/Home.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,1
+agent-lee-agentic-os,agent-lee-agentic-os/pages/Settings.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,1
+LeeWay-Agents-the-World-Within,LeeWay-Agents-the-World-Within/leeway-agents/src/components/firebase.ts,LeeWay-Agents-the-World-Within,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,1
+LeeWay-Edge-Integrated,LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/GovernanceContract.ts,LeeWay-Edge-Integrated,Standards,LeeWay-Standards/packages/standards/policy,law duplication,true,high,false,Governance Duplication,low,1
+LeeWay-Edge-Integrated,LeeWay-Edge-Integrated/gpu/LeeWay-Standards/src/runtime/security/IntentSanitizer.ts,LeeWay-Edge-Integrated,Standards,LeeWay-Standards/packages/standards/policy,law duplication,true,high,false,Governance Duplication,low,1
+LeeWay-Edge-RTC-main,LeeWay-Edge-RTC-main/src/components/GalaxyBackground.tsx,LeeWay-Edge-RTC-main,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,1
+agent-lee-agentic-os,agent-lee-agentic-os/components/AgentLeeCameraPopup.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,2
+agent-lee-agentic-os,agent-lee-agentic-os/components/AuthGate.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,2
+agent-lee-agentic-os,agent-lee-agentic-os/components/ParticleTransition.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,2
+agent-lee-agentic-os,agent-lee-agentic-os/pages/AgentLeeWorkstation.tsx,agent-lee-agentic-os,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,2
+LeeWay-Edge-RTC-main,LeeWay-Edge-RTC-main/src/components/EconomicMoat.tsx,LeeWay-Edge-RTC-main,Integrated,LeeWay-Edge-Integrated/app,ui shell outside integrated,true,high,false,Shell/UI Misplacement,low,2

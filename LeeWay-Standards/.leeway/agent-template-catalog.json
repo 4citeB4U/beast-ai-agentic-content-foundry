@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-04-21T00:00:00.000Z",
+  "templates": [
+    {
+      "id": "governance-guardian",
+      "title": "Governance Guardian Agent",
+      "region": "CORE",
+      "tag": "CORE.AGENTS.GOVERNANCE.GUARDIAN.MAIN",
+      "description": "Monitors compliance, headers, policies, and runtime governance drift."
+    },
+    {
+      "id": "runtime-healer",
+      "title": "Runtime Healer Agent",
+      "region": "CORE",
+      "tag": "CORE.AGENTS.RUNTIME.HEALER.MAIN",
+      "description": "Observes runtime faults and emits repair or recovery actions."
+    },
+    {
+      "id": "learning-keeper",
+      "title": "Learning Keeper Agent",
+      "region": "DATA",
+      "tag": "DATA.AGENTS.LEARNING.KEEPER.MAIN",
+      "description": "Records episodic, semantic, and procedural memory updates."
+    },
+    {
+      "id": "execution-conductor",
+      "title": "Execution Conductor Agent",
+      "region": "CORE",
+      "tag": "CORE.AGENTS.EXECUTION.CONDUCTOR.MAIN",
+      "description": "Coordinates workflow execution paths, retries, and packet routing."
+    },
+    {
+      "id": "spatial-operator",
+      "title": "Spatial Operator Agent",
+      "region": "UI",
+      "tag": "UI.AGENTS.SPATIAL.OPERATOR.MAIN",
+      "description": "Connects XR surfaces, graph renderers, and operator feedback loops."
+    }
+  ],
+  "layers": [
+    {
+      "id": "governance",
+      "description": "Law, entry, scheduling, division execution, compliance, and file governance layer.",
+      "directories": [
+        "src/runtime/core",
+        "src/core/registry",
+        "src/governance"
+      ]
+    },
+    {
+      "id": "learning",
+      "description": "Episodic, semantic, procedural, modulation, and memory persistence layer.",
+      "directories": [
+        "src/core/agents",
+        "src/runtime/intelligence",
+        "src/runtime/construct"
+      ]
+    },
+    {
+      "id": "healing",
+      "description": "Autonomous repair, monitoring, and self-heal workflow layer.",
+      "directories": [
+        "src/runtime/core",
+        "src/agents/generated",
+        "src/runtime/events"
+      ]
+    },
+    {
+      "id": "discovery",
+      "description": "Discovery pipeline, schema, site mapping, and explainability layer.",
+      "directories": [
+        "src/agents/discovery",
+        "src/core/registry",
+        ".leeway"
+      ]
+    }
+  ]
+}

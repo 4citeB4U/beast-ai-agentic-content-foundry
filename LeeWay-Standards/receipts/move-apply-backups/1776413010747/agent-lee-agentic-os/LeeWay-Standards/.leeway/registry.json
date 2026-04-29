@@ -1,0 +1,1668 @@
+{
+  "version": "1.0.1",
+  "built": "2026-04-12T00:25:48.239Z",
+  "rootDir": "D:\\LeeWay-Standards-main",
+  "files": {
+    "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\02_ENGINE\\agentlee_persona_engine_v1_1.js": {
+      "path": "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\02_ENGINE\\agentlee_persona_engine_v1_1.js",
+      "hasHeader": true,
+      "region": "🧠 AI",
+      "tag": "AI.ORCHESTRATION.MODEL.LOADER",
+      "agents": [],
+      "license": null,
+      "fiveWH": {}
+    },
+    "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\03_POETRY\\agentlee_poetry_bank.js": {
+      "path": "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\03_POETRY\\agentlee_poetry_bank.js",
+      "hasHeader": true,
+      "region": "🧠 AI",
+      "tag": "AI.ORCHESTRATION.MODEL.LOADER",
+      "agents": [],
+      "license": null,
+      "fiveWH": {}
+    },
+    "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\04_LINGO\\agentlee_lingo_worker.js": {
+      "path": "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\04_LINGO\\agentlee_lingo_worker.js",
+      "hasHeader": true,
+      "region": "🟣 MCP",
+      "tag": "TOOLS.WORKER.LINGO.MAIN",
+      "agents": [],
+      "license": null,
+      "fiveWH": {}
+    },
+    "examples\\example-agent.js": {
+      "path": "examples\\example-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.EXAMPLE",
+      "tag": "AI.AGENT.EXAMPLE.BASIC",
+      "agents": [
+        "ASSESS",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Example of a LEEWAY-compliant custom agent implementation",
+        "WHY": "Demonstrates how third-party agents integrate with the LEEWAY SDK governance model",
+        "WHO": "Rapid Web Development",
+        "WHERE": "examples/example-agent.js",
+        "WHEN": "2026",
+        "HOW": "ESM module implementing a simple LEEWAY agent contract with run() and describe() methods"
+      }
+    },
+    "examples\\NexusButton.tsx": {
+      "path": "examples\\NexusButton.tsx",
+      "hasHeader": true,
+      "region": "UI.COMPONENT.NEXUS",
+      "tag": "UI.COMPONENT.NEXUS.BUTTON",
+      "agents": [
+        "AZR",
+        "PHI3",
+        "QWEN",
+        "LLAMA",
+        "ECHO"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Nexus voice control button — the primary interface for voice commands",
+        "WHY": "Provides users with a single clearly-identified entry point for voice interactions",
+        "WHO": "Rapid Web Development",
+        "WHERE": "examples/NexusButton.tsx",
+        "WHEN": "2026",
+        "HOW": "React functional component with Tailwind CSS styling and accessibility support"
+      }
+    },
+    "LeeWayUniverse.tsx": {
+      "path": "LeeWayUniverse.tsx",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.LEEWAYUNIVERSE.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "LeeWayUniverse module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "LeeWayUniverse.tsx",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\agents\\discovery\\architecture-map-agent.js": {
+      "path": "src\\agents\\discovery\\architecture-map-agent.js",
+      "hasHeader": true,
+      "region": "DOCS.AGENT.ARCHITECTURE",
+      "tag": "DOCS.STANDARD.ARCHITECTURE.MAP",
+      "agents": [
+        "ARCHITECTURE",
+        "DOCS",
+        "REGISTRY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Architecture map agent — produces a visual or JSON architecture map of the codebase",
+        "WHY": "Understanding system architecture is essential for safe evolution and AI-assisted development",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/discovery/architecture-map-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads LEEWAY registry and builds a layered region/module graph in JSON and ASCII"
+      }
+    },
+    "src\\agents\\discovery\\docs-agent.js": {
+      "path": "src\\agents\\discovery\\docs-agent.js",
+      "hasHeader": true,
+      "region": "DOCS.AGENT.GENERATOR",
+      "tag": "DOCS.STANDARD.DOCS.AGENT",
+      "agents": [
+        "DOCS",
+        "EXPLAIN",
+        "REGISTRY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Docs agent — generates structured plain-English docs from LEEWAY headers and registries",
+        "WHY": "Human-readable documentation must be automatically derivable from code headers",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/discovery/docs-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads LEEWAY headers and produces Markdown documentation summaries"
+      }
+    },
+    "src\\agents\\discovery\\explain-agent.js": {
+      "path": "src\\agents\\discovery\\explain-agent.js",
+      "hasHeader": true,
+      "region": "DOCS.AGENT.EXPLAIN",
+      "tag": "DOCS.STANDARD.EXPLAIN.MAIN",
+      "agents": [
+        "EXPLAIN",
+        "DOCS",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Explain agent — explains a file, module, or service in plain English",
+        "WHY": "Any file in a LEEWAY system must be self-explainable to any developer or AI tool",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/discovery/explain-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads LEEWAY headers and produces structured human-readable explanations"
+      }
+    },
+    "src\\agents\\discovery\\intent-registry-agent.js": {
+      "path": "src\\agents\\discovery\\intent-registry-agent.js",
+      "hasHeader": true,
+      "region": "SEO.AGENT.INTENT",
+      "tag": "SEO.INTENT.REGISTRY.MAIN",
+      "agents": [
+        "INTENT",
+        "SCHEMA",
+        "REGISTRY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Intent registry agent — tracks supported intents and their routes",
+        "WHY": "AI agents and voice assistants need a machine-readable registry of supported intents",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/discovery/intent-registry-agent.js",
+        "WHEN": "2026",
+        "HOW": "Maintains a registry of intent-to-handler mappings in .leeway/intents.json"
+      }
+    },
+    "src\\agents\\discovery\\schema-agent.js": {
+      "path": "src\\agents\\discovery\\schema-agent.js",
+      "hasHeader": true,
+      "region": "SEO.AGENT.SCHEMA",
+      "tag": "SEO.SCHEMA.AGENT.MAIN",
+      "agents": [
+        "SCHEMA",
+        "SITEMAP",
+        "DISCOVERY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Schema agent — generates machine-readable schemas and capability metadata",
+        "WHY": "Applications must expose structured data for AI tools, search engines, and voice assistants",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/discovery/schema-agent.js",
+        "WHEN": "2026",
+        "HOW": "Generates Schema.org JSON-LD, OpenGraph, and capability manifest from LEEWAY metadata"
+      }
+    },
+    "src\\agents\\discovery\\sitemap-agent.js": {
+      "path": "src\\agents\\discovery\\sitemap-agent.js",
+      "hasHeader": true,
+      "region": "SEO.AGENT.SITEMAP",
+      "tag": "SEO.SITEMAP.AGENT.MAIN",
+      "agents": [
+        "SITEMAP",
+        "SCHEMA",
+        "REGISTRY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Sitemap agent — builds site and discovery maps from LEEWAY registry",
+        "WHY": "Applications must expose sitemaps for crawlers, search engines, and AI indexers",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/discovery/sitemap-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads route registrations and LEEWAY headers to build XML and JSON sitemaps"
+      }
+    },
+    "src\\agents\\governance\\align-agent.js": {
+      "path": "src\\agents\\governance\\align-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.GOVERNANCE",
+      "tag": "AI.AGENT.ALIGN.MAIN",
+      "agents": [
+        "ALIGN",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Align agent — normalizes files, settings, transports, ports, and env structure",
+        "WHY": "Drift in naming, structure, and configuration breaks governance and causes deployment failures",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/governance/align-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads assessment results, proposes normalized corrections, applies non-destructive patches"
+      }
+    },
+    "src\\agents\\governance\\assess-agent.js": {
+      "path": "src\\agents\\governance\\assess-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.GOVERNANCE",
+      "tag": "AI.AGENT.ASSESS.MAIN",
+      "agents": [
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Assess agent — surveys what already exists before anything is created or patched",
+        "WHY": "Prevents duplicate work, identifies existing patterns, and gives align/audit agents accurate ground truth",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/governance/assess-agent.js",
+        "WHEN": "2026",
+        "HOW": "Event-driven file walker, dormant until invoked, returns structured inventory"
+      }
+    },
+    "src\\agents\\governance\\audit-agent.js": {
+      "path": "src\\agents\\governance\\audit-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.GOVERNANCE",
+      "tag": "AI.AGENT.AUDIT.MAIN",
+      "agents": [
+        "AUDIT",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Audit agent — scores compliance, generates reports, and blocks unsafe changes",
+        "WHY": "LEEWAY systems must be continuously validated to remain stable and governable",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/governance/audit-agent.js",
+        "WHEN": "2026",
+        "HOW": "Aggregates compliance scores across all files, produces JSON and text reports"
+      }
+    },
+    "src\\agents\\integrity\\circular-dependency-agent.js": {
+      "path": "src\\agents\\integrity\\circular-dependency-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.CIRCULAR.DEPENDENCY",
+      "agents": [
+        "CIRCULAR",
+        "DEPENDENCY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Circular dependency agent — detects circular imports and risky graph patterns",
+        "WHY": "Circular imports cause module initialization failures and memory leaks",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/circular-dependency-agent.js",
+        "WHEN": "2026",
+        "HOW": "DFS cycle detection on the dependency graph produced by dependency-graph-agent"
+      }
+    },
+    "src\\agents\\integrity\\dependency-graph-agent.js": {
+      "path": "src\\agents\\integrity\\dependency-graph-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.DEPENDENCY.GRAPH",
+      "agents": [
+        "DEPENDENCY",
+        "CIRCULAR",
+        "REFACTOR"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Dependency graph agent — builds lightweight dependency maps between modules",
+        "WHY": "Understanding module dependencies is essential for safe refactoring and change impact analysis",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/dependency-graph-agent.js",
+        "WHEN": "2026",
+        "HOW": "Parses import/require statements, builds directed adjacency graph"
+      }
+    },
+    "src\\agents\\integrity\\duplicate-logic-agent.js": {
+      "path": "src\\agents\\integrity\\duplicate-logic-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.DUPLICATE.LOGIC",
+      "agents": [
+        "DUPLICATE",
+        "SYNTAX",
+        "REFACTOR"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Duplicate logic agent — detects repeated logic and duplicate injected blocks",
+        "WHY": "Duplicate code wastes space, confuses developers, and creates maintenance debt",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/duplicate-logic-agent.js",
+        "WHEN": "2026",
+        "HOW": "Hash-based block comparison across files, sliding window on function bodies"
+      }
+    },
+    "src\\agents\\integrity\\import-agent.js": {
+      "path": "src\\agents\\integrity\\import-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.IMPORT.MAIN",
+      "agents": [
+        "IMPORT",
+        "SYNTAX",
+        "MODULE"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Import agent — normalizes import style and validates local import rules",
+        "WHY": "Mixed import styles and broken paths cause module resolution failures",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/import-agent.js",
+        "WHEN": "2026",
+        "HOW": "Scans import statements for style violations and common path issues"
+      }
+    },
+    "src\\agents\\integrity\\module-policy-agent.js": {
+      "path": "src\\agents\\integrity\\module-policy-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.MODULE.POLICY",
+      "agents": [
+        "MODULE",
+        "IMPORT",
+        "SYNTAX"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Module policy agent — prevents CommonJS/ESM drift within a project",
+        "WHY": "Mixed module systems cause runtime errors that are extremely hard to debug",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/module-policy-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads package.json type field and validates all files follow the declared module system"
+      }
+    },
+    "src\\agents\\integrity\\refactor-scan-agent.js": {
+      "path": "src\\agents\\integrity\\refactor-scan-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.REFACTOR.SCAN",
+      "agents": [
+        "REFACTOR",
+        "SYNTAX",
+        "DUPLICATE"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Refactor scan agent — suggests safe structural improvements to code",
+        "WHY": "Continuous refactoring suggestions keep the codebase clean and maintainable",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/refactor-scan-agent.js",
+        "WHEN": "2026",
+        "HOW": "Pattern-based heuristics detect long functions, deep nesting, and complex conditionals"
+      }
+    },
+    "src\\agents\\integrity\\syntax-agent.js": {
+      "path": "src\\agents\\integrity\\syntax-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.INTEGRITY",
+      "tag": "AI.AGENT.SYNTAX.MAIN",
+      "agents": [
+        "SYNTAX",
+        "IMPORT",
+        "MODULE"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Syntax agent — guards against malformed code and unsafe patch results",
+        "WHY": "Malformed syntax breaks builds; this agent catches errors before they reach CI",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/integrity/syntax-agent.js",
+        "WHEN": "2026",
+        "HOW": "Lightweight structural pattern checks for common JS/TS syntax issues"
+      }
+    },
+    "src\\agents\\mcp\\endpoint-agent.js": {
+      "path": "src\\agents\\mcp\\endpoint-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.ENDPOINT",
+      "tag": "MCP.ENDPOINT.AGENT.MAIN",
+      "agents": [
+        "ENDPOINT",
+        "TRANSPORT",
+        "PORT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Endpoint agent — detects existing health and HTTP endpoints safely",
+        "WHY": "Prevents duplicate endpoint registration and detects port conflicts before startup",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/endpoint-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads manifest files and scans source for endpoint declarations"
+      }
+    },
+    "src\\agents\\mcp\\env-agent.js": {
+      "path": "src\\agents\\mcp\\env-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.ENV",
+      "tag": "MCP.ENV.AGENT.MAIN",
+      "agents": [
+        "ENV",
+        "RUNTIME",
+        "ALIGN"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Env agent — validates required vs optional environment variables",
+        "WHY": "Missing or misconfigured env vars cause runtime failures that are hard to debug",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/env-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads .leeway/env-schema.json and validates against process.env"
+      }
+    },
+    "src\\agents\\mcp\\health-agent-lite.js": {
+      "path": "src\\agents\\mcp\\health-agent-lite.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.HEALTH",
+      "tag": "MCP.HEALTH.AGENT.LITE",
+      "agents": [
+        "HEALTH",
+        "RUNTIME",
+        "ENV"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Health agent lite — runs lightweight startup and readiness checks",
+        "WHY": "Services must pass readiness gates before routing traffic or accepting requests",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/health-agent-lite.js",
+        "WHEN": "2026",
+        "HOW": "Runs a series of configurable health checks, returns pass/fail with details"
+      }
+    },
+    "src\\agents\\mcp\\manifest-agent.js": {
+      "path": "src\\agents\\mcp\\manifest-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.MANIFEST",
+      "tag": "MCP.MANIFEST.AGENT.MAIN",
+      "agents": [
+        "MANIFEST",
+        "TRANSPORT",
+        "ENDPOINT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Manifest agent — validates MCP manifest completeness and tool definitions",
+        "WHY": "Incomplete or malformed manifests prevent MCP servers from being discovered and used",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/manifest-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads manifest JSON, validates required fields and tool schemas"
+      }
+    },
+    "src\\agents\\mcp\\port-agent.js": {
+      "path": "src\\agents\\mcp\\port-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.PORT",
+      "tag": "MCP.PORT.AGENT.MAIN",
+      "agents": [
+        "PORT",
+        "ENDPOINT",
+        "TRANSPORT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Port agent — assigns and validates ports from a registry to prevent collisions",
+        "WHY": "Port collisions cause service startup failures; governance requires a centralized port registry",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/port-agent.js",
+        "WHEN": "2026",
+        "HOW": "Maintains a port registry in .leeway/ports.json, validates before assignment"
+      }
+    },
+    "src\\agents\\mcp\\process-agent.js": {
+      "path": "src\\agents\\mcp\\process-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.PROCESS",
+      "tag": "MCP.PROCESS.AGENT.MAIN",
+      "agents": [
+        "PROCESS",
+        "PORT",
+        "HEALTH"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Process agent — handles process ownership, shutdown sequencing, and zombie cleanup",
+        "WHY": "Unmanaged processes cause resource leaks, port conflicts, and failed restarts",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/process-agent.js",
+        "WHEN": "2026",
+        "HOW": "Tracks PID registry in .leeway/processes.json, validates liveness, signals shutdown"
+      }
+    },
+    "src\\agents\\mcp\\runtime-agent.js": {
+      "path": "src\\agents\\mcp\\runtime-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.RUNTIME",
+      "tag": "MCP.RUNTIME.AGENT.MAIN",
+      "agents": [
+        "RUNTIME",
+        "ENV",
+        "ALIGN"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Runtime agent — checks module and runtime compatibility before build and start",
+        "WHY": "Runtime version mismatches cause failures that are difficult to diagnose in CI",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/runtime-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads package.json engines field and compares against current Node version"
+      }
+    },
+    "src\\agents\\mcp\\transport-agent.js": {
+      "path": "src\\agents\\mcp\\transport-agent.js",
+      "hasHeader": true,
+      "region": "MCP.AGENT.TRANSPORT",
+      "tag": "MCP.TRANSPORT.AGENT.MAIN",
+      "agents": [
+        "TRANSPORT",
+        "ENDPOINT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Transport agent — verifies approved MCP transport usage",
+        "WHY": "MCP transport mismatches cause silent failures and security violations",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/mcp/transport-agent.js",
+        "WHEN": "2026",
+        "HOW": "Checks transport declarations in manifests and source for approved protocols"
+      }
+    },
+    "src\\agents\\orchestration\\azr-coordinator.js": {
+      "path": "src\\agents\\orchestration\\azr-coordinator.js",
+      "hasHeader": true,
+      "region": "AGENTS.ORCHESTRATION",
+      "tag": "AGENT.AZR.COORDINATOR",
+      "agents": [],
+      "license": null,
+      "fiveWH": {
+        "WHAT": "AZR Coordinator Agent",
+        "WHY": "Orchestrates the ExecutionCycle across specialized agents",
+        "WHO": "Sovereign Manager",
+        "HOW": "Governs the state transition from Intent to Memory Commit"
+      }
+    },
+    "src\\agents\\orchestration\\doctor-agent.js": {
+      "path": "src\\agents\\orchestration\\doctor-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.ORCHESTRATION",
+      "tag": "AI.AGENT.DOCTOR.MAIN",
+      "agents": [
+        "DOCTOR",
+        "ASSESS",
+        "AUDIT",
+        "HEALTH",
+        "ENV",
+        "RUNTIME"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Doctor agent — runs a full system health and compliance diagnosis",
+        "WHY": "The entire LEEWAY system must be diagnosable in a single command",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/orchestration/doctor-agent.js",
+        "WHEN": "2026",
+        "HOW": "Orchestrates assess, audit, runtime, env, and health checks into one unified report"
+      }
+    },
+    "src\\agents\\orchestration\\memory-agent-lite.js": {
+      "path": "src\\agents\\orchestration\\memory-agent-lite.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.ORCHESTRATION",
+      "tag": "AI.AGENT.MEMORY.LITE",
+      "agents": [
+        "MEMORY",
+        "ROUTER",
+        "DOCTOR"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Memory agent lite — stores SDK-local state, receipts, audit history, and registries",
+        "WHY": "Agent operations must be logged and recoverable; receipts provide auditability",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/orchestration/memory-agent-lite.js",
+        "WHEN": "2026",
+        "HOW": "Persistent JSON store in .leeway/memory.json with receipt logging"
+      }
+    },
+    "src\\agents\\orchestration\\router-agent.js": {
+      "path": "src\\agents\\orchestration\\router-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.ORCHESTRATION",
+      "tag": "AI.AGENT.ROUTER.MAIN",
+      "agents": [
+        "ROUTER",
+        "ASSESS",
+        "AUDIT",
+        "DOCTOR"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Router agent — chooses which other agents to invoke for a given task",
+        "WHY": "Complex governance tasks require orchestrated invocation of multiple specialized agents",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/orchestration/router-agent.js",
+        "WHEN": "2026",
+        "HOW": "Intent-based routing from task descriptions to named agent handlers"
+      }
+    },
+    "src\\agents\\security\\permission-agent.js": {
+      "path": "src\\agents\\security\\permission-agent.js",
+      "hasHeader": true,
+      "region": "SECURITY.AGENT.PERMISSION",
+      "tag": "SECURITY.PERMISSION.AGENT.MAIN",
+      "agents": [
+        "PERMISSION",
+        "POLICY",
+        "AUTHORITY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Permission agent — checks action permissions and runtime boundaries",
+        "WHY": "Actions must be gated by explicit permission checks to prevent unauthorized operations",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/security/permission-agent.js",
+        "WHEN": "2026",
+        "HOW": "Checks declared AGENTS list in headers and validates against permission rules"
+      }
+    },
+    "src\\agents\\security\\policy-agent.js": {
+      "path": "src\\agents\\security\\policy-agent.js",
+      "hasHeader": true,
+      "region": "SECURITY.AGENT.POLICY",
+      "tag": "SECURITY.POLICY.AGENT.MAIN",
+      "agents": [
+        "POLICY",
+        "AUDIT",
+        "PERMISSION"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Policy agent — enforces LEEWAY policy bundles across the codebase",
+        "WHY": "Governance requires consistent enforcement of named policy sets",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/security/policy-agent.js",
+        "WHEN": "2026",
+        "HOW": "Loads policy bundles from .leeway/policies.json, evaluates against file metadata"
+      }
+    },
+    "src\\agents\\security\\privacy-agent.js": {
+      "path": "src\\agents\\security\\privacy-agent.js",
+      "hasHeader": true,
+      "region": "SECURITY.AGENT.PRIVACY",
+      "tag": "SECURITY.PRIVACY.AGENT.MAIN",
+      "agents": [
+        "PRIVACY",
+        "POLICY",
+        "SECRET"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Privacy agent — checks privacy and data handling declarations in code",
+        "WHY": "Systems handling personal data must declare their data handling intent",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/security/privacy-agent.js",
+        "WHEN": "2026",
+        "HOW": "Scans for PII patterns in logs and data structures, checks for privacy declarations"
+      }
+    },
+    "src\\agents\\security\\prompt-security-agent.js": {
+      "path": "src\\agents\\security\\prompt-security-agent.js",
+      "hasHeader": true,
+      "region": "SECURITY.AGENT.PROMPT",
+      "tag": "SECURITY.SCANNER.PROMPT.MAIN",
+      "agents": [
+        "PROMPT",
+        "POLICY",
+        "SECRET"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Prompt security agent — scans prompt files and agent instructions for unsafe patterns",
+        "WHY": "Malicious prompt injection can compromise AI agent behavior and expose sensitive operations",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/security/prompt-security-agent.js",
+        "WHEN": "2026",
+        "HOW": "Pattern matching against known prompt injection techniques and unsafe instruction patterns"
+      }
+    },
+    "src\\agents\\security\\secret-scan-agent.js": {
+      "path": "src\\agents\\security\\secret-scan-agent.js",
+      "hasHeader": true,
+      "region": "SECURITY.AGENT.SCANNER",
+      "tag": "SECURITY.SCANNER.SECRET.MAIN",
+      "agents": [
+        "SECRET",
+        "POLICY",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Secret scan agent — looks for secrets and unsafe credential handling in source code",
+        "WHY": "Committed secrets are a critical security vulnerability; this agent prevents them",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/security/secret-scan-agent.js",
+        "WHEN": "2026",
+        "HOW": "Pattern matching against known secret formats, env var names, and credential patterns"
+      }
+    },
+    "src\\agents\\security\\tool-access-agent.js": {
+      "path": "src\\agents\\security\\tool-access-agent.js",
+      "hasHeader": true,
+      "region": "SECURITY.AGENT.ACCESS",
+      "tag": "SECURITY.ACCESS.TOOL.MAIN",
+      "agents": [
+        "TOOL",
+        "POLICY",
+        "PERMISSION"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Tool access agent — ensures tools are called only through approved paths",
+        "WHY": "Unapproved tool invocation paths create unauditable side effects and security gaps",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/security/tool-access-agent.js",
+        "WHEN": "2026",
+        "HOW": "Validates tool call paths against an approved routes registry"
+      }
+    },
+    "src\\agents\\standards\\authority-agent.js": {
+      "path": "src\\agents\\standards\\authority-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.AUTHORITY.MAIN",
+      "agents": [
+        "AUTHORITY",
+        "POLICY",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Authority agent — declares allowed actions, denied actions, and execution scope per file/module",
+        "WHY": "Governance requires explicit declaration of what each file is permitted to do",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/authority-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads LEEWAY headers and .leeway/authority.json to validate action permissions"
+      }
+    },
+    "src\\agents\\standards\\discovery-pipeline-agent.js": {
+      "path": "src\\agents\\standards\\discovery-pipeline-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.DISCOVERY.PIPELINE",
+      "agents": [
+        "DISCOVERY",
+        "SCHEMA",
+        "SITEMAP"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Discovery pipeline agent — ensures every artifact has the discovery chain metadata",
+        "WHY": "LEEWAY applications must be visible to search engines, AI tools, and voice assistants",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/discovery-pipeline-agent.js",
+        "WHEN": "2026",
+        "HOW": "Checks for Schema.org JSON-LD, OpenGraph, sitemap, and FAQ structured data presence"
+      }
+    },
+    "src\\agents\\standards\\header-agent.js": {
+      "path": "src\\agents\\standards\\header-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.HEADER.MAIN",
+      "agents": [
+        "HEADER",
+        "ASSESS",
+        "ALIGN"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Header agent — inserts and repairs LEEWAY headers in source files",
+        "WHY": "All LEEWAY files must have a valid identity header; this agent enforces that rule",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/header-agent.js",
+        "WHEN": "2026",
+        "HOW": "Reads files, detects missing or malformed headers, inserts or repairs as needed"
+      }
+    },
+    "src\\agents\\standards\\placement-agent.js": {
+      "path": "src\\agents\\standards\\placement-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.PLACEMENT.MAIN",
+      "agents": [
+        "PLACEMENT",
+        "ASSESS",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Placement agent — checks file placement against LEEWAY directory structure rules",
+        "WHY": "Files in wrong directories break discoverability and architecture legibility",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/placement-agent.js",
+        "WHEN": "2026",
+        "HOW": "Compares declared REGION against expected directory paths, reports misplacements"
+      }
+    },
+    "src\\agents\\standards\\region-agent.js": {
+      "path": "src\\agents\\standards\\region-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.REGION.MAIN",
+      "agents": [
+        "REGION",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Region agent — assigns REGION correctly to files based on path and content",
+        "WHY": "Files must belong to the correct system region for governance and discoverability",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/region-agent.js",
+        "WHEN": "2026",
+        "HOW": "Path analysis and content scanning to determine the most appropriate region"
+      }
+    },
+    "src\\agents\\standards\\registry-agent.js": {
+      "path": "src\\agents\\standards\\registry-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.REGISTRY.MAIN",
+      "agents": [
+        "REGISTRY",
+        "ASSESS",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Registry agent — updates tag registry, file registry, and system map",
+        "WHY": "A LEEWAY system needs a queryable registry of all files and their identities",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/registry-agent.js",
+        "WHEN": "2026",
+        "HOW": "Walks codebase, reads LEEWAY headers, writes to .leeway/registry.json"
+      }
+    },
+    "src\\agents\\standards\\tag-agent.js": {
+      "path": "src\\agents\\standards\\tag-agent.js",
+      "hasHeader": true,
+      "region": "AI.AGENT.STANDARDS",
+      "tag": "AI.AGENT.TAG.MAIN",
+      "agents": [
+        "TAG",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Tag agent — infers TAG values from file path, purpose, and role",
+        "WHY": "Every file needs an accurate TAG for the system to be machine-searchable",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/agents/standards/tag-agent.js",
+        "WHEN": "2026",
+        "HOW": "Uses path heuristics and file content analysis to suggest optimal TAGs"
+      }
+    },
+    "src\\cli\\leeway.js": {
+      "path": "src\\cli\\leeway.js",
+      "hasHeader": true,
+      "region": "CORE.SDK.CLI",
+      "tag": "CORE.SDK.CLI.LEEWAY",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT",
+        "DOCTOR",
+        "REGISTRY"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "LEEWAY CLI — the primary command-line interface for the LEEWAY governance SDK",
+        "WHY": "Developers need a single command to run governance checks, audits, and repairs",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/cli/leeway.js",
+        "WHEN": "2026",
+        "HOW": "Node.js CLI using process.argv, no heavy dependencies, direct agent invocation"
+      }
+    },
+    "src\\cli\\setup-lee.js": {
+      "path": "src\\cli\\setup-lee.js",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.SETUP_LEE.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "setup-lee module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\cli\\setup-lee.js",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\cli\\terminal.js": {
+      "path": "src\\cli\\terminal.js",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.TERMINAL.MAIN",
+      "agents": [],
+      "license": null,
+      "fiveWH": {}
+    },
+    "src\\core\\backstory.js": {
+      "path": "src\\core\\backstory.js",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.BACKSTORY.LEE",
+      "agents": [],
+      "license": null,
+      "fiveWH": {}
+    },
+    "src\\core\\compliance-scorer.js": {
+      "path": "src\\core\\compliance-scorer.js",
+      "hasHeader": true,
+      "region": "CORE.SDK.SCORER",
+      "tag": "CORE.SDK.COMPLIANCE.SCORER",
+      "agents": [
+        "AUDIT",
+        "ASSESS",
+        "DOCTOR"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Scores LEEWAY compliance for files, directories, and repositories",
+        "WHY": "The LEEWAY system must be able to quantify how well a codebase follows governance standards",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/compliance-scorer.js",
+        "WHEN": "2026",
+        "HOW": "Weighted scoring across header, tag, placement, security, and naming rules"
+      }
+    },
+    "src\\core\\compliance-scorer.test.js": {
+      "path": "src\\core\\compliance-scorer.test.js",
+      "hasHeader": true,
+      "region": "TEST.CORE.COMPLIANCE",
+      "tag": "TEST.UNIT.COMPLIANCE.SCORER",
+      "agents": [
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Unit tests for the LEEWAY compliance-scorer core module",
+        "WHY": "Compliance scoring drives audit reports and governance gates",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/compliance-scorer.test.js",
+        "WHEN": "2026",
+        "HOW": "Node.js built-in test runner (node:test) with assert"
+      }
+    },
+    "src\\core\\execution-cycle.js": {
+      "path": "src\\core\\execution-cycle.js",
+      "hasHeader": true,
+      "region": "CORE.EXECUTION",
+      "tag": "CORE.CYCLE.CONTRACT",
+      "agents": [],
+      "license": null,
+      "fiveWH": {
+        "WHAT": "Centralized Execution Cycle Contract",
+        "WHY": "Enforces governance, traceability, and replayability for all agent actions",
+        "WHO": "Agent Lee (Sovereign Architect)",
+        "HOW": "Hardened state machine for Perception -> Plan -> Action -> Eval"
+      }
+    },
+    "src\\core\\header-parser.js": {
+      "path": "src\\core\\header-parser.js",
+      "hasHeader": true,
+      "region": "CORE.SDK.PARSER",
+      "tag": "CORE.SDK.HEADER.PARSER",
+      "agents": [
+        "HEADER",
+        "ASSESS",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Parses, validates, and builds LEEWAY identity headers from source files",
+        "WHY": "Every LEEWAY-compliant file must begin with a structured identity header; this module reads and writes those headers",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/header-parser.js",
+        "WHEN": "2026",
+        "HOW": "Pure JS string parsing, no regex over-engineering, line-by-line state machine"
+      }
+    },
+    "src\\core\\header-parser.test.js": {
+      "path": "src\\core\\header-parser.test.js",
+      "hasHeader": true,
+      "region": "TEST.CORE.HEADER",
+      "tag": "TEST.UNIT.HEADER.PARSER",
+      "agents": [
+        "AUDIT",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Unit tests for the LEEWAY header-parser core module",
+        "WHY": "The header parser is foundational — every other module depends on it working correctly",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/header-parser.test.js",
+        "WHEN": "2026",
+        "HOW": "Node.js built-in test runner (node:test) with assert"
+      }
+    },
+    "src\\core\\region-classifier.js": {
+      "path": "src\\core\\region-classifier.js",
+      "hasHeader": true,
+      "region": "CORE.SDK.CLASSIFIER",
+      "tag": "CORE.SDK.REGION.CLASSIFIER",
+      "agents": [
+        "REGION",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Classifies files into LEEWAY system regions",
+        "WHY": "Every file must belong to a named region that defines its role and layer in the system",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/region-classifier.js",
+        "WHEN": "2026",
+        "HOW": "Path-based heuristics with configurable overrides"
+      }
+    },
+    "src\\core\\region-classifier.test.js": {
+      "path": "src\\core\\region-classifier.test.js",
+      "hasHeader": true,
+      "region": "TEST.CORE.REGION",
+      "tag": "TEST.UNIT.REGION.CLASSIFIER",
+      "agents": [
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Unit tests for the LEEWAY region-classifier core module",
+        "WHY": "Region classification determines where files belong; errors affect entire governance pipeline",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/region-classifier.test.js",
+        "WHEN": "2026",
+        "HOW": "Node.js built-in test runner (node:test) with assert"
+      }
+    },
+    "src\\core\\tag-validator.js": {
+      "path": "src\\core\\tag-validator.js",
+      "hasHeader": true,
+      "region": "CORE.SDK.VALIDATOR",
+      "tag": "CORE.SDK.TAG.VALIDATOR",
+      "agents": [
+        "TAG",
+        "ASSESS"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Validates and infers LEEWAY TAG values for files",
+        "WHY": "Every file needs a structured TAG to be discoverable and machine-readable",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/tag-validator.js",
+        "WHEN": "2026",
+        "HOW": "Pattern matching against known domain/subdomain/asset/purpose vocabulary"
+      }
+    },
+    "src\\core\\tag-validator.test.js": {
+      "path": "src\\core\\tag-validator.test.js",
+      "hasHeader": true,
+      "region": "TEST.CORE.TAG",
+      "tag": "TEST.UNIT.TAG.VALIDATOR",
+      "agents": [
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "Unit tests for the LEEWAY tag-validator core module",
+        "WHY": "TAG validation is critical — invalid tags break discoverability and governance",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/core/tag-validator.test.js",
+        "WHEN": "2026",
+        "HOW": "Node.js built-in test runner (node:test) with assert"
+      }
+    },
+    "src\\core\\voice-conduit.js": {
+      "path": "src\\core\\voice-conduit.js",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.VOICE_CONDUIT.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "voice-conduit module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\core\\voice-conduit.js",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\core\\vulcan-command.js": {
+      "path": "src\\core\\vulcan-command.js",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.VULCAN_COMMAND.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "vulcan-command module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\core\\vulcan-command.js",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\index.js": {
+      "path": "src\\index.js",
+      "hasHeader": true,
+      "region": "CORE.SDK.ENTRY",
+      "tag": "CORE.SDK.LEEWAY.INDEX",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "LEEWAY SDK main entry point — exports all agents, core modules, and utilities",
+        "WHY": "Provides a single importable surface for consumers of the LEEWAY governance framework",
+        "WHO": "Rapid Web Development",
+        "WHERE": "src/index.js",
+        "WHEN": "2026",
+        "HOW": "ESM exports, lazy agent loading, zero heavy dependencies"
+      }
+    },
+    "src\\main.tsx": {
+      "path": "src\\main.tsx",
+      "hasHeader": true,
+      "region": "AI",
+      "tag": "CORE.SDK.MAIN.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "main module",
+        "WHY": "Part of AI region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\main.tsx",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\consensus\\ExecutionTrace.ts": {
+      "path": "src\\runtime\\consensus\\ExecutionTrace.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.EXECUTIONTRACE.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "ExecutionTrace module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\consensus\\ExecutionTrace.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\consensus\\HiveConsensus.ts": {
+      "path": "src\\runtime\\consensus\\HiveConsensus.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.HIVECONSENSUS.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "HiveConsensus module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\consensus\\HiveConsensus.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\consensus\\HiveState.ts": {
+      "path": "src\\runtime\\consensus\\HiveState.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.HIVESTATE.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "HiveState module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\consensus\\HiveState.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\core\\PerceptionBus.ts": {
+      "path": "src\\runtime\\core\\PerceptionBus.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.PERCEPTIONBUS.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "PerceptionBus module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\core\\PerceptionBus.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\core\\SovereignRuntime.ts": {
+      "path": "src\\runtime\\core\\SovereignRuntime.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.SOVEREIGNRUNTIME.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "SovereignRuntime module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\core\\SovereignRuntime.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\core\\UnifiedExecutionLayer.ts": {
+      "path": "src\\runtime\\core\\UnifiedExecutionLayer.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.UNIFIEDEXECUTIONLAYER.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "UnifiedExecutionLayer module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\core\\UnifiedExecutionLayer.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\security\\cortices\\ModuleLoaderAgent.ts": {
+      "path": "src\\runtime\\security\\cortices\\ModuleLoaderAgent.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "SECURITY.VALIDATOR.MODULELOADERAGENT.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "ModuleLoaderAgent module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\security\\cortices\\ModuleLoaderAgent.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\security\\GovernanceContract.ts": {
+      "path": "src\\runtime\\security\\GovernanceContract.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "SECURITY.VALIDATOR.GOVERNANCECONTRACT.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "GovernanceContract module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\security\\GovernanceContract.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\runtime\\security\\IntentSanitizer.ts": {
+      "path": "src\\runtime\\security\\IntentSanitizer.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "SECURITY.VALIDATOR.INTENTSANITIZER.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "IntentSanitizer module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\runtime\\security\\IntentSanitizer.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "src\\server.js": {
+      "path": "src\\server.js",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.SERVER.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "server module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "src\\server.js",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    },
+    "vite.config.ts": {
+      "path": "vite.config.ts",
+      "hasHeader": true,
+      "region": "CORE",
+      "tag": "CORE.SDK.VITE_CONFIG.MAIN",
+      "agents": [
+        "ASSESS",
+        "ALIGN",
+        "AUDIT"
+      ],
+      "license": "MIT",
+      "fiveWH": {
+        "WHAT": "vite.config module",
+        "WHY": "Part of CORE region",
+        "WHO": "LEEWAY Align Agent",
+        "WHERE": "vite.config.ts",
+        "WHEN": "2026",
+        "HOW": "Auto-aligned by LEEWAY align-agent"
+      }
+    }
+  },
+  "tags": {
+    "AI.ORCHESTRATION.MODEL.LOADER": [
+      "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\02_ENGINE\\agentlee_persona_engine_v1_1.js",
+      "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\03_POETRY\\agentlee_poetry_bank.js"
+    ],
+    "TOOLS.WORKER.LINGO.MAIN": [
+      "Agent_Lee_Persona_System\\Agent_Lee_Persona_System\\04_LINGO\\agentlee_lingo_worker.js"
+    ],
+    "AI.AGENT.EXAMPLE.BASIC": [
+      "examples\\example-agent.js"
+    ],
+    "UI.COMPONENT.NEXUS.BUTTON": [
+      "examples\\NexusButton.tsx"
+    ],
+    "CORE.SDK.LEEWAYUNIVERSE.MAIN": [
+      "LeeWayUniverse.tsx"
+    ],
+    "DOCS.STANDARD.ARCHITECTURE.MAP": [
+      "src\\agents\\discovery\\architecture-map-agent.js"
+    ],
+    "DOCS.STANDARD.DOCS.AGENT": [
+      "src\\agents\\discovery\\docs-agent.js"
+    ],
+    "DOCS.STANDARD.EXPLAIN.MAIN": [
+      "src\\agents\\discovery\\explain-agent.js"
+    ],
+    "SEO.INTENT.REGISTRY.MAIN": [
+      "src\\agents\\discovery\\intent-registry-agent.js"
+    ],
+    "SEO.SCHEMA.AGENT.MAIN": [
+      "src\\agents\\discovery\\schema-agent.js"
+    ],
+    "SEO.SITEMAP.AGENT.MAIN": [
+      "src\\agents\\discovery\\sitemap-agent.js"
+    ],
+    "AI.AGENT.ALIGN.MAIN": [
+      "src\\agents\\governance\\align-agent.js"
+    ],
+    "AI.AGENT.ASSESS.MAIN": [
+      "src\\agents\\governance\\assess-agent.js"
+    ],
+    "AI.AGENT.AUDIT.MAIN": [
+      "src\\agents\\governance\\audit-agent.js"
+    ],
+    "AI.AGENT.CIRCULAR.DEPENDENCY": [
+      "src\\agents\\integrity\\circular-dependency-agent.js"
+    ],
+    "AI.AGENT.DEPENDENCY.GRAPH": [
+      "src\\agents\\integrity\\dependency-graph-agent.js"
+    ],
+    "AI.AGENT.DUPLICATE.LOGIC": [
+      "src\\agents\\integrity\\duplicate-logic-agent.js"
+    ],
+    "AI.AGENT.IMPORT.MAIN": [
+      "src\\agents\\integrity\\import-agent.js"
+    ],
+    "AI.AGENT.MODULE.POLICY": [
+      "src\\agents\\integrity\\module-policy-agent.js"
+    ],
+    "AI.AGENT.REFACTOR.SCAN": [
+      "src\\agents\\integrity\\refactor-scan-agent.js"
+    ],
+    "AI.AGENT.SYNTAX.MAIN": [
+      "src\\agents\\integrity\\syntax-agent.js"
+    ],
+    "MCP.ENDPOINT.AGENT.MAIN": [
+      "src\\agents\\mcp\\endpoint-agent.js"
+    ],
+    "MCP.ENV.AGENT.MAIN": [
+      "src\\agents\\mcp\\env-agent.js"
+    ],
+    "MCP.HEALTH.AGENT.LITE": [
+      "src\\agents\\mcp\\health-agent-lite.js"
+    ],
+    "MCP.MANIFEST.AGENT.MAIN": [
+      "src\\agents\\mcp\\manifest-agent.js"
+    ],
+    "MCP.PORT.AGENT.MAIN": [
+      "src\\agents\\mcp\\port-agent.js"
+    ],
+    "MCP.PROCESS.AGENT.MAIN": [
+      "src\\agents\\mcp\\process-agent.js"
+    ],
+    "MCP.RUNTIME.AGENT.MAIN": [
+      "src\\agents\\mcp\\runtime-agent.js"
+    ],
+    "MCP.TRANSPORT.AGENT.MAIN": [
+      "src\\agents\\mcp\\transport-agent.js"
+    ],
+    "AGENT.AZR.COORDINATOR": [
+      "src\\agents\\orchestration\\azr-coordinator.js"
+    ],
+    "AI.AGENT.DOCTOR.MAIN": [
+      "src\\agents\\orchestration\\doctor-agent.js"
+    ],
+    "AI.AGENT.MEMORY.LITE": [
+      "src\\agents\\orchestration\\memory-agent-lite.js"
+    ],
+    "AI.AGENT.ROUTER.MAIN": [
+      "src\\agents\\orchestration\\router-agent.js"
+    ],
+    "SECURITY.PERMISSION.AGENT.MAIN": [
+      "src\\agents\\security\\permission-agent.js"
+    ],
+    "SECURITY.POLICY.AGENT.MAIN": [
+      "src\\agents\\security\\policy-agent.js"
+    ],
+    "SECURITY.PRIVACY.AGENT.MAIN": [
+      "src\\agents\\security\\privacy-agent.js"
+    ],
+    "SECURITY.SCANNER.PROMPT.MAIN": [
+      "src\\agents\\security\\prompt-security-agent.js"
+    ],
+    "SECURITY.SCANNER.SECRET.MAIN": [
+      "src\\agents\\security\\secret-scan-agent.js"
+    ],
+    "SECURITY.ACCESS.TOOL.MAIN": [
+      "src\\agents\\security\\tool-access-agent.js"
+    ],
+    "AI.AGENT.AUTHORITY.MAIN": [
+      "src\\agents\\standards\\authority-agent.js"
+    ],
+    "AI.AGENT.DISCOVERY.PIPELINE": [
+      "src\\agents\\standards\\discovery-pipeline-agent.js"
+    ],
+    "AI.AGENT.HEADER.MAIN": [
+      "src\\agents\\standards\\header-agent.js"
+    ],
+    "AI.AGENT.PLACEMENT.MAIN": [
+      "src\\agents\\standards\\placement-agent.js"
+    ],
+    "AI.AGENT.REGION.MAIN": [
+      "src\\agents\\standards\\region-agent.js"
+    ],
+    "AI.AGENT.REGISTRY.MAIN": [
+      "src\\agents\\standards\\registry-agent.js"
+    ],
+    "AI.AGENT.TAG.MAIN": [
+      "src\\agents\\standards\\tag-agent.js"
+    ],
+    "CORE.SDK.CLI.LEEWAY": [
+      "src\\cli\\leeway.js"
+    ],
+    "CORE.SDK.SETUP_LEE.MAIN": [
+      "src\\cli\\setup-lee.js"
+    ],
+    "CORE.SDK.TERMINAL.MAIN": [
+      "src\\cli\\terminal.js"
+    ],
+    "CORE.BACKSTORY.LEE": [
+      "src\\core\\backstory.js"
+    ],
+    "CORE.SDK.COMPLIANCE.SCORER": [
+      "src\\core\\compliance-scorer.js"
+    ],
+    "TEST.UNIT.COMPLIANCE.SCORER": [
+      "src\\core\\compliance-scorer.test.js"
+    ],
+    "CORE.CYCLE.CONTRACT": [
+      "src\\core\\execution-cycle.js"
+    ],
+    "CORE.SDK.HEADER.PARSER": [
+      "src\\core\\header-parser.js"
+    ],
+    "TEST.UNIT.HEADER.PARSER": [
+      "src\\core\\header-parser.test.js"
+    ],
+    "CORE.SDK.REGION.CLASSIFIER": [
+      "src\\core\\region-classifier.js"
+    ],
+    "TEST.UNIT.REGION.CLASSIFIER": [
+      "src\\core\\region-classifier.test.js"
+    ],
+    "CORE.SDK.TAG.VALIDATOR": [
+      "src\\core\\tag-validator.js"
+    ],
+    "TEST.UNIT.TAG.VALIDATOR": [
+      "src\\core\\tag-validator.test.js"
+    ],
+    "CORE.SDK.VOICE_CONDUIT.MAIN": [
+      "src\\core\\voice-conduit.js"
+    ],
+    "CORE.SDK.VULCAN_COMMAND.MAIN": [
+      "src\\core\\vulcan-command.js"
+    ],
+    "CORE.SDK.LEEWAY.INDEX": [
+      "src\\index.js"
+    ],
+    "CORE.SDK.MAIN.MAIN": [
+      "src\\main.tsx"
+    ],
+    "CORE.SDK.EXECUTIONTRACE.MAIN": [
+      "src\\runtime\\consensus\\ExecutionTrace.ts"
+    ],
+    "CORE.SDK.HIVECONSENSUS.MAIN": [
+      "src\\runtime\\consensus\\HiveConsensus.ts"
+    ],
+    "CORE.SDK.HIVESTATE.MAIN": [
+      "src\\runtime\\consensus\\HiveState.ts"
+    ],
+    "CORE.SDK.PERCEPTIONBUS.MAIN": [
+      "src\\runtime\\core\\PerceptionBus.ts"
+    ],
+    "CORE.SDK.SOVEREIGNRUNTIME.MAIN": [
+      "src\\runtime\\core\\SovereignRuntime.ts"
+    ],
+    "CORE.SDK.UNIFIEDEXECUTIONLAYER.MAIN": [
+      "src\\runtime\\core\\UnifiedExecutionLayer.ts"
+    ],
+    "SECURITY.VALIDATOR.MODULELOADERAGENT.MAIN": [
+      "src\\runtime\\security\\cortices\\ModuleLoaderAgent.ts"
+    ],
+    "SECURITY.VALIDATOR.GOVERNANCECONTRACT.MAIN": [
+      "src\\runtime\\security\\GovernanceContract.ts"
+    ],
+    "SECURITY.VALIDATOR.INTENTSANITIZER.MAIN": [
+      "src\\runtime\\security\\IntentSanitizer.ts"
+    ],
+    "CORE.SDK.SERVER.MAIN": [
+      "src\\server.js"
+    ],
+    "CORE.SDK.VITE_CONFIG.MAIN": [
+      "vite.config.ts"
+    ]
+  },
+  "regions": {
+    "🧠 AI": 2,
+    "🟣 MCP": 1,
+    "AI": 22,
+    "UI": 1,
+    "CORE": 24,
+    "DOCS": 3,
+    "SEO": 3,
+    "MCP": 8,
+    "AGENTS": 1,
+    "SECURITY": 6,
+    "TEST": 4
+  }
+}

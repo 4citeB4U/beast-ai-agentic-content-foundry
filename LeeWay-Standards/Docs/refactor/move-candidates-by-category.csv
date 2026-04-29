@@ -1,0 +1,6 @@
+category,count
+Compute Misplacement,369
+Communication Misplacement,153
+Shell/UI Misplacement,51
+Runtime Misplacement,13
+Governance Duplication,7

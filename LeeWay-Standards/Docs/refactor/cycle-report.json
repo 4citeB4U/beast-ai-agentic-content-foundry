@@ -1,0 +1,39 @@
+{
+  "group": "G001",
+  "startedAt": "2026-04-18T01:58:06.340Z",
+  "result": "FAILED",
+  "steps": [
+    {
+      "at": "2026-04-18T02:00:08.497Z",
+      "step": "rebuild-dependency-map",
+      "status": "FAILED",
+      "command": "node ./scripts/build-group-dependency-map.mjs --group=G001",
+      "error": "spawnSync node ETIMEDOUT",
+      "timedOut": false,
+      "output": ""
+    }
+  ],
+  "safeGroupApplied": null,
+  "filesMoved": 0,
+  "nextBoundaryViolation": null,
+  "closureSeed": null,
+  "closureGroup": null,
+  "closureStatus": "NOT_STARTED",
+  "validationStatus": "BLOCKED",
+  "validation": {
+    "preClosure": null,
+    "postClosure": null
+  },
+  "haltReason": "rebuild-dependency-map failed",
+  "artifacts": {
+    "cycleReport": "Docs/refactor/cycle-report.json"
+  },
+  "finishedAt": "2026-04-18T02:00:08.498Z",
+  "commandTimeoutMs": 120000,
+  "safe-group-applied": null,
+  "files-moved": 0,
+  "next-boundary-violation": null,
+  "closure-seed": null,
+  "closure-status": "NOT_STARTED",
+  "validation-status": "BLOCKED"
+}

@@ -1,0 +1,2 @@
+group_id,source_path,target_path,repo,reason,risk,coupling_class,imports_count,imported_by_count,external_importers_count,external_imports_count,runtime_critical,import_rewrite
+G001-C2-seed,LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/registry.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,C2-seed,13,0,0,13,true,true

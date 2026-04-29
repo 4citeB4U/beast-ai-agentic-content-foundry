@@ -1,0 +1,32 @@
+repo,path_pattern,owner_layer,responsibility,allowed_imports_from,forbidden_imports_from,allowed_execution_role,move_target_if_misplaced,quarantine_if_unresolved,delete_externalize_class
+LeeWay-Standards,src/contracts/**,standards,shared contracts and canonical types,none,"integrated;runtime;projection",validate_define_law,LeeWay-Standards/src/contracts,yes,none
+LeeWay-Standards,src/validators/**,standards,validators and policy checks,src/contracts,"integrated;runtime;projection",validate_only,LeeWay-Standards/src/validators,yes,none
+LeeWay-Standards,src/core/tag-validator*,standards,compliance and tag integrity,src/contracts,"integrated;runtime;projection",validate_only,LeeWay-Standards/src/core,yes,none
+LeeWay-Standards,src/runtime/**,standards,runtime law and guardrails,"src/contracts;src/validators","integrated/ui;runtime internals",gate_authorize,LeeWay-Standards/src/runtime,yes,none
+LeeWay-Standards,**/node_modules/**,external,dependency cache,n/a,n/a,none,n/a,yes,delete
+LeeWay-Standards,**/.venv/**,external,local environment cache,n/a,n/a,none,n/a,yes,delete
+LeeWay-Edge-Integrated,app/motherboard/**,integrated,motherboard and control shell,standards/contracts,"runtime internals;projection internals",orchestrate,LeeWay-Edge-Integrated/app/motherboard,yes,none
+LeeWay-Edge-Integrated,app/rooms/**,integrated,room and session shell,"standards/contracts;adapters","rtc transport internals;gpu dispatch internals",orchestrate,LeeWay-Edge-Integrated/app/rooms,yes,none
+LeeWay-Edge-Integrated,services/**,integrated,orchestration services,"standards/contracts;adapters","runtime internals;projection internals",orchestrate,LeeWay-Edge-Integrated/services,yes,none
+LeeWay-Edge-Integrated,adapters/rtc.*,integrated,bridge to rtc runtime,standards/contracts,projection repos,orchestrate_via_adapter,LeeWay-Edge-Integrated/adapters,yes,none
+LeeWay-Edge-Integrated,adapters/gpu.*,integrated,bridge to gpu runtime,standards/contracts,projection repos,orchestrate_via_adapter,LeeWay-Edge-Integrated/adapters,yes,none
+LeeWay-Edge-RTC-main,src/transport/**,runtime-rtc,signaling and media transport,standards/contracts,"integrated/ui;projection;gpu internals",execute_runtime_communication,LeeWay-Edge-RTC-main/src/transport,yes,none
+LeeWay-Edge-RTC-main,src/room/**,runtime-rtc,room communication state and lifecycle,standards/contracts,"integrated/ui;projection;gpu internals",execute_runtime_communication,LeeWay-Edge-RTC-main/src/room,yes,none
+LeeWay-Edge-RTC-main,src/diagnostics/**,runtime-rtc,rtc diagnostics and health,standards/contracts,"integrated/ui;projection",execute_runtime_communication,LeeWay-Edge-RTC-main/src/diagnostics,yes,none
+LeewayEdgeWebGPU,gpu/bootstrap/**,runtime-gpu,compute bootstrap and device bring-up,standards/contracts,"integrated/ui;projection;rtc internals",execute_runtime_compute,LeewayEdgeWebGPU/gpu/bootstrap,yes,none
+LeewayEdgeWebGPU,gpu/pipeline/**,runtime-gpu,compute pipeline orchestration,standards/contracts,"integrated/ui;projection;rtc internals",execute_runtime_compute,LeewayEdgeWebGPU/gpu/pipeline,yes,none
+LeewayEdgeWebGPU,gpu/workers/**,runtime-gpu,worker manager and workers,standards/contracts,"integrated/ui;projection;rtc internals",execute_runtime_compute,LeewayEdgeWebGPU/gpu/workers,yes,none
+LeewayEdgeWebGPU,gpu/fallback/**,runtime-gpu,fallback engine,standards/contracts,"integrated/ui;projection;rtc internals",execute_runtime_compute,LeewayEdgeWebGPU/gpu/fallback,yes,none
+agent-lee-agentic-os,pages/**,projection,projection pages and studio UX,"integrated clients;standards/contracts","runtime internals;standards runtime law internals",projection_only,"LeeWay-Edge-Integrated/app or agent-lee-agentic-os/apps/agent-lee/ui",yes,none
+agent-lee-agentic-os,components/**,projection,projection components and studio UX,"integrated clients;standards/contracts","runtime internals;standards runtime law internals",projection_only,agent-lee-agentic-os/apps/agent-lee/ui,yes,none
+agent-lee-agentic-os,core/LeewayRTCClient.ts,projection,should consume adapters not own runtime internals,integrated adapters,LeeWay-Edge-RTC-main/src/**,projection_only,LeeWay-Edge-Integrated/adapters,yes,none
+agent-lee-agentic-os,core/RTCInitializer.ts,projection,should consume adapters not own runtime internals,integrated adapters,LeeWay-Edge-RTC-main/src/**,projection_only,LeeWay-Edge-Integrated/services,yes,none
+agent-lee-agentic-os,core/CentralGovernance.ts,standards,law duplication risk,standards/contracts,projection runtime paths,validate_only,LeeWay-Standards/src/runtime,yes,none
+agent-lee-agentic-os,cortices/**,runtime-gpu,compute and runtime internals,standards/contracts,projection pages/components,runtime_execute_only,LeewayEdgeWebGPU/gpu or standalone runtime,yes,none
+agent-lee-agentic-os,serviceAccountKey.json,external,secret material,n/a,n/a,none,secure secret store,yes,externalize
+LeeWay-Agents-the-World-Within,workforce/**,projection-workforce,workforce catalog and classification,"standards/contracts;integrated service contracts","runtime internals;integrated/ui shell",projection_backend_only,LeeWay-Agents-the-World-Within/workforce,yes,none
+LeeWay-Agents-the-World-Within,agents/**,projection-workforce,operative and job family metadata,standards/contracts,"runtime internals;integrated/ui shell",projection_backend_only,LeeWay-Agents-the-World-Within/agents,yes,none
+LeeWay-Agents-the-World-Within,**/LeeWay-Standards/**,standards,nested standards copy drift,n/a,n/a,none,LeeWay-Standards root,yes,delete
+LeeWay-Agents-the-World-Within,agents/*.gguf,external,large model binary,n/a,n/a,none,artifact/model registry,yes,externalize
+LeeWay-Agents-the-World-Within,**/node_modules/**,external,dependency cache,n/a,n/a,none,n/a,yes,delete
+LeeWay-Agents-the-World-Within,**/.venv/**,external,local environment cache,n/a,n/a,none,n/a,yes,delete

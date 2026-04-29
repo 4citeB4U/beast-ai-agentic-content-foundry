@@ -1,0 +1,27 @@
+name: layer-governance
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate-layer-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run layer path checks
+        working-directory: LeeWay-Standards
+        run: node scripts/check-layer-paths.mjs
+      - name: Run SSA scan
+        working-directory: LeeWay-Standards
+        run: node scripts/run-agents.mjs --mode=scan
+      - name: Run SSA purge plan
+        working-directory: LeeWay-Standards
+        run: node scripts/run-agents.mjs --mode=purge-plan
+      - name: Run SSA quarantine dry-run
+        working-directory: LeeWay-Standards
+        run: node scripts/quarantine.mjs --dry-run

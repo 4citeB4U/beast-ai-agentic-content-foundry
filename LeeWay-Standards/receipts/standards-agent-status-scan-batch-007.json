@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-04-16T21:54:24.755Z",
+  "mode": "scan",
+  "scope": "all",
+  "phase": "completed",
+  "summary": {
+    "totalAgents": 9,
+    "activeAgents": 7,
+    "blockedAgents": 0,
+    "errorAgents": 0,
+    "totalReceipts": 38,
+    "totalBlockingReceipts": 0
+  },
+  "agents": [
+    {
+      "agentId": "ssa-placement-auditor",
+      "title": "Placement Auditor",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 32,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Placement Auditor scanning governed scope for policy drift"
+    },
+    {
+      "agentId": "ssa-import-sentinel",
+      "title": "Import Sentinel",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Import Sentinel scanning governed scope for policy drift"
+    },
+    {
+      "agentId": "ssa-contract-integrity",
+      "title": "Contract Integrity",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Contract Integrity scanning governed scope for policy drift"
+    },
+    {
+      "agentId": "ssa-dead-code-reaper",
+      "title": "Dead Code Reaper",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Dead Code Reaper standby in scan mode"
+    },
+    {
+      "agentId": "ssa-quarantine-executor",
+      "title": "Quarantine Executor",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 0,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Quarantine Executor standby in scan mode"
+    },
+    {
+      "agentId": "ssa-runtime-chain-guardian",
+      "title": "Runtime Chain Guardian",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Runtime Chain Guardian scanning governed scope for policy drift"
+    },
+    {
+      "agentId": "ssa-receipt-audit",
+      "title": "Receipt Auditor",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Receipt Auditor scanning governed scope for policy drift"
+    },
+    {
+      "agentId": "ssa-health-monitor",
+      "title": "Health Monitor",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Health Monitor scanning governed scope for policy drift"
+    },
+    {
+      "agentId": "ssa-data-lineage-tracker",
+      "title": "Data Lineage Tracker",
+      "status": "idle",
+      "lastRunAt": 1776376464755,
+      "receiptCount": 1,
+      "blockingCount": 0,
+      "reposWatched": [
+        "all"
+      ],
+      "currentMission": "Data Lineage Tracker scanning governed scope for policy drift"
+    }
+  ]
+}

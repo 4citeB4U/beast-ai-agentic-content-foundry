@@ -1,0 +1,7 @@
+group_id,source_path,target_path,repo,reason,risk,coupling_class,imports_count,imported_by_count,external_importers_count,external_imports_count,runtime_critical,import_rewrite
+G001-A2,LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/runtime-mode.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,A2,0,0,0,0,true,true
+G001-A2,LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/intent-router.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,A2,0,0,0,0,true,true
+G001-A2,LeeWay-Edge-Integrated/rtc/services/sfu/src/guardian/stats-worker.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,A2,0,0,0,0,true,true
+G001-A2,LeeWay-Edge-Integrated/rtc/services/sfu/src/agents/types.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,A2,0,0,0,0,true,true
+G001-A2,LeeWay-Edge-Integrated/rtc/services/sfu/src/metrics.ts,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,A2,0,0,0,0,true,true
+G001-A2,LeeWay-Edge-Integrated/gpu/rtc/cluster.registry.js,LeeWay-Edge-RTC-main/src/transport,LeeWay-Edge-Integrated,rtc logic outside rtc repo,high,A2,0,0,0,0,true,true
