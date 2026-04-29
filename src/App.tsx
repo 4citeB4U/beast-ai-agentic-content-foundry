@@ -102,6 +102,8 @@ import {
   siNotebooklm,
 } from 'simple-icons';
 
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 // --- Types ---
 
 interface ContentItem {
@@ -853,13 +855,13 @@ const AgentLeeLive = ({
 
   useEffect(() => {
     let alive = true;
-    fetch('/leeway-hivemind.json')
+    fetch(assetUrl('/leeway-hivemind.json'))
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (alive && data) setHiveMindManifest(data as HiveMindManifest);
       })
       .catch(() => {});
-    fetch('/platform-api-skills.json')
+    fetch(assetUrl('/platform-api-skills.json'))
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (alive && data) setPlatformSkills(data as PlatformApiSkillsManifest);
@@ -1322,7 +1324,7 @@ const NodePalette = ({
       style={{ backgroundColor: settings.leftPanelBg }}
     >
       <div className="flex items-center gap-2 mb-6">
-        <img src="/headerlogo.png" alt="Beast AI" className="w-full max-w-[180px] h-auto object-contain select-none" style={{ maxHeight: 56 }} />
+        <img src={assetUrl('/headerlogo.png')} alt="Beast AI" className="w-full max-w-[180px] h-auto object-contain select-none" style={{ maxHeight: 56 }} />
       </div>
 
       <div className="mb-6 space-y-3">
@@ -1460,7 +1462,7 @@ const PropertiesPanel = ({ node, onUpdateNode, onDeleteNode, settings }: {
         style={{ backgroundColor: settings.rightPanelBg }}
       >
         <img
-          src="/companylogo.png"
+          src={assetUrl('/companylogo.png')}
           alt="Beast AI"
           className="absolute top-4 left-1/2 -translate-x-1/2 w-56 h-auto object-contain opacity-20 pointer-events-none select-none"
         />
@@ -1501,7 +1503,7 @@ const PropertiesPanel = ({ node, onUpdateNode, onDeleteNode, settings }: {
        style={{ backgroundColor: settings.rightPanelBg }}
     >
       <img
-        src="/companylogo.png"
+        src={assetUrl('/companylogo.png')}
         alt="Beast AI"
         className="absolute top-4 left-1/2 -translate-x-1/2 w-52 h-auto object-contain opacity-15 pointer-events-none select-none z-0"
       />
